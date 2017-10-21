@@ -10,7 +10,7 @@ libmath-bigint-gmp-perl
 gettext
 ruby-compass
 postgresql
-postgresql-server-dev
+postgresql-server-dev-9.4
 gnuplot
 ttf-bitstream-vera
 libexpat1-dev
