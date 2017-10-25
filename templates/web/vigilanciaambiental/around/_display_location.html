@@ -1,0 +1,111 @@
+[%
+
+    rss_alt   = loc('RSS feed');
+    rss_title = loc('RSS feed of recent local problems');
+
+    rss_url
+        = pc
+        ? c.uri_for( "/rss/pc", pc )
+        : c.uri_for( "/rss/l/$short_latitude,$short_longitude" );
+
+    email_url = c.uri_for(
+        '/alert/list',
+        {
+            lat  => short_latitude,
+            lon  => short_longitude,
+            feed => "local:$short_latitude:$short_longitude",
+        }
+    );
+
+    url_skip = c.uri_for(
+        '/report/new',
+        {
+            pc         => pc
+            latitude   => short_latitude,
+            longitude  => short_longitude,
+            skipped    => 1,
+        }
+    );
+
+    PROCESS "maps/${map.type}.html";
+
+    SET rss = [ loc('Recent local problems, FixMyStreet'), rss_url ] IF c.cobrand.moniker != 'emptyhomes';
+    INCLUDE 'header.html',
+        title  => loc('Viewing a location')
+        bodyclass => 'mappage',
+        robots => 'noindex,nofollow';
+
+    allow_creation = !c.cobrand.only_authed_can_create || (c.user && c.user.from_body);
+%]
+<div id="s-categories" class="s-categories-maximized">
+  <div id="s-categories-toggle">
+    <div id="toggle-image" class="toggle-up" onclick="toggleCategories();">
+    </div>
+  </div>
+  <div id="categories-filters">
+  </div>
+</div>
+[% IF allow_creation %]
+<form action="[% c.uri_for('/report/new') %]" method="post" name="mapForm" id="mapForm" enctype="multipart/form-data" class="validate">
+    [% IF c.req.params.map_override %]
+        <input type="hidden" name="map_override" value="[% c.req.params.map_override | html %]">
+    [% END %]
+    <input type="hidden" name="pc" value="[% pc | html %]">
+
+    <input type="hidden" name="latitude" id="fixmystreet.latitude" value="[% short_latitude | html %]">
+    <input type="hidden" name="longitude" id="fixmystreet.longitude" value="[% short_longitude | html %]">
+[% END %]
+
+    [% map_html %]
+
+    <p id='sub_map_links'>
+        [% IF c.req.params.no_pins %]
+            <a id='hide_pins_link' rel='nofollow' href='[% c.uri_with( { no_pins => 0 } ) %]'>[% loc('Show pins') %]</a>
+        [% ELSE %]
+            <a id='hide_pins_link' rel='nofollow' href='[% c.uri_with( { no_pins => 1 } ) %]'>[% loc('Hide pins') %]</a>
+        [% END %]
+    </p>
+
+    </div>
+
+
+
+    [% IF list %]
+        <div id="side">
+    [% ELSE %]
+        <div id="side" style="display:none">
+    [% END %]
+        [% IF allow_creation %]
+            [% TRY %][% INCLUDE 'around/extra_text.html' %][% CATCH file %][% END %]
+        [% END %]
+
+      [% IF c.cobrand.moniker != 'emptyhomes' %]
+        [% INCLUDE 'around/_updates.html' %]
+
+        <section class="full-width">
+            [% INCLUDE "around/tabbed_lists.html" %]
+        </section>
+      [% END %]
+    </div>
+
+    [% IF allow_creation %]
+        [% IF list %]
+            <div id="side-form" style="display:none">
+        [% ELSE %]
+            <div id="side-form">
+        [% END %]
+    [% INCLUDE "report/new/fill_in_details_form.html"
+        js = 1,
+        report.used_map = 1
+        report.name = c.user.name
+    %]
+    </div>
+    [% END %]
+
+[% IF allow_creation %]
+</form>
+[% END %]
+[% INCLUDE 'footer.html' %]
+<script type="text/javascript">
+  getCategoryGroups();
+</script>

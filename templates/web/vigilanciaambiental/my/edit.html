@@ -1,0 +1,142 @@
+[% INCLUDE header.html
+    title = loc('Edit Profile')
+UNLESS not_page %]
+<div class="reportes sub report-list user-profile" id="user-profile" style="[% style %]">
+	<div class="scrolled-95">
+    [% IF password_changed || messages && !not_page || c.req.arguments.0 == 'pass' %]
+      <div id="messages">
+      [% IF c.req.arguments.0 == 'pass' %]
+          <p>[% loc('Your password needs to be changed') %]</p>
+          <script> $(document).ready(function() {
+              setTimeout(function() {
+                $('#change-passwd-btn').addClass('reportar-abuso-active');
+                $('#my-change-passwd').show();
+              },20);
+          });</script>
+      [% ELSE %]
+  			[% messages %]
+  			[% IF password_changed %]
+  				<p>[% loc('Your password has been changed') %]</p>
+  			[% END %]
+  		[% END %]
+      </div>
+    [% END %]
+	    <!--edit-profile-->
+	    <div class="c-t profile">
+	    	<form method="post" action="[% c.uri_for( '/my/edit' ) %]" id="form_profile_form" name="profileForm" class="validate"[% IF c.cobrand.allow_photo_upload %] enctype="multipart/form-data"[% END %]>
+	    		<input name="redirect" type="hidden" value="/my">
+		    	<button type="submit" id="edit-profile-cancel" class="btn btn-sky btn-small btn-comentar btn-profile">[% loc('Back') %]</button>
+		    	<script>
+                    $('#edit-profile-cancel').click(function(event){
+                        event.preventDefault();
+                        window.location.href = '/my';
+                    });
+                </script>
+		        <button type="submit" id="edit-profile-save" class="btn btn-sky btn-small btn-comentar btn-profile">[% loc('Save') %]</button>
+	        	<div class="img-profile">
+	        	[% IF c.cobrand.allow_photo_upload %]
+		        	[% IF c.user.picture_url %]
+		                <img id="user-image" src="[% c.user.picture_url %]" style="min-height: 100px; min-width: 100px;" class="img-circle" alt="[% c.user.name %]">
+		            </div>
+		            <div class="edit-img">
+		            	<button type="button" class="btn btn-small btn-comentar btn-reemplazar InputButton">Reemplazar Imagen</button>
+		                <input type="file" id="InputFile" name="photo">
+		            	<button id="profile-image-delete"type="button" class="btn btn-small btn-comentar btn-borrar">Borrar</button>
+		            	<input id="image_delete" name="image_delete" type="hidden" value="0">
+		        	</div>
+		            [% ELSE %]
+			            [% IF upload_fileid %]
+		   					<img id="user-image" class="img-circle" src="/photo/[% upload_fileid %].temp.jpeg" alt="">
+		   				[% ELSE %]
+		   					<img id="user-image" class="img-circle" alt="" src="/cobrands/pormibarrio/images/no-profile-picture.jpg">
+		   				</div>
+		   				<div class="edit-img">
+			            	<button type="button" class="btn btn-small btn-comentar btn-reemplazar upload-img">Añadir foto</button>
+							<input type="file" id="InputFile" name="photo">
+			        	</div>
+	   					[% END %]
+   					[% END %]
+	            [% END %]
+	            <div class="edit-profile">
+	            	<button type="button" id="change-passwd-btn">[% loc('Change Password') %]</button>
+	            	<div id="my-change-passwd" >
+	            		<form action="[% c.uri_for('change_password') %]" method="post" name="change_password" class="fieldset">
+					    [% IF password_error;
+
+					        errors = {
+					            missing  => loc('Please enter a password'),
+					            mismatch => loc('The passwords do not match'),
+					            other    => loc('Please check the passwords and try again'),
+					        };
+
+					        loc_password_error = errors.$password_error || errors.other; %]
+					    	<div class="form-error">[% loc_password_error %]</div>
+					    [% END %]
+					        <input type="password" class="form-control" name="new_password" value="[% new_password | html %]" placeholder="[% loc('Password') %]">
+					        <input type="password" class="form-control" name="confirm" value="[% confirm | html %]" placeholder="[% loc('Again') %]">
+					        <input id="change-pass-submit" name="change-pass-submit" type="submit" class="btn btn-sky btn-small" value="[% loc('Change Password') %]">
+						</form>
+	            	</div>
+	            	<input class="form-control" placeholder="Email" value="[% c.user.email %]" type="email" name="email">
+	            	[% IF field_errors.email  %]
+		                <p class="error-m">[% field_errors.email %]</p>
+		            [% END %]
+	            	<input type="text" placeholder="Nombre y apellido" class="form-focus-trigger validName form-control [% IF field_errors.name %] error [% END %]" value="[% c.user.name | html %]" name="name" id="form_name" >
+		            [% IF field_errors.name  %]
+		                <p class="error-m">[% field_errors.name %]</p>
+		            [% END %]
+		            <input type="text" placeholder="Cédula de Identidad: 0.000.000-0" class="form-control form-focus-trigger [% IF field_errors.identity_document %] error [% END %]" value="[% c.user.identity_document | html %]" name="identity_document" id="identity_document" >
+		            [% IF field_errors.identity_document  %]
+		                <p class="error-m">[% field_errors.identity_document %]</p>
+		            [% END %]
+		            <input class="form-control" type="text" value="[% c.user.phone | html %]" name="phone" id="form_phone" placeholder="Teléfono (opcional)">
+		            [% IF field_errors.phone  %]
+		                <p class="error-m">[% field_errors.phone %]</p>
+		            [% END %]
+		            [% IF c.config.FACEBOOK_APP_ID || c.config.TWITTER_KEY %]
+		            <div class="social-control">
+		            	<div class="checkbox">
+			            	<input type="checkbox" id="not_update_photo" name="not_update_photo"></input>
+			            	<label class="inline">[% loc('Do not replace my image with social image') %]</label>
+			            </div>
+	            		[% IF c.config.FACEBOOK_APP_ID %]
+			                [% IF c.user.facebook_id %]
+			                	<button name="facebook_unlink" value="facebook_unlink" class="btn btn-block btn-social btn-facebook">Desvincular de <strong>Facebook</strong></button>
+			                [% ELSE %]
+			                	<button name="facebook_link" value="facebook_link"class="btn btn-block btn-social btn-facebook">Vincular con <strong>Facebook</strong></button>
+			            	[% END %]
+			            [% END %]
+			            [% IF c.config.TWITTER_KEY %]
+			                [% IF c.user.twitter_id %]
+			                	<button name="twitter_unlink" value="twitter_unlink" class="btn btn-block btn-social btn-twitter">Desvincular de <strong>Twitter</strong></button>
+			                [% ELSE %]
+			                	<button name="twitter_link" value="twitter_link" class="btn btn-block btn-social btn-twitter">Vincular con <strong>Twitter</strong></button>
+			            	[% END %]
+			            [% END %]
+			         </div>
+		            [% END %]
+	            </div>
+	        </form>
+	        <script>
+	        $(document).ready(function () {
+	        	$('#profile-image-delete').click(function(){
+	        		$('#image_delete').val('1');
+              $('#form_profile_form').submit();
+	        	});
+	        	$("#InputFile").change(function(){
+				    if (this.files && this.files[0]) {
+				        var reader = new FileReader();
+				        reader.onload = function (e) {
+				            $('#user-image').attr('src', e.target.result);
+				        }
+				        reader.readAsDataURL(this.files[0]);
+				    }
+				});
+			});
+	        </script>
+	    </div>
+	    <!--/edit-profile-->
+	</div>
+</div>
+
+[% INCLUDE footer.html UNLESS not_page %]
