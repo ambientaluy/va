@@ -9,12 +9,12 @@
 # PostgreSQL database details for FixMyStreet
 FMS_DB_HOST: 'localhost'
 FMS_DB_PORT: '5432'
-FMS_DB_NAME: 'va'
-FMS_DB_USER: 'va'
-FMS_DB_PASS: 'tero17'
+FMS_DB_NAME: 'fms'
+FMS_DB_USER: 'fms'
+FMS_DB_PASS: 'somepassword'
 
 # The base URL of the install.
-BASE_URL: 'http://www.example.org'
+BASE_URL: 'http://www.ambiental.uy'
 # Use the below if you're using the Catalyst development server
 #   BASE_URL: 'http://localhost:3000'
 
@@ -70,9 +70,9 @@ GEO_CACHE: '../cache/'
 # And then specify whichever type code have the boundaries you want:
 #   MAPIT_TYPES: [ 'O06' ]
 #MAPIT_URL: 'http://global.mapit.mysociety.org/'
-MAPIT_URL: ''
+MAPIT_URL: 'http://mapit.ambiental.uy:81'
 #MAPIT_TYPES: ['O02']
-MAPIT_TYPES: ['ZZZ']
+MAPIT_TYPES: ['DEPTO']
 
 # If you are using global MapIt, you might want to restrict FixMyStreet usage
 # to only one or more areas, rather than all O04, for example. Provide MapIt
@@ -89,7 +89,7 @@ MAPIT_TYPES_CHILDREN: ''
 
 # Which service to use to look up results from e.g. front page searches.
 # Possible choices are Google, Bing, or OSM (blank will use OSM by default).
-GEOCODER: ''
+GEOCODER: 'OSM'
 
 # If you wish to use Google Maps or Bing Maps Geocoding, get and put the
 # relevant key here.

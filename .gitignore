@@ -30,6 +30,7 @@ FixMyBarangay.po
 /web/photo/*
 /web/cache/*
 /local
+/commonlib
 /web/upload/*
 
 /web/cobrands/fixmystreet/compass_app_log.txt

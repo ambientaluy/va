@@ -12,8 +12,8 @@ use strict;
 use mySociety::Gaze;
 use Utils;
 
-use constant ZOOM_LEVELS    => 6;
-use constant MIN_ZOOM_LEVEL => 13;
+use constant ZOOM_LEVELS    => 19;
+use constant MIN_ZOOM_LEVEL => 1;
 
 # display_map C PARAMS
 # PARAMS include:

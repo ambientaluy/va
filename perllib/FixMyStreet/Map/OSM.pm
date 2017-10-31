@@ -13,8 +13,8 @@ use Math::Trig;
 use mySociety::Gaze;
 use Utils;
 
-use constant ZOOM_LEVELS    => 6;
-use constant MIN_ZOOM_LEVEL => 13;
+use constant ZOOM_LEVELS    => 16;
+use constant MIN_ZOOM_LEVEL => 3;
 
 sub map_type {
     return 'OpenLayers.Layer.OSM.Mapnik';
