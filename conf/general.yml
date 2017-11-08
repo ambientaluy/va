@@ -9,19 +9,19 @@
 # PostgreSQL database details for FixMyStreet
 FMS_DB_HOST: 'localhost'
 FMS_DB_PORT: '5432'
-FMS_DB_NAME: 'fms'
-FMS_DB_USER: 'fms'
-FMS_DB_PASS: 'somepassword'
+FMS_DB_NAME: 'va'
+FMS_DB_USER: 'va'
+FMS_DB_PASS: 'tero17'
 
 # The base URL of the install.
-BASE_URL: 'http://www.ambiental.uy'
+BASE_URL: 'http://vigilancia.ambiental.uy'
 # Use the below if you're using the Catalyst development server
 #   BASE_URL: 'http://localhost:3000'
 
 # Email domain used for emails, and contact name/email for admin use.
-EMAIL_DOMAIN: 'example.org'
-CONTACT_EMAIL: 'team@example.org'
-CONTACT_NAME: 'FixMyStreet'
+EMAIL_DOMAIN: 'gmail.com'
+CONTACT_EMAIL: 'uyambiental@gmail.com'
+CONTACT_NAME: 'Vigilancia Ambiental'
 # Address used for emails you don't expect a reply to (e.g. confirmation
 # emails); can be same as CONTACT_EMAIL above, of course, if you don't have a
 # special address.
