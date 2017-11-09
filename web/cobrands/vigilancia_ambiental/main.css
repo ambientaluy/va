@@ -771,6 +771,7 @@ div.reportes{
 	height:100%;
 	overflow:hidden;
 	z-index: 4000;
+	position:relative;
 }
 
 div.ir{
@@ -3313,3 +3314,29 @@ tr.noDeadLine{
 .slimScrollBar{
 	background-color:#fff;	
 }
+
+.menu-principal {
+	float:right;
+	padding: 5px 20px;
+	color:#fff;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size:14px;	
+	font-weight: 500;
+	outline: none;
+	}
+
+
+.menu-principal:hover { 
+	color:#fff; 
+	background-color:#DBA914; 
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	padding: 5px 20px;
+	font-weight: 700;
+	}
+	
+	.menu-principal:active { 
+	color:#000; 	
+	font-weight: 700;
+	}
