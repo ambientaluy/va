@@ -73,7 +73,7 @@ GEO_CACHE: '../cache/'
 #MAPIT_URL: 'http://global.mapit.mysociety.org/'
 MAPIT_URL: 'http://mapit.ambiental.uy:81'
 #MAPIT_TYPES: ['O02']
-MAPIT_TYPES: ['DEPTO']
+MAPIT_TYPES: ['DEPTO','URU','MUN']
 
 # If you are using global MapIt, you might want to restrict FixMyStreet usage
 # to only one or more areas, rather than all O04, for example. Provide MapIt
