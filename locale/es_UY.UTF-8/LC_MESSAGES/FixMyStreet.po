@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fixmystreet\n"
 "Report-Msgid-Bugs-To: matthew@mysociety.org\n"
-"POT-Creation-Date: 2017-08-10 15:23-0300\n"
+"POT-Creation-Date: 2017-11-10 09:15-0300\n"
 "PO-Revision-Date: 2014-08-01 00:44-0300\n"
 "Last-Translator: Fernando Uval <fernando@datauy.org>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/fixmystreet/language/es/)\n"
@@ -19,21 +19,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 1.6.7\n"
 
-#. (0)
-#: templates/web/pormibarrio/static/stats_new.html:240
-msgid " + (MARGINS.left) + "
-msgstr ""
-
-#: templates/web/pormibarrio/static/stats_new.html:360
-msgid " + arc.centroid(d) + "
-msgstr ""
-
-#. (" + height / 2 + ")
-#: templates/web/pormibarrio/static/stats_new.html:335
-msgid " + width / 2 + "
-msgstr ""
-
-#: perllib/FixMyStreet/DB/Result/Problem.pm:629
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:767
+#: perllib/FixMyStreet/DB/Result/Problem.pm:631
 #: perllib/FixMyStreet/DB/ResultSet/Problem.pm:407
 msgid " and "
 msgstr " y "
@@ -90,10 +77,13 @@ msgstr "%d a %d de %d"
 #: templates/web/pormibarrio/reports/body.html:22
 #: templates/web/pormibarriocr/reports/body.html:0
 #: templates/web/pormibarriocr/reports/body.html:22
+#: templates/web/vigilancia_ambiental/reports/body.html:0
+#: templates/web/vigilancia_ambiental/reports/body.html:22
 msgid "%s - Summary reports"
 msgstr "%s - Resumen de reportes"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:714
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:852
+#: perllib/FixMyStreet/DB/Result/Problem.pm:716
 msgid "%s ref:&nbsp;%s"
 msgstr "%s ref:&nbsp;%s"
 
@@ -101,7 +91,8 @@ msgstr "%s ref:&nbsp;%s"
 msgid "%s ward, %s"
 msgstr "%s barrio, %s"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:565
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:703
+#: perllib/FixMyStreet/DB/Result/Problem.pm:567
 msgid "%s, reported at %s"
 msgstr "%s, reportado en %s"
 
@@ -112,18 +103,21 @@ msgstr "%s , en %s barrio"
 #: templates/web/default/email_sent.html:29
 #: templates/web/pormibarrio/email_sent.html:29
 #: templates/web/pormibarriocr/email_sent.html:29
+#: templates/web/vigilancia_ambiental/email_sent.html:29
 msgid "(Don't worry &mdash; we'll hang on to your alert while you're checking your email.)"
 msgstr "(No te preocupes &mdash; guardamos tu alerta mientras revisás el correo)"
 
 #: templates/web/default/email_sent.html:25
 #: templates/web/pormibarrio/email_sent.html:25
 #: templates/web/pormibarriocr/email_sent.html:25
+#: templates/web/vigilancia_ambiental/email_sent.html:25
 msgid "(Don't worry &mdash; we'll hang on to your problem report while you're checking your email.)"
 msgstr "(No te preocupes &mdash; guardamos tu reporte mientras revisás el correo)"
 
 #: templates/web/default/email_sent.html:27
 #: templates/web/pormibarrio/email_sent.html:27
 #: templates/web/pormibarriocr/email_sent.html:27
+#: templates/web/vigilancia_ambiental/email_sent.html:27
 msgid "(Don't worry &mdash; we'll hang on to your update while you're checking your email.)"
 msgstr "(No te preocupes &mdash; guardamos tu comentario mientras revisás el correo)"
 
@@ -136,6 +130,7 @@ msgstr "(Correo electrónico en el cuadro abuso)"
 #: templates/web/fixmystreet/alert/_list.html:24
 #: templates/web/pormibarrio/alert/_list.html:24
 #: templates/web/pormibarriocr/alert/_list.html:24
+#: templates/web/vigilancia_ambiental/alert/_list.html:24
 msgid "(a default distance which covers roughly 200,000 people)"
 msgstr "(Una distancia predeterminada que cubre aproximadamente 200.000 personas)"
 
@@ -143,6 +138,7 @@ msgstr "(Una distancia predeterminada que cubre aproximadamente 200.000 personas
 #: templates/web/fixmystreet/alert/_list.html:28
 #: templates/web/pormibarrio/alert/_list.html:28
 #: templates/web/pormibarriocr/alert/_list.html:28
+#: templates/web/vigilancia_ambiental/alert/_list.html:28
 msgid "(alternatively the RSS feed can be customised, within"
 msgstr "(O bien la fuente RSS se puede personalizar, dentro de"
 
@@ -166,6 +162,7 @@ msgstr "(arreglado)"
 #: templates/web/fixmystreet/around/intro.html:2
 #: templates/web/pormibarrio/around/intro.html:2
 #: templates/web/pormibarriocr/around/intro.html:2
+#: templates/web/vigilancia_ambiental/around/intro.html:2
 msgid "(like graffiti, fly tipping, broken paving slabs, or street lighting)"
 msgstr "(como vandalismo, basura ilegal, pavimentación o alumbrado roto)"
 
@@ -174,6 +171,7 @@ msgstr "(como vandalismo, basura ilegal, pavimentación o alumbrado roto)"
 #: templates/web/fixmystreet/report/_item.html:16
 #: templates/web/pormibarrio/report/_item.html:15
 #: templates/web/pormibarriocr/report/_item.html:15
+#: templates/web/vigilancia_ambiental/report/_item.html:15
 msgid "(not sent to council)"
 msgstr "(sin enviar a la Intendencia)"
 
@@ -188,6 +186,7 @@ msgstr "(opcional)"
 #: templates/web/fixmystreet/report/_item.html:15
 #: templates/web/pormibarrio/report/_item.html:14
 #: templates/web/pormibarriocr/report/_item.html:14
+#: templates/web/vigilancia_ambiental/report/_item.html:14
 msgid "(sent to both)"
 msgstr "(enviado a ambos)"
 
@@ -199,14 +198,16 @@ msgstr "(nunca se muestra tu dirección de correo electrónico o número de tel�
 msgid "(we never show your email)"
 msgstr "(nunca se muestra tu dirección de correo electrónico)"
 
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:530
 #: perllib/FixMyStreet/App/Controller/Report/New.pm:743
 #: perllib/FixMyStreet/App/Controller/Report/New.pm:791
-#: perllib/FixMyStreet/DB/Result/Problem.pm:392
+#: perllib/FixMyStreet/DB/Result/Problem.pm:394
 msgid "-- Pick a category --"
 msgstr "-- Elegí una categoría --"
 
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:536
 #: perllib/FixMyStreet/App/Controller/Report/New.pm:724
-#: perllib/FixMyStreet/DB/Result/Problem.pm:398
+#: perllib/FixMyStreet/DB/Result/Problem.pm:400
 msgid "-- Pick a property type --"
 msgstr "-- Elegí un tipo de propiedad --"
 
@@ -244,6 +245,7 @@ msgstr ""
 #: templates/web/fixmystreet/questionnaire/completed-open.html:6
 #: templates/web/pormibarrio/questionnaire/completed-open.html:6
 #: templates/web/pormibarriocr/questionnaire/completed-open.html:6
+#: templates/web/vigilancia_ambiental/questionnaire/completed-open.html:6
 msgid ""
 "<p style=\"font-size:150%\">We&rsquo;re sorry to hear that. We have two\n"
 "suggestions: why not try <a href=\"http://www.writetothem.com/\">writing direct\n"
@@ -371,6 +373,8 @@ msgstr "¿Quiénes somos?"
 
 #: templates/web/pormibarrio/auth/login_block.html:52
 #: templates/web/pormibarriocr/auth/login_block.html:44
+#: templates/web/vigilancia_ambiental/auth/_login_block.html:52
+#: templates/web/vigilancia_ambiental/auth/login_block.html:52
 msgid "Access"
 msgstr "Acceder"
 
@@ -390,6 +394,10 @@ msgstr "Acceder"
 #: templates/web/pormibarriocr/dashboard/index.html:135
 #: templates/web/pormibarriocr/report/update-form.html:41
 #: templates/web/pormibarriocr/report/update-form.html:42
+#: templates/web/vigilancia_ambiental/dashboard/index.html:134
+#: templates/web/vigilancia_ambiental/dashboard/index.html:135
+#: templates/web/vigilancia_ambiental/report/update-form.html:43
+#: templates/web/vigilancia_ambiental/report/update-form.html:44
 msgid "Action Scheduled"
 msgstr "Acción agendada"
 
@@ -406,6 +414,7 @@ msgstr ""
 
 #: templates/web/default/admin/body.html:45
 #: templates/web/pormibarrio/admin/body.html:45
+#: templates/web/vigilancia_ambiental/admin/body.html:45
 msgid "Add a contact using the form below."
 msgstr "Agregar contacto con el formulario de abajo."
 
@@ -418,6 +427,7 @@ msgstr "Agregar organismo"
 
 #: templates/web/default/admin/body.html:88
 #: templates/web/pormibarrio/admin/body.html:88
+#: templates/web/vigilancia_ambiental/admin/body.html:88
 #: templates/web/zurich/admin/body.html:30
 msgid "Add new category"
 msgstr "Agregar nueva categoría"
@@ -432,11 +442,13 @@ msgstr "Añadido %s"
 
 #: templates/web/pormibarrio/report/new/fill_in_details_form.html:38
 #: templates/web/pormibarriocr/report/new/fill_in_details_form.html:38
+#: templates/web/vigilancia_ambiental/report/new/fill_in_details_form.html:38
 msgid "Address"
 msgstr "Dirección"
 
 #: templates/web/pormibarrio/my/edit.html:76
 #: templates/web/pormibarriocr/my/edit.html:66
+#: templates/web/vigilancia_ambiental/my/edit.html:76
 msgid "Again"
 msgstr "Otra vez"
 
@@ -450,11 +462,15 @@ msgstr "Otra vez:"
 #: templates/web/pormibarriocr/report/new/fill_in_details_form.html:141
 #: templates/web/pormibarriocr/report/new/fill_in_details_form.html:156
 #: templates/web/pormibarriocr/report/update-form.html:82
+#: templates/web/vigilancia_ambiental/report/new/fill_in_details_form.html:141
+#: templates/web/vigilancia_ambiental/report/new/fill_in_details_form.html:156
+#: templates/web/vigilancia_ambiental/report/update-form.html:82
 msgid "Agreed"
 msgstr "Acepto"
 
 #: templates/web/pormibarrio/dashboard/deadlines.html:45
 #: templates/web/pormibarriocr/dashboard/deadlines.html:45
+#: templates/web/vigilancia_ambiental/dashboard/deadlines.html:45
 msgid "Alert"
 msgstr "Alerta"
 
@@ -471,6 +487,7 @@ msgstr "Alerta %d desactivada (creada %s)"
 #: templates/web/fixmystreet/report/update-form.html:148
 #: templates/web/pormibarrio/report/update-form.html:66
 #: templates/web/pormibarriocr/report/update-form.html:66
+#: templates/web/vigilancia_ambiental/report/update-form.html:66
 msgid "Alert me to future updates"
 msgstr "Avisarme de los comentarios futuros"
 
@@ -482,8 +499,8 @@ msgid "All Reports"
 msgstr "Todos los reportes"
 
 #: templates/web/pormibarrio/static/stats.html:15
-#: templates/web/pormibarrio/static/stats_new.html:20
 #: templates/web/pormibarriocr/static/stats.html:19
+#: templates/web/vigilancia_ambiental/static/stats.html:15
 msgid "All bodies"
 msgstr "Todos las municipalidades"
 
@@ -498,9 +515,9 @@ msgstr "Todos las municipalidades"
 #: templates/web/oxfordshire/footer.html:23
 #: templates/web/oxfordshire/header.html:67
 #: templates/web/pormibarrio/static/stats.html:19
-#: templates/web/pormibarrio/static/stats_new.html:16
 #: templates/web/pormibarriocr/static/stats.html:16
 #: templates/web/reading/footer.html:8 templates/web/stevenage/footer.html:43
+#: templates/web/vigilancia_ambiental/static/stats.html:19
 #: templates/web/zurich/admin/index-dm.html:12
 #: templates/web/zurich/admin/stats.html:13
 #: templates/web/zurich/footer.html:19
@@ -543,6 +560,8 @@ msgstr "Toda la información proporcionada será enviada a <strong>%s</strong> o
 #: templates/web/pormibarrio/report/new/fill_in_details_form.html:18
 #: templates/web/pormibarriocr/report/new/fill_in_details_form.html:16
 #: templates/web/pormibarriocr/report/new/fill_in_details_form.html:18
+#: templates/web/vigilancia_ambiental/report/new/fill_in_details_form.html:16
+#: templates/web/vigilancia_ambiental/report/new/fill_in_details_form.html:18
 msgid "All the information you provide here will be sent to <strong>%s</strong>."
 msgstr "Toda la información proporcionada será enviada a <strong>%s</strong>."
 
@@ -550,6 +569,7 @@ msgstr "Toda la información proporcionada será enviada a <strong>%s</strong>."
 #: templates/web/fixmystreet/questionnaire/index.html:54
 #: templates/web/pormibarrio/questionnaire/index.html:54
 #: templates/web/pormibarriocr/questionnaire/index.html:54
+#: templates/web/vigilancia_ambiental/questionnaire/index.html:54
 msgid "An update marked this problem as fixed."
 msgstr "Una actualización marcó este reporte como arreglado."
 
@@ -584,6 +604,7 @@ msgstr "Área cubierta"
 
 #: templates/web/pormibarrio/report/update-form.html:51
 #: templates/web/pormibarriocr/report/update-form.html:51
+#: templates/web/vigilancia_ambiental/report/update-form.html:51
 msgid "Assign category"
 msgstr "Asignar categoría"
 
@@ -614,7 +635,8 @@ msgstr "Se devuelven como máximo %d solicitudes por cada consulta. Las solicitu
 msgid "At the moment only searching for and looking at reports work."
 msgstr "Por el momento sólo funcionan las búsquedas y las vistas de reportes."
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:347
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:485
+#: perllib/FixMyStreet/DB/Result/Problem.pm:349
 #: templates/web/zurich/report/_item.html:11
 msgid "Awaiting moderation"
 msgstr "Esperando moderación"
@@ -625,6 +647,8 @@ msgstr "Esperando moderación"
 #: templates/web/pormibarrio/my/edit.html:28
 #: templates/web/pormibarriocr/js/translation_strings.html:33
 #: templates/web/pormibarriocr/my/edit.html:18
+#: templates/web/vigilancia_ambiental/js/translation_strings.html:33
+#: templates/web/vigilancia_ambiental/my/edit.html:28
 msgid "Back"
 msgstr "Atrás"
 
@@ -668,6 +692,8 @@ msgstr "Por Fecha"
 #: templates/web/pormibarrio/around/_report_banner.html:8
 #: templates/web/pormibarriocr/around/_report_banner.html:10
 #: templates/web/pormibarriocr/around/_report_banner.html:12
+#: templates/web/vigilancia_ambiental/around/_report_banner.html:10
+#: templates/web/vigilancia_ambiental/around/_report_banner.html:8
 msgid "Can't see the map? <a href='%s' rel='nofollow'>Skip this step</a>"
 msgstr "¿No puedes ver el mapa? <a href='%s' rel='nofollow'>Salte este paso</a>"
 
@@ -686,6 +712,10 @@ msgstr "¿No puedes ver el mapa? <a href='%s' rel='nofollow'>Salte este paso</a>
 #: templates/web/pormibarriocr/report/new/fill_in_details_form.html:52
 #: templates/web/seesomething/report/new/category.html:6
 #: templates/web/southampton/report/new/category.html:3
+#: templates/web/vigilancia_ambiental/admin/body.html:53
+#: templates/web/vigilancia_ambiental/dashboard/deadlines.html:22
+#: templates/web/vigilancia_ambiental/report/new/category.html:10
+#: templates/web/vigilancia_ambiental/report/new/fill_in_details_form.html:52
 #: templates/web/zurich/admin/body.html:13
 #: templates/web/zurich/admin/index-dm.html:23
 #: templates/web/zurich/admin/index-sdm.html:21
@@ -705,6 +735,7 @@ msgstr "Categoría ratio de arreglo de problemas > 4 semanas"
 #: templates/web/default/report/new/fill_in_details_form.html:67
 #: templates/web/emptyhomes/report/new/fill_in_details_form.html:50
 #: templates/web/pormibarrio/admin/body.html:109
+#: templates/web/vigilancia_ambiental/admin/body.html:109
 #: templates/web/zurich/admin/body.html:36
 #: templates/web/zurich/admin/report_edit-sdm.html:45
 #: templates/web/zurich/admin/report_edit.html:143
@@ -722,6 +753,8 @@ msgstr "Categoría: %s"
 #: templates/web/pormibarrio/my/edit.html:77
 #: templates/web/pormibarriocr/my/edit.html:51
 #: templates/web/pormibarriocr/my/edit.html:67
+#: templates/web/vigilancia_ambiental/my/edit.html:61
+#: templates/web/vigilancia_ambiental/my/edit.html:77
 msgid "Change Password"
 msgstr "Cambiar contraseña"
 
@@ -732,6 +765,7 @@ msgstr "Los cambios han sido guardados"
 
 #: templates/web/default/admin/body.html:131
 #: templates/web/pormibarrio/admin/body.html:131
+#: templates/web/vigilancia_ambiental/admin/body.html:131
 msgid ""
 "Check <strong>confirmed</strong> to indicate that this contact has been confirmed as correct.\n"
 "                If you are not sure of the origin or validity of the contact, leave this unchecked."
@@ -740,6 +774,7 @@ msgstr ""
 "                Si no estás seguro del origen o validez del contacto, dejalo sin marcar."
 
 #: templates/web/pormibarrio/admin/body.html:142
+#: templates/web/vigilancia_ambiental/admin/body.html:142
 #, fuzzy
 msgid ""
 "Check <strong>deleted</strong> to remove the category from use.\n"
@@ -758,6 +793,7 @@ msgstr ""
 
 #: templates/web/default/admin/body.html:162
 #: templates/web/pormibarrio/admin/body.html:162
+#: templates/web/vigilancia_ambiental/admin/body.html:162
 msgid ""
 "Check <strong>private</strong> if reports in this category should <strong>never be displayed on the website</strong>.\n"
 "                <br>\n"
@@ -775,6 +811,7 @@ msgstr ""
 
 #: templates/web/default/admin/body.html:101
 #: templates/web/pormibarrio/admin/body.html:101
+#: templates/web/vigilancia_ambiental/admin/body.html:101
 msgid ""
 "Choose a <strong>category</strong> name that makes sense to the public (e.g., \"Pothole\", \"Street lighting\") but is helpful\n"
 "                  to the body too. These will appear in the drop-down menu on the report-a-problem page."
@@ -788,6 +825,8 @@ msgstr ""
 #: templates/web/pormibarriocr/dashboard/index.html:137
 #: templates/web/pormibarriocr/report/update-form.html:41
 #: templates/web/pormibarriocr/report/update-form.html:44
+#: templates/web/vigilancia_ambiental/dashboard/index.html:134
+#: templates/web/vigilancia_ambiental/dashboard/index.html:137
 msgid "Clarify Report"
 msgstr "Clarificar reporte"
 
@@ -802,6 +841,8 @@ msgstr "Click aquí o ingresá como dd/mm/aaaa"
 #: templates/web/pormibarrio/js/translation_strings.html:48
 #: templates/web/pormibarriocr/around/_report_banner.html:4
 #: templates/web/pormibarriocr/js/translation_strings.html:48
+#: templates/web/vigilancia_ambiental/around/_report_banner.html:2
+#: templates/web/vigilancia_ambiental/js/translation_strings.html:48
 msgid "Click map to report a problem"
 msgstr "Haga clic en el mapa para notificar un problema"
 
@@ -822,6 +863,9 @@ msgstr "Hacé click en el mapa para notificar un problema"
 #: templates/web/pormibarriocr/dashboard/deadlines.html:35
 #: templates/web/pormibarriocr/dashboard/deadlines.html:37
 #: templates/web/pormibarriocr/report/banner.html:15
+#: templates/web/vigilancia_ambiental/dashboard/deadlines.html:35
+#: templates/web/vigilancia_ambiental/dashboard/deadlines.html:37
+#: templates/web/vigilancia_ambiental/report/banner.html:15
 #: templates/web/zurich/admin/header.html:1
 #: templates/web/zurich/admin/header.html:10
 #: templates/web/zurich/admin/header.html:12
@@ -832,7 +876,8 @@ msgstr "Hacé click en el mapa para notificar un problema"
 msgid "Closed"
 msgstr "Cerrado"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:807
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:945
+#: perllib/FixMyStreet/DB/Result/Problem.pm:809
 msgid "Closed by council"
 msgstr "Cerrado por la Intendencia"
 
@@ -871,11 +916,13 @@ msgstr "Cobrand:"
 
 #: templates/web/pormibarrio/my/my.html:130
 #: templates/web/pormibarriocr/my/my.html:130
+#: templates/web/vigilancia_ambiental/my/my.html:130
 msgid "Comments"
 msgstr "Comentarios"
 
 #: templates/web/pormibarrio/my/my.html:82
 #: templates/web/pormibarriocr/my/my.html:82
+#: templates/web/vigilancia_ambiental/my/my.html:82
 msgid "Completed"
 msgstr "Finalizado"
 
@@ -900,6 +947,8 @@ msgstr "Configurar Endpoint"
 #: templates/web/pormibarrio/admin/body.html:62
 #: templates/web/pormibarrio/report/display.html:80
 #: templates/web/pormibarriocr/report/display.html:56
+#: templates/web/vigilancia_ambiental/admin/body.html:62
+#: templates/web/vigilancia_ambiental/report/display.html:80
 msgid "Confirm"
 msgstr "Confirmar"
 
@@ -934,6 +983,9 @@ msgstr "Confirmación"
 #: templates/web/pormibarrio/admin/body.html:55
 #: templates/web/pormibarrio/my/my.html:76
 #: templates/web/pormibarriocr/my/my.html:76
+#: templates/web/vigilancia_ambiental/admin/body.html:137
+#: templates/web/vigilancia_ambiental/admin/body.html:55
+#: templates/web/vigilancia_ambiental/my/my.html:76
 #: templates/web/zurich/admin/stats.html:40
 msgid "Confirmed"
 msgstr "Confirmado"
@@ -967,6 +1019,8 @@ msgstr "Contactar FixMyStreet"
 #: templates/web/pormibarrio/contact/index.html:2
 #: templates/web/pormibarriocr/contact/index.html:1
 #: templates/web/pormibarriocr/contact/index.html:2
+#: templates/web/vigilancia_ambiental/contact/index.html:1
+#: templates/web/vigilancia_ambiental/contact/index.html:2
 msgid "Contact Us"
 msgstr "Contáctenos"
 
@@ -976,6 +1030,7 @@ msgstr "Contáctenos"
 #: templates/web/fixmystreet/contact/index.html:19
 #: templates/web/pormibarrio/contact/index.html:19
 #: templates/web/pormibarriocr/contact/index.html:19
+#: templates/web/vigilancia_ambiental/contact/index.html:19
 msgid "Contact the team"
 msgstr "Contactar con el equipo"
 
@@ -988,6 +1043,7 @@ msgstr "No se pudo encontrar usuario"
 #: templates/web/oxfordshire/js/translation_strings.html:31
 #: templates/web/pormibarrio/js/translation_strings.html:38
 #: templates/web/pormibarriocr/js/translation_strings.html:38
+#: templates/web/vigilancia_ambiental/js/translation_strings.html:38
 msgid "Could not look up location"
 msgstr "No se pudo buscar ubicación"
 
@@ -998,6 +1054,7 @@ msgstr "Intendencia"
 #: templates/web/default/admin/body.html:1
 #: templates/web/default/admin/body_edit.html:1
 #: templates/web/pormibarrio/admin/body.html:1
+#: templates/web/vigilancia_ambiental/admin/body.html:1
 #: templates/web/zurich/admin/body.html:1
 msgid "Council contacts for %s"
 msgstr "Contactos de la Intendencia para %s"
@@ -1016,15 +1073,19 @@ msgstr "Total"
 #: templates/web/default/email_sent.html:1
 #: templates/web/pormibarrio/email_sent.html:1
 #: templates/web/pormibarriocr/email_sent.html:1
+#: templates/web/vigilancia_ambiental/email_sent.html:1
 msgid "Create a report"
 msgstr "Crear un reporte"
 
 #: templates/web/pormibarrio/auth/login_block.html:33
+#: templates/web/vigilancia_ambiental/auth/_login_block.html:33
+#: templates/web/vigilancia_ambiental/auth/login_block.html:33
 msgid "Create account"
 msgstr "Crear cuenta"
 
 #: templates/web/default/admin/body.html:179
 #: templates/web/pormibarrio/admin/body.html:179
+#: templates/web/vigilancia_ambiental/admin/body.html:179
 #: templates/web/zurich/admin/body.html:53
 msgid "Create category"
 msgstr "Crear una categoría"
@@ -1037,6 +1098,7 @@ msgstr "Creado"
 
 #: templates/web/pormibarrio/my/my.html:145
 #: templates/web/pormibarriocr/my/my.html:145
+#: templates/web/vigilancia_ambiental/my/my.html:145
 msgid "Created %s"
 msgstr "Creado %s"
 
@@ -1064,6 +1126,8 @@ msgstr "No se han creado organismos aún."
 #: templates/web/pormibarrio/dashboard/index.html:7
 #: templates/web/pormibarriocr/dashboard/index.html:5
 #: templates/web/pormibarriocr/dashboard/index.html:7
+#: templates/web/vigilancia_ambiental/dashboard/index.html:5
+#: templates/web/vigilancia_ambiental/dashboard/index.html:7
 msgid "Dashboard"
 msgstr "Cuadro de mando"
 
@@ -1071,6 +1135,8 @@ msgstr "Cuadro de mando"
 #: templates/web/pormibarrio/dashboard/deadlines.html:2
 #: templates/web/pormibarriocr/dashboard/deadlines.html:1
 #: templates/web/pormibarriocr/dashboard/deadlines.html:2
+#: templates/web/vigilancia_ambiental/dashboard/deadlines.html:1
+#: templates/web/vigilancia_ambiental/dashboard/deadlines.html:2
 msgid "DeadLines"
 msgstr "Plazos"
 
@@ -1085,6 +1151,8 @@ msgstr "Resulelto por subdivisión en cinco días hábiles"
 #: templates/web/default/admin/body_edit.html:85
 #: templates/web/pormibarrio/admin/body.html:148
 #: templates/web/pormibarrio/admin/body.html:56
+#: templates/web/vigilancia_ambiental/admin/body.html:148
+#: templates/web/vigilancia_ambiental/admin/body.html:56
 msgid "Deleted"
 msgstr "Eliminado"
 
@@ -1103,6 +1171,8 @@ msgstr "Descripción"
 #: templates/web/pormibarriocr/js/translation_strings.html:35
 #: templates/web/pormibarriocr/report/new/fill_in_details_form.html:81
 #: templates/web/seesomething/report/new/fill_in_details_form.html:16
+#: templates/web/vigilancia_ambiental/js/translation_strings.html:35
+#: templates/web/vigilancia_ambiental/report/new/fill_in_details_form.html:81
 #: templates/web/zurich/report/new/fill_in_details_form.html:42
 msgid "Details"
 msgstr "Detalles"
@@ -1118,6 +1188,7 @@ msgstr "Detalles:"
 
 #: templates/web/default/admin/body.html:57
 #: templates/web/pormibarrio/admin/body.html:57
+#: templates/web/vigilancia_ambiental/admin/body.html:57
 msgid "Devolved"
 msgstr "Delegado"
 
@@ -1129,6 +1200,9 @@ msgstr "Ranking de premios a la constancia"
 #: templates/web/pormibarrio/my/edit.html:100
 #: templates/web/pormibarriocr/auth/login_block.html:23
 #: templates/web/pormibarriocr/my/edit.html:86
+#: templates/web/vigilancia_ambiental/auth/_login_block.html:18
+#: templates/web/vigilancia_ambiental/auth/login_block.html:18
+#: templates/web/vigilancia_ambiental/my/edit.html:100
 msgid "Do not replace my image with social image"
 msgstr "No ulitizar mi imagen de la red"
 
@@ -1147,6 +1221,7 @@ msgstr "¿Tiene una contraseña FixMyStreet?"
 #: templates/web/fixmystreet/questionnaire/index.html:64
 #: templates/web/pormibarrio/questionnaire/index.html:64
 #: templates/web/pormibarriocr/questionnaire/index.html:64
+#: templates/web/vigilancia_ambiental/questionnaire/index.html:64
 msgid "Don&rsquo;t know"
 msgstr "No lo se"
 
@@ -1164,10 +1239,13 @@ msgstr "No lo se"
 #: templates/web/pormibarriocr/dashboard/index.html:136
 #: templates/web/pormibarriocr/report/update-form.html:41
 #: templates/web/pormibarriocr/report/update-form.html:43
+#: templates/web/vigilancia_ambiental/dashboard/index.html:134
+#: templates/web/vigilancia_ambiental/dashboard/index.html:136
 msgid "Duplicate"
 msgstr "Duplicado"
 
 #: templates/web/pormibarrio/admin/body.html:90
+#: templates/web/vigilancia_ambiental/admin/body.html:90
 #, fuzzy
 msgid ""
 "Each contact for the body has a category, which is displayed to the public.\n"
@@ -1203,11 +1281,14 @@ msgstr "Editar"
 #: templates/web/pormibarrio/my/edit.html:2
 #: templates/web/pormibarriocr/my/edit.html:1
 #: templates/web/pormibarriocr/my/edit.html:2
+#: templates/web/vigilancia_ambiental/my/edit.html:1
+#: templates/web/vigilancia_ambiental/my/edit.html:2
 msgid "Edit Profile"
 msgstr "Editar Perfil"
 
 #: templates/web/default/admin/body.html:189
 #: templates/web/pormibarrio/admin/body.html:189
+#: templates/web/vigilancia_ambiental/admin/body.html:189
 #: templates/web/zurich/admin/body.html:64
 msgid "Edit body details"
 msgstr "Editar detalles del organismo"
@@ -1253,6 +1334,9 @@ msgstr "Email no registrado"
 #: templates/web/pormibarriocr/report/display.html:47
 #: templates/web/pormibarriocr/report/display.html:69
 #: templates/web/seesomething/auth/general.html:20
+#: templates/web/vigilancia_ambiental/admin/body.html:54
+#: templates/web/vigilancia_ambiental/report/display.html:71
+#: templates/web/vigilancia_ambiental/report/display.html:93
 #: templates/web/zurich/admin/body-form.html:9
 #: templates/web/zurich/admin/body.html:14
 #: templates/web/zurich/auth/general.html:24
@@ -1266,6 +1350,7 @@ msgstr "Email añadido a lista de abusos"
 
 #: templates/web/default/admin/body.html:126
 #: templates/web/pormibarrio/admin/body.html:126
+#: templates/web/vigilancia_ambiental/admin/body.html:126
 msgid "Email address:"
 msgstr "Dirección de correo:"
 
@@ -1294,6 +1379,8 @@ msgid "Email me updates"
 msgstr "Recibir por correo actualizaciones"
 
 #: templates/web/pormibarrio/auth/login_block.html:37
+#: templates/web/vigilancia_ambiental/auth/_login_block.html:37
+#: templates/web/vigilancia_ambiental/auth/login_block.html:37
 #, fuzzy
 msgid "Email or password incorrect. Maybe you want to <a class=\"green no-account\" href=\"#\">register</a>?"
 msgstr "Email o Password incorrectos. Quizás quieras <a class=\"green registrate\" href=\"#\">registrarte</a>?"
@@ -1369,6 +1456,7 @@ msgstr ""
 #: templates/web/default/admin/stats.html:70
 #: templates/web/pormibarrio/dashboard/deadlines.html:12
 #: templates/web/pormibarriocr/dashboard/deadlines.html:12
+#: templates/web/vigilancia_ambiental/dashboard/deadlines.html:12
 msgid "End Date:"
 msgstr "Fecha de finalización:"
 
@@ -1434,6 +1522,7 @@ msgstr ""
 #: templates/web/default/admin/body.html:11
 #: templates/web/default/admin/body_edit.html:18
 #: templates/web/pormibarrio/admin/body.html:11
+#: templates/web/vigilancia_ambiental/admin/body.html:11
 msgid "Example postcode %s"
 msgstr "Ejemplo de código postal %s"
 
@@ -1469,11 +1558,13 @@ msgstr "Nombre"
 #: templates/web/fixmystreet/questionnaire/index.html:73
 #: templates/web/pormibarrio/questionnaire/index.html:73
 #: templates/web/pormibarriocr/questionnaire/index.html:73
+#: templates/web/vigilancia_ambiental/questionnaire/index.html:73
 msgid "First time"
 msgstr "Primera vez"
 
 #: templates/web/default/admin/body.html:37
 #: templates/web/pormibarrio/admin/body.html:37
+#: templates/web/vigilancia_ambiental/admin/body.html:37
 msgid "Fix this by choosing an <strong>area covered</strong> in the <em>Edit body details</em> form below."
 msgstr "Arreglá ésto eligiendo un <strong>área de cobertura</strong> en los <em>Detalles del Organismo</em> del formulario abajo."
 
@@ -1504,6 +1595,7 @@ msgstr ""
 #: templates/web/fixmystreet/alert/_list.html:73
 #: templates/web/pormibarrio/alert/_list.html:73
 #: templates/web/pormibarriocr/alert/_list.html:73
+#: templates/web/vigilancia_ambiental/alert/_list.html:73
 msgid ""
 "FixMyStreet sends different categories of problem\n"
 "to the appropriate council, so problems within the boundary of a particular council\n"
@@ -1546,6 +1638,13 @@ msgstr ""
 #: templates/web/pormibarriocr/report/banner.html:12
 #: templates/web/pormibarriocr/report/update-form.html:41
 #: templates/web/pormibarriocr/report/update-form.html:45
+#: templates/web/vigilancia_ambiental/dashboard/deadlines.html:35
+#: templates/web/vigilancia_ambiental/dashboard/deadlines.html:37
+#: templates/web/vigilancia_ambiental/dashboard/index.html:134
+#: templates/web/vigilancia_ambiental/dashboard/index.html:138
+#: templates/web/vigilancia_ambiental/report/banner.html:12
+#: templates/web/vigilancia_ambiental/report/update-form.html:43
+#: templates/web/vigilancia_ambiental/report/update-form.html:45
 msgid "Fixed"
 msgstr "Arreglado"
 
@@ -1602,11 +1701,13 @@ msgstr "Marcado:"
 #: templates/web/fixmystreet/reports/_ward-list.html:4
 #: templates/web/pormibarrio/reports/_ward-list.html:4
 #: templates/web/pormibarriocr/reports/_ward-list.html:4
+#: templates/web/vigilancia_ambiental/reports/_ward-list.html:4
 msgid "Follow a ward link to view only reports within that ward."
 msgstr "Clic en el enlace de un barrio para ver solo los reportes en ese barrio"
 
 #: templates/web/pormibarrio/my/my.html:127
 #: templates/web/pormibarriocr/my/my.html:127
+#: templates/web/vigilancia_ambiental/my/my.html:127
 msgid "Following"
 msgstr "Siguiendo"
 
@@ -1615,6 +1716,7 @@ msgid "For council(s):"
 msgstr "Por Concejalía(s):"
 
 #: templates/web/pormibarrio/auth/social_signup.html:28
+#: templates/web/vigilancia_ambiental/auth/social_signup.html:28
 msgid "For example: 1.234.567-8"
 msgstr "Por ejemplo: 1.234.567-8"
 
@@ -1642,12 +1744,14 @@ msgstr "¿Olvidaste tu contraseña?"
 #: templates/web/pormibarrio/static/privacy.html:1
 #: templates/web/pormibarriocr/faq/faq-en-gb.html:1
 #: templates/web/pormibarriocr/static/privacy.html:1
+#: templates/web/vigilancia_ambiental/faq/faq-en-gb.html:1
+#: templates/web/vigilancia_ambiental/static/privacy.html:1
 msgid "Frequently Asked Questions"
 msgstr "Preguntas frecuentes"
 
 #: templates/web/pormibarrio/static/stats.html:9
-#: templates/web/pormibarrio/static/stats_new.html:9
 #: templates/web/pormibarriocr/static/stats.html:9
+#: templates/web/vigilancia_ambiental/static/stats.html:9
 msgid "From"
 msgstr "Desde"
 
@@ -1659,10 +1763,13 @@ msgstr "GeoRSS en Google Maps"
 #: templates/web/fixmystreet/around/_updates.html:3
 #: templates/web/fixmystreet/report/display.html:38
 #: templates/web/pormibarrio/around/_updates.html:3
-#: templates/web/pormibarrio/report/_main.html:56
+#: templates/web/pormibarrio/report/_main.html:57
 #: templates/web/pormibarrio/report/display.html:52
 #: templates/web/pormibarriocr/around/_updates.html:3
 #: templates/web/pormibarriocr/report/display.html:28
+#: templates/web/vigilancia_ambiental/around/_updates.html:3
+#: templates/web/vigilancia_ambiental/report/_main.html:57
+#: templates/web/vigilancia_ambiental/report/display.html:52
 msgid "Get updates"
 msgstr "Recibe actualizaciones"
 
@@ -1672,6 +1779,8 @@ msgstr "Recibe actualizaciones"
 #: templates/web/pormibarrio/reports/_rss.html:9
 #: templates/web/pormibarriocr/reports/_rss.html:3
 #: templates/web/pormibarriocr/reports/_rss.html:9
+#: templates/web/vigilancia_ambiental/reports/_rss.html:3
+#: templates/web/vigilancia_ambiental/reports/_rss.html:9
 msgid "Get updates of %s problems"
 msgstr "Recibe actualizaciones de %s problemas"
 
@@ -1681,6 +1790,8 @@ msgstr "Recibe actualizaciones de %s problemas"
 #: templates/web/pormibarrio/reports/_rss.html:3
 #: templates/web/pormibarriocr/reports/_rss.html:11
 #: templates/web/pormibarriocr/reports/_rss.html:3
+#: templates/web/vigilancia_ambiental/reports/_rss.html:11
+#: templates/web/vigilancia_ambiental/reports/_rss.html:3
 msgid "Get updates of problems in this %s"
 msgstr "Recibe actualizaciones de los problemas en este %s"
 
@@ -1689,6 +1800,7 @@ msgstr "Recibe actualizaciones de los problemas en este %s"
 #: templates/web/fixmystreet/alert/_list.html:82
 #: templates/web/pormibarrio/alert/_list.html:82
 #: templates/web/pormibarriocr/alert/_list.html:82
+#: templates/web/vigilancia_ambiental/alert/_list.html:82
 msgid "Give me an RSS feed"
 msgstr "Dame un feed RSS"
 
@@ -1714,10 +1826,12 @@ msgstr "Líneas de color gris son las Concejalías que ya no existen."
 
 #: templates/web/pormibarrio/dashboard/deadlines.html:16
 #: templates/web/pormibarriocr/dashboard/deadlines.html:16
+#: templates/web/vigilancia_ambiental/dashboard/deadlines.html:16
 msgid "Group"
 msgstr "Grupo"
 
 #: templates/web/pormibarrio/admin/body.html:175
+#: templates/web/vigilancia_ambiental/admin/body.html:175
 #, fuzzy
 msgid "Group ID:"
 msgstr "Grupo"
@@ -1726,10 +1840,13 @@ msgstr "Grupo"
 #: templates/web/fixmystreet/questionnaire/index.html:55
 #: templates/web/pormibarrio/questionnaire/index.html:55
 #: templates/web/pormibarriocr/questionnaire/index.html:55
+#: templates/web/vigilancia_ambiental/questionnaire/index.html:55
 msgid "Has this problem been fixed?"
 msgstr "¿Ha sido corregido este problema?"
 
 #: templates/web/pormibarrio/auth/login_block.html:30
+#: templates/web/vigilancia_ambiental/auth/_login_block.html:30
+#: templates/web/vigilancia_ambiental/auth/login_block.html:30
 msgid "Have account"
 msgstr "Acceder"
 
@@ -1737,11 +1854,14 @@ msgstr "Acceder"
 #: templates/web/fixmystreet/questionnaire/index.html:68
 #: templates/web/pormibarrio/questionnaire/index.html:68
 #: templates/web/pormibarriocr/questionnaire/index.html:68
+#: templates/web/vigilancia_ambiental/questionnaire/index.html:68
 msgid "Have you ever reported a problem to a council before, or is this your first time?"
 msgstr "¿Alguna vez informó de un problema a la Intendencia antes, o es tu primera vez?"
 
 #: templates/web/pormibarrio/auth/login_block.html:54
 #: templates/web/pormibarriocr/auth/login_block.html:46
+#: templates/web/vigilancia_ambiental/auth/_login_block.html:54
+#: templates/web/vigilancia_ambiental/auth/login_block.html:54
 msgid "Have you forgotten your password?"
 msgstr "¿Olvidaste tu contraseña?"
 
@@ -1768,6 +1888,7 @@ msgstr "Ayuda"
 #: templates/web/fixmystreet/alert/_list.html:8
 #: templates/web/pormibarrio/alert/_list.html:8
 #: templates/web/pormibarriocr/alert/_list.html:8
+#: templates/web/vigilancia_ambiental/alert/_list.html:8
 msgid "Here are the types of local problem alerts for &lsquo;%s&rsquo;."
 msgstr "Estos son los tipos de alertas de problemas locales para '%s'."
 
@@ -1802,6 +1923,8 @@ msgstr "Ocultar antiguos"
 #: templates/web/default/around/display_location.html:62
 #: templates/web/pormibarrio/around/display_location.html:65
 #: templates/web/pormibarriocr/around/display_location.html:62
+#: templates/web/vigilancia_ambiental/around/_display_location.html:65
+#: templates/web/vigilancia_ambiental/around/display_location.html:65
 msgid "Hide pins"
 msgstr "Ocultar pines"
 
@@ -1813,6 +1936,7 @@ msgstr "Historial"
 #: templates/web/oxfordshire/js/translation_strings.html:25
 #: templates/web/pormibarrio/js/translation_strings.html:32
 #: templates/web/pormibarriocr/js/translation_strings.html:32
+#: templates/web/vigilancia_ambiental/js/translation_strings.html:32
 msgid "Home"
 msgstr "Inicio"
 
@@ -1824,6 +1948,7 @@ msgstr "Cómo notificar un problema"
 #: templates/web/oxfordshire/js/translation_strings.html:27
 #: templates/web/pormibarrio/js/translation_strings.html:34
 #: templates/web/pormibarriocr/js/translation_strings.html:34
+#: templates/web/vigilancia_ambiental/js/translation_strings.html:34
 msgid "How to send successful reports"
 msgstr "Cómo enviar reportes exitosos"
 
@@ -1870,6 +1995,7 @@ msgstr ""
 
 #: templates/web/default/admin/body.html:104
 #: templates/web/pormibarrio/admin/body.html:104
+#: templates/web/vigilancia_ambiental/admin/body.html:104
 msgid ""
 "If two or more bodies serve the same location, FixMyStreet combines identical categories into a single entry in\n"
 "                  the menu. Make sure you use the same category name in the bodies if you want this to happen."
@@ -1880,18 +2006,21 @@ msgstr ""
 #: templates/web/default/email_sent.html:19
 #: templates/web/pormibarrio/email_sent.html:19
 #: templates/web/pormibarriocr/email_sent.html:19
+#: templates/web/vigilancia_ambiental/email_sent.html:19
 msgid "If you do not, your alert will not be activated."
 msgstr "Si no, tu alerta no se activará."
 
 #: templates/web/default/email_sent.html:15
 #: templates/web/pormibarrio/email_sent.html:15
 #: templates/web/pormibarriocr/email_sent.html:15
+#: templates/web/vigilancia_ambiental/email_sent.html:15
 msgid "If you do not, your problem will not be posted."
 msgstr "Si no, tu problema no se publicará."
 
 #: templates/web/default/email_sent.html:17
 #: templates/web/pormibarrio/email_sent.html:17
 #: templates/web/pormibarriocr/email_sent.html:17
+#: templates/web/vigilancia_ambiental/email_sent.html:17
 msgid "If you do not, your update will not be posted."
 msgstr "Si no, tu comentario no se publicará."
 
@@ -1908,6 +2037,7 @@ msgstr "Si envía un reporte aquí, se quedará en el sitio pero no se informar�
 #: templates/web/default/email_sent.html:9
 #: templates/web/pormibarrio/email_sent.html:9
 #: templates/web/pormibarriocr/email_sent.html:9
+#: templates/web/vigilancia_ambiental/email_sent.html:9
 msgid "If you use web-based email or have 'junk mail' filters, you may wish to check your bulk/spam mail folders: sometimes, our messages are marked that way."
 msgstr "Si utiliza correo electrónico web o tiene filtros anti-spam es recomendable que compruebe carpetas de spam: a veces, los mensajes se marcan así."
 
@@ -1915,6 +2045,7 @@ msgstr "Si utiliza correo electrónico web o tiene filtros anti-spam es recomend
 #: templates/web/fixmystreet/questionnaire/index.html:77
 #: templates/web/pormibarrio/questionnaire/index.html:77
 #: templates/web/pormibarriocr/questionnaire/index.html:77
+#: templates/web/vigilancia_ambiental/questionnaire/index.html:77
 msgid ""
 "If you wish to leave a public update on the problem, please enter it here\n"
 "(please note it will not be sent to the council). For example, what was\n"
@@ -1926,6 +2057,7 @@ msgstr ""
 
 #: templates/web/default/admin/body.html:120
 #: templates/web/pormibarrio/admin/body.html:120
+#: templates/web/vigilancia_ambiental/admin/body.html:120
 msgid "If you're using <strong>a send method that is not email</strong>, enter the service ID (Open311) or equivalent identifier here."
 msgstr "Si estás usando <strong>un método de envío que no es correo</strong>, ingresá la ID del servicio (Open311) o equivalente aquí."
 
@@ -1990,6 +2122,13 @@ msgstr "Selección de feed ilegal"
 #: templates/web/pormibarriocr/my/my.html:79
 #: templates/web/pormibarriocr/report/update-form.html:41
 #: templates/web/pormibarriocr/report/update-form.html:43
+#: templates/web/vigilancia_ambiental/dashboard/deadlines.html:35
+#: templates/web/vigilancia_ambiental/dashboard/deadlines.html:37
+#: templates/web/vigilancia_ambiental/dashboard/index.html:134
+#: templates/web/vigilancia_ambiental/dashboard/index.html:136
+#: templates/web/vigilancia_ambiental/my/my.html:79
+#: templates/web/vigilancia_ambiental/report/update-form.html:43
+#: templates/web/vigilancia_ambiental/report/update-form.html:45
 msgid "In Progress"
 msgstr "En Progreso"
 
@@ -2007,6 +2146,7 @@ msgstr "Además, los siguientes atributos que no forman parte de la especificaci
 #: templates/web/fixmystreet/report/banner.html:19
 #: templates/web/pormibarrio/report/banner.html:19
 #: templates/web/pormibarriocr/report/banner.html:19
+#: templates/web/vigilancia_ambiental/report/banner.html:19
 #: templates/web/zurich/admin/header.html:1
 #: templates/web/zurich/admin/header.html:8
 #: templates/web/zurich/admin/report_edit.html:102
@@ -2052,7 +2192,7 @@ msgstr "Valor inválido para agency_responsible %s"
 msgid "Invalid end date"
 msgstr "Fecha de fin inválida"
 
-#: perllib/FixMyStreet/App/Controller/Api.pm:298
+#: perllib/FixMyStreet/App/Controller/Api.pm:319
 #: perllib/FixMyStreet/App/Controller/Open311.pm:432
 msgid "Invalid format %s specified."
 msgstr "Formato no válido %s especificado."
@@ -2085,6 +2225,12 @@ msgstr "Fecha de inicio no válida"
 #: templates/web/pormibarriocr/dashboard/index.html:135
 #: templates/web/pormibarriocr/report/update-form.html:41
 #: templates/web/pormibarriocr/report/update-form.html:42
+#: templates/web/vigilancia_ambiental/dashboard/deadlines.html:35
+#: templates/web/vigilancia_ambiental/dashboard/deadlines.html:36
+#: templates/web/vigilancia_ambiental/dashboard/index.html:134
+#: templates/web/vigilancia_ambiental/dashboard/index.html:135
+#: templates/web/vigilancia_ambiental/report/update-form.html:43
+#: templates/web/vigilancia_ambiental/report/update-form.html:44
 msgid "Investigating"
 msgstr "Investigando"
 
@@ -2104,6 +2250,8 @@ msgstr "Cabe señalar sin embargo que el proceso puede ser lento, especialmente 
 #: templates/web/pormibarrio/auth/login_block.html:50
 #: templates/web/pormibarriocr/auth/login_block.html:42
 #: templates/web/seesomething/auth/general.html:35
+#: templates/web/vigilancia_ambiental/auth/_login_block.html:50
+#: templates/web/vigilancia_ambiental/auth/login_block.html:50
 #: templates/web/zurich/auth/general.html:40
 msgid "Keep me signed in on this computer"
 msgstr "Recordar mi contraseña en este ordenador"
@@ -2116,6 +2264,7 @@ msgstr "Apellido"
 
 #: templates/web/default/admin/body.html:58
 #: templates/web/pormibarrio/admin/body.html:58
+#: templates/web/vigilancia_ambiental/admin/body.html:58
 #: templates/web/zurich/admin/body.html:15
 msgid "Last editor"
 msgstr "Último editor"
@@ -2136,6 +2285,8 @@ msgstr "Dejar en blanco su todos los reportes a este organismo deben ser enviado
 #: templates/web/default/admin/body.html:16
 #: templates/web/pormibarrio/admin/body.html:14
 #: templates/web/pormibarrio/admin/body.html:16
+#: templates/web/vigilancia_ambiental/admin/body.html:14
+#: templates/web/vigilancia_ambiental/admin/body.html:16
 msgid "List all reported problems"
 msgstr "Listar todos los problemas notificados"
 
@@ -2164,6 +2315,7 @@ msgstr "Cargando..."
 #: templates/web/fixmystreet/alert/updates.html:1
 #: templates/web/pormibarrio/alert/updates.html:1
 #: templates/web/pormibarriocr/alert/updates.html:1
+#: templates/web/vigilancia_ambiental/alert/updates.html:1
 msgid "Local RSS feeds and email alerts"
 msgstr "Feeds RSS locales y alertas por email"
 
@@ -2193,6 +2345,8 @@ msgstr "Busque el problema en un mapa de la zona"
 
 #: templates/web/pormibarrio/auth/login_block.html:5
 #: templates/web/pormibarriocr/auth/login_block.html:5
+#: templates/web/vigilancia_ambiental/auth/_login_block.html:5
+#: templates/web/vigilancia_ambiental/auth/login_block.html:5
 msgid "Login or signup to help impoving our city"
 msgstr "Regístrate o ingresa para ayudar a mejorar tu ciudad"
 
@@ -2200,6 +2354,8 @@ msgstr "Regístrate o ingresa para ayudar a mejorar tu ciudad"
 #: templates/web/pormibarrio/report/new/fill_in_details_form.html:172
 #: templates/web/pormibarriocr/report/new/fill_in_details_form.html:170
 #: templates/web/pormibarriocr/report/new/fill_in_details_form.html:172
+#: templates/web/vigilancia_ambiental/report/new/fill_in_details_form.html:170
+#: templates/web/vigilancia_ambiental/report/new/fill_in_details_form.html:172
 msgid "Login to your account to be able to send the report to your local government"
 msgstr "Logueate a tu cuenta para poder enviar reportes a la IM"
 
@@ -2207,6 +2363,8 @@ msgstr "Logueate a tu cuenta para poder enviar reportes a la IM"
 #: templates/web/pormibarrio/report/update-form.html:99
 #: templates/web/pormibarriocr/report/update-form.html:97
 #: templates/web/pormibarriocr/report/update-form.html:99
+#: templates/web/vigilancia_ambiental/report/update-form.html:97
+#: templates/web/vigilancia_ambiental/report/update-form.html:99
 msgid "Login to your account to be able to send your update to your local government"
 msgstr "Logueate a tu cuenta para poder enviar tu comentario a la IM"
 
@@ -2214,6 +2372,7 @@ msgstr "Logueate a tu cuenta para poder enviar tu comentario a la IM"
 #: templates/web/oxfordshire/js/translation_strings.html:37
 #: templates/web/pormibarrio/js/translation_strings.html:44
 #: templates/web/pormibarriocr/js/translation_strings.html:44
+#: templates/web/vigilancia_ambiental/js/translation_strings.html:44
 msgid "MAP"
 msgstr "Mapa"
 
@@ -2228,6 +2387,7 @@ msgstr "Marcar usuarios de los que se quiere monitorear el comportamiento como <
 #: templates/web/fixmystreet/contact/index.html:98
 #: templates/web/pormibarrio/contact/index.html:98
 #: templates/web/pormibarriocr/contact/index.html:98
+#: templates/web/vigilancia_ambiental/contact/index.html:98
 msgid "Message"
 msgstr "Mensaje:"
 
@@ -2269,6 +2429,7 @@ msgstr "Más problemas cercanos"
 #: templates/web/fixmystreet/report/update-form.html:136
 #: templates/web/pormibarrio/report/display.html:89
 #: templates/web/pormibarriocr/report/display.html:65
+#: templates/web/vigilancia_ambiental/report/display.html:89
 #: templates/web/zurich/admin/body-form.html:4
 #: templates/web/zurich/auth/general.html:60
 #: templates/web/zurich/report/new/fill_in_details_form.html:100
@@ -2322,6 +2483,7 @@ msgstr ""
 #: templates/web/default/email_sent.html:3
 #: templates/web/pormibarrio/email_sent.html:3
 #: templates/web/pormibarriocr/email_sent.html:3
+#: templates/web/vigilancia_ambiental/email_sent.html:3
 msgid "Nearly Done! Now check your email..."
 msgstr "¡Casi terminado! Ahora compruebe su correo electrónico ..."
 
@@ -2414,6 +2576,7 @@ msgstr "Nuevo comentario:"
 #: templates/web/fixmystreet/front/news.html:8
 #: templates/web/pormibarrio/front/news.html:8
 #: templates/web/pormibarriocr/front/news.html:8
+#: templates/web/vigilancia_ambiental/front/news.html:8
 msgid "New!"
 msgstr "¡Nuevo!"
 
@@ -2444,15 +2607,22 @@ msgstr "Siguiente"
 #: templates/web/pormibarrio/questionnaire/index.html:62
 #: templates/web/pormibarriocr/questionnaire/index.html:101
 #: templates/web/pormibarriocr/questionnaire/index.html:62
+#: templates/web/vigilancia_ambiental/admin/body.html:68
+#: templates/web/vigilancia_ambiental/admin/body.html:69
+#: templates/web/vigilancia_ambiental/admin/body.html:70
+#: templates/web/vigilancia_ambiental/questionnaire/index.html:101
+#: templates/web/vigilancia_ambiental/questionnaire/index.html:62
 msgid "No"
 msgstr "No"
 
 #: templates/web/pormibarrio/dashboard/deadlines.html:45
 #: templates/web/pormibarriocr/dashboard/deadlines.html:45
+#: templates/web/vigilancia_ambiental/dashboard/deadlines.html:45
 msgid "No Dead Line"
 msgstr "Sin plazo"
 
 #: templates/web/pormibarrio/report/_main.html:20
+#: templates/web/vigilancia_ambiental/report/_main.html:20
 msgid "No address specified"
 msgstr "No se ha especificado la dirección exacta"
 
@@ -2464,7 +2634,8 @@ msgstr "Sin organismo"
 msgid "No council"
 msgstr "Sin Intendencia"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:375
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:513
+#: perllib/FixMyStreet/DB/Result/Problem.pm:377
 msgid "No council selected"
 msgstr "Ningúna Intendencia seleccionada"
 
@@ -2498,6 +2669,7 @@ msgstr "No se han notificado problemas todavía."
 #: templates/web/oxfordshire/js/translation_strings.html:32
 #: templates/web/pormibarrio/js/translation_strings.html:39
 #: templates/web/pormibarriocr/js/translation_strings.html:39
+#: templates/web/vigilancia_ambiental/js/translation_strings.html:39
 msgid "No result returned"
 msgstr "Sin resultados"
 
@@ -2517,6 +2689,7 @@ msgstr "No hay seguidores"
 
 #: templates/web/default/admin/body.html:73
 #: templates/web/pormibarrio/admin/body.html:73
+#: templates/web/vigilancia_ambiental/admin/body.html:73
 msgid "Non Public"
 msgstr "No público"
 
@@ -2553,6 +2726,8 @@ msgstr ""
 #: templates/web/pormibarriocr/dashboard/index.html:137
 #: templates/web/pormibarriocr/report/update-form.html:41
 #: templates/web/pormibarriocr/report/update-form.html:44
+#: templates/web/vigilancia_ambiental/dashboard/index.html:134
+#: templates/web/vigilancia_ambiental/dashboard/index.html:137
 msgid "Not Responsible"
 msgstr "No responsable"
 
@@ -2571,6 +2746,7 @@ msgstr "Sin comunicar a la Intendencia"
 #: templates/web/default/admin/body.html:59
 #: templates/web/default/admin/body_edit.html:87
 #: templates/web/pormibarrio/admin/body.html:59
+#: templates/web/vigilancia_ambiental/admin/body.html:59
 #: templates/web/zurich/admin/body.html:16
 msgid "Note"
 msgstr "Nota"
@@ -2582,6 +2758,7 @@ msgstr "Tenga en cuenta que al incluir reportes no confirmados usamos la fecha d
 #: templates/web/default/admin/body.html:157
 #: templates/web/default/admin/body_edit.html:44
 #: templates/web/pormibarrio/admin/body.html:157
+#: templates/web/vigilancia_ambiental/admin/body.html:157
 #: templates/web/zurich/admin/body.html:47
 msgid "Note:"
 msgstr "Nota:"
@@ -2608,6 +2785,7 @@ msgstr "Y ahora a enviar tu comentario... ¿no tienes contraseña en PorMiBarrio
 
 #: templates/web/pormibarrio/report/new/fill_in_details_form.html:47
 #: templates/web/pormibarriocr/report/new/fill_in_details_form.html:47
+#: templates/web/vigilancia_ambiental/report/new/fill_in_details_form.html:47
 msgid "Number or corner"
 msgstr "Número o esquina"
 
@@ -2615,6 +2793,7 @@ msgstr "Número o esquina"
 #: templates/web/oxfordshire/js/translation_strings.html:36
 #: templates/web/pormibarrio/js/translation_strings.html:43
 #: templates/web/pormibarriocr/js/translation_strings.html:43
+#: templates/web/vigilancia_ambiental/js/translation_strings.html:43
 msgid "OK"
 msgstr "OK"
 
@@ -2669,6 +2848,7 @@ msgstr "Problemas antiguos"
 #: templates/web/fixmystreet/report/update-form.html:28
 #: templates/web/pormibarrio/dashboard/deadlines.html:35
 #: templates/web/pormibarriocr/dashboard/deadlines.html:35
+#: templates/web/vigilancia_ambiental/dashboard/deadlines.html:35
 #: templates/web/zurich/admin/header.html:1
 #: templates/web/zurich/admin/header.html:7
 #: templates/web/zurich/admin/report_edit.html:89
@@ -2698,6 +2878,7 @@ msgstr "Especificación Open311"
 #: templates/web/fixmystreet/alert/_list.html:60
 #: templates/web/pormibarrio/alert/_list.html:60
 #: templates/web/pormibarriocr/alert/_list.html:60
+#: templates/web/vigilancia_ambiental/alert/_list.html:60
 msgid "Or problems reported to:"
 msgstr "O problemas notificados a:"
 
@@ -2705,17 +2886,22 @@ msgstr "O problemas notificados a:"
 #: templates/web/fixmystreet/alert/_list.html:36
 #: templates/web/pormibarrio/alert/_list.html:36
 #: templates/web/pormibarriocr/alert/_list.html:36
+#: templates/web/vigilancia_ambiental/alert/_list.html:36
 msgid "Or you can subscribe to an alert based upon what ward or council you&rsquo;re in:"
 msgstr "O puede suscribirse a una alerta basada en el barrio o Intendencia en la que estás:"
 
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:709
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:719
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:729
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:741
 #: perllib/FixMyStreet/App/Controller/Report/New.pm:1305
 #: perllib/FixMyStreet/App/Controller/Report/New.pm:791
 #: perllib/FixMyStreet/App/Controller/Report/New.pm:792
 #: perllib/FixMyStreet/App/Controller/Report/New.pm:797
-#: perllib/FixMyStreet/DB/Result/Problem.pm:571
-#: perllib/FixMyStreet/DB/Result/Problem.pm:581
-#: perllib/FixMyStreet/DB/Result/Problem.pm:591
-#: perllib/FixMyStreet/DB/Result/Problem.pm:603
+#: perllib/FixMyStreet/DB/Result/Problem.pm:573
+#: perllib/FixMyStreet/DB/Result/Problem.pm:583
+#: perllib/FixMyStreet/DB/Result/Problem.pm:593
+#: perllib/FixMyStreet/DB/Result/Problem.pm:605
 #: perllib/FixMyStreet/DB/ResultSet/Problem.pm:395
 #: perllib/FixMyStreet/DB/ResultSet/Problem.pm:408
 msgid "Other"
@@ -2727,6 +2913,7 @@ msgstr "Nuestro código es open source y <a href=\"http://github.com/mysociety/f
 
 #: templates/web/pormibarrio/dashboard/deadlines.html:45
 #: templates/web/pormibarriocr/dashboard/deadlines.html:45
+#: templates/web/vigilancia_ambiental/dashboard/deadlines.html:45
 msgid "Overdue"
 msgstr "Atrasado"
 
@@ -2756,6 +2943,7 @@ msgstr "Parcial"
 
 #: templates/web/pormibarrio/my/edit.html:75
 #: templates/web/pormibarriocr/my/edit.html:65
+#: templates/web/vigilancia_ambiental/my/edit.html:75
 msgid "Password"
 msgstr "Contraseña"
 
@@ -2776,6 +2964,7 @@ msgstr "Contraseña:"
 #: templates/web/default/js/translation_strings.html:45
 #: templates/web/pormibarrio/js/translation_strings.html:46
 #: templates/web/pormibarriocr/js/translation_strings.html:46
+#: templates/web/vigilancia_ambiental/js/translation_strings.html:46
 msgid "Permalink"
 msgstr "Enlace"
 
@@ -2821,6 +3010,7 @@ msgstr "Foto"
 #: templates/web/fixmystreet/questionnaire/index.html:90
 #: templates/web/pormibarrio/questionnaire/index.html:90
 #: templates/web/pormibarriocr/questionnaire/index.html:90
+#: templates/web/vigilancia_ambiental/questionnaire/index.html:90
 msgid "Photo:"
 msgstr "Foto:"
 
@@ -2832,6 +3022,7 @@ msgstr "Fotos de reportes cercanos recientes"
 #: templates/web/oxfordshire/js/translation_strings.html:24
 #: templates/web/pormibarrio/js/translation_strings.html:31
 #: templates/web/pormibarriocr/js/translation_strings.html:31
+#: templates/web/vigilancia_ambiental/js/translation_strings.html:31
 msgid "Place pin on map"
 msgstr "Colocar pin en mapa"
 
@@ -2843,6 +3034,8 @@ msgstr "Colocar pin en mapa"
 #: templates/web/pormibarrio/dashboard/deadlines.html:36
 #: templates/web/pormibarriocr/dashboard/deadlines.html:35
 #: templates/web/pormibarriocr/dashboard/deadlines.html:36
+#: templates/web/vigilancia_ambiental/dashboard/deadlines.html:35
+#: templates/web/vigilancia_ambiental/dashboard/deadlines.html:36
 #: templates/web/zurich/admin/header.html:1
 #: templates/web/zurich/admin/header.html:9
 #: templates/web/zurich/admin/index-dm.html:9
@@ -2854,6 +3047,7 @@ msgstr "Planificado"
 #: templates/web/fixmystreet/questionnaire/index.html:44
 #: templates/web/pormibarrio/questionnaire/index.html:44
 #: templates/web/pormibarriocr/questionnaire/index.html:44
+#: templates/web/vigilancia_ambiental/questionnaire/index.html:44
 msgid "Please <a class=\"tab_link\" href=\"#report\">take a look</a> at the updates that have been left."
 msgstr "Por favor, <a class=\"tab_link\" href=\"#report\"> eche un vistazo</a> a los comentarios que han sido dejados."
 
@@ -2862,6 +3056,7 @@ msgstr "Por favor, <a class=\"tab_link\" href=\"#report\"> eche un vistazo</a> a
 #: templates/web/oxfordshire/report/new/notes.html:5
 #: templates/web/pormibarrio/report/new/notes.html:6
 #: templates/web/pormibarriocr/report/new/notes.html:6
+#: templates/web/vigilancia_ambiental/report/new/notes.html:6
 msgid "Please be polite, concise and to the point."
 msgstr "Por favor, sea cortés, conciso y vaya al grano."
 
@@ -2871,6 +3066,8 @@ msgstr "Por favor, sea cortés, conciso y vaya al grano."
 #: templates/web/pormibarrio/my/edit.html:69
 #: templates/web/pormibarriocr/my/edit.html:54
 #: templates/web/pormibarriocr/my/edit.html:59
+#: templates/web/vigilancia_ambiental/my/edit.html:64
+#: templates/web/vigilancia_ambiental/my/edit.html:69
 msgid "Please check the passwords and try again"
 msgstr "Por favor, comprueba la contraseña e inténtalo de nuevo."
 
@@ -2888,24 +3085,29 @@ msgstr "Por favor, consulte su email"
 #: templates/web/pormibarriocr/auth/general.html:8
 #: templates/web/seesomething/auth/general.html:15
 #: templates/web/seesomething/auth/general.html:9
+#: templates/web/vigilancia_ambiental/auth/general.html:14
+#: templates/web/vigilancia_ambiental/auth/general.html:8
 #: templates/web/zurich/auth/general.html:3
 #: templates/web/zurich/auth/general.html:9
 msgid "Please check your email address is correct"
 msgstr "Por favor, compruebe que su dirección de email es correcta"
 
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:532
 #: perllib/FixMyStreet/App/Controller/Report/New.pm:1015
 #: perllib/FixMyStreet/App/Controller/Report/New.pm:1022
 #: perllib/FixMyStreet/App/Controller/Report/New.pm:1041
 #: perllib/FixMyStreet/App/Controller/Report/New.pm:1084
-#: perllib/FixMyStreet/DB/Result/Problem.pm:394
+#: perllib/FixMyStreet/DB/Result/Problem.pm:396
 #: templates/web/default/js/translation_strings.html:9
 #: templates/web/oxfordshire/js/translation_strings.html:9
 #: templates/web/pormibarrio/js/translation_strings.html:10
 #: templates/web/pormibarriocr/js/translation_strings.html:10
+#: templates/web/vigilancia_ambiental/js/translation_strings.html:10
 msgid "Please choose a category"
 msgstr "Por favor, elija una categoría"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:400
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:538
+#: perllib/FixMyStreet/DB/Result/Problem.pm:402
 msgid "Please choose a property type"
 msgstr "Por favor, elija un tipo de propiedad"
 
@@ -2918,6 +3120,7 @@ msgid "Please choose an incident category"
 msgstr "Por favor elegir categoría de incidente"
 
 #: templates/web/pormibarrio/auth/social_signup.html:7
+#: templates/web/vigilancia_ambiental/auth/social_signup.html:7
 msgid "Please confirm your personal information"
 msgstr "Por favor confirma tu información personal"
 
@@ -2940,6 +3143,7 @@ msgstr ""
 #: templates/web/oxfordshire/report/new/notes.html:6
 #: templates/web/pormibarrio/report/new/notes.html:7
 #: templates/web/pormibarriocr/report/new/notes.html:7
+#: templates/web/vigilancia_ambiental/report/new/notes.html:7
 msgid "Please do not be abusive&nbsp;&mdash; abusing your council devalues the service for all users."
 msgstr "Por favor no ser abusivo&nbsp;&mdash; abusar del servicio lo devalúa para todos los usuarios."
 
@@ -2947,11 +3151,13 @@ msgstr "Por favor no ser abusivo&nbsp;&mdash; abusar del servicio lo devalúa pa
 msgid "Please do not give address or personal information in this section."
 msgstr "Por favor no poner información personal en esta sección."
 
+#: db/perllib/FixMyStreet/DB/Result/Comment.pm:229
 #: perllib/FixMyStreet/DB/Result/Comment.pm:135
 #: templates/web/default/js/translation_strings.html:2
 #: templates/web/oxfordshire/js/translation_strings.html:2
 #: templates/web/pormibarrio/js/translation_strings.html:3
 #: templates/web/pormibarriocr/js/translation_strings.html:3
+#: templates/web/vigilancia_ambiental/js/translation_strings.html:3
 msgid "Please enter a message"
 msgstr "Por favor, rellene un mensaje."
 
@@ -2964,24 +3170,30 @@ msgstr "Por favor, rellene un mensaje."
 #: templates/web/pormibarriocr/js/translation_strings.html:20
 #: templates/web/pormibarriocr/my/edit.html:54
 #: templates/web/pormibarriocr/my/edit.html:57
+#: templates/web/vigilancia_ambiental/js/translation_strings.html:20
+#: templates/web/vigilancia_ambiental/my/edit.html:64
+#: templates/web/vigilancia_ambiental/my/edit.html:67
 msgid "Please enter a password"
 msgstr "Por favor, introduzca una contraseña"
 
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:507
 #: perllib/FixMyStreet/App/Controller/Contact.pm:114
-#: perllib/FixMyStreet/DB/Result/Problem.pm:369
+#: perllib/FixMyStreet/DB/Result/Problem.pm:371
 #: templates/web/default/js/translation_strings.html:3
 #: templates/web/oxfordshire/js/translation_strings.html:3
 #: templates/web/pormibarrio/js/translation_strings.html:4
 #: templates/web/pormibarriocr/js/translation_strings.html:4
+#: templates/web/vigilancia_ambiental/js/translation_strings.html:4
 msgid "Please enter a subject"
 msgstr "Por favor, introduzca un título"
 
 #: perllib/FixMyStreet/App/Controller/Auth.pm:143
 #: perllib/FixMyStreet/App/Controller/Auth.pm:225
-#: perllib/FixMyStreet/Cobrand/PorMiBarrio.pm:103
+#: perllib/FixMyStreet/Cobrand/PorMiBarrio.pm:109
 msgid "Please enter a valid ID"
 msgstr "Por favor, introduce un documento válido"
 
+#: db/perllib/FixMyStreet/DB/Result/User.pm:219
 #: perllib/FixMyStreet/App/Controller/Admin.pm:1043
 #: perllib/FixMyStreet/App/Controller/Admin.pm:989
 #: perllib/FixMyStreet/DB/Result/User.pm:135
@@ -2995,6 +3207,8 @@ msgstr "Por favor, introduce un documento válido"
 #: templates/web/pormibarriocr/js/translation_strings.html:17
 #: templates/web/seesomething/js/translation_strings.html:10
 #: templates/web/seesomething/js/translation_strings.html:13
+#: templates/web/vigilancia_ambiental/js/translation_strings.html:13
+#: templates/web/vigilancia_ambiental/js/translation_strings.html:17
 msgid "Please enter a valid email"
 msgstr "Por favor, introduce una dirección de email válida"
 
@@ -3003,21 +3217,24 @@ msgstr "Por favor, introduce una dirección de email válida"
 msgid "Please enter a valid email address"
 msgstr "Por favor, introduzca una dirección válida de email"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:372
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:510
+#: perllib/FixMyStreet/DB/Result/Problem.pm:374
 #: templates/web/default/js/translation_strings.html:4
 #: templates/web/oxfordshire/js/translation_strings.html:4
 #: templates/web/pormibarrio/js/translation_strings.html:5
 #: templates/web/pormibarriocr/js/translation_strings.html:5
 #: templates/web/seesomething/js/translation_strings.html:2
+#: templates/web/vigilancia_ambiental/js/translation_strings.html:5
 msgid "Please enter some details"
 msgstr "Por favor, introduzca algunos detalles"
 
 #: perllib/FixMyStreet/App/Controller/Auth.pm:148
 #: perllib/FixMyStreet/App/Controller/Auth.pm:230
-#: perllib/FixMyStreet/Cobrand/PorMiBarrio.pm:106
+#: perllib/FixMyStreet/Cobrand/PorMiBarrio.pm:112
 msgid "Please enter your ID"
 msgstr "Por favor, introduzca su documento"
 
+#: db/perllib/FixMyStreet/DB/Result/User.pm:216
 #: perllib/FixMyStreet/App/Controller/Contact.pm:113
 #: perllib/FixMyStreet/DB/Result/User.pm:132
 #: templates/web/default/auth/general.html:13
@@ -3039,6 +3256,10 @@ msgstr "Por favor, introduzca su documento"
 #: templates/web/seesomething/auth/general.html:14
 #: templates/web/seesomething/auth/general.html:9
 #: templates/web/seesomething/js/translation_strings.html:9
+#: templates/web/vigilancia_ambiental/auth/general.html:13
+#: templates/web/vigilancia_ambiental/auth/general.html:8
+#: templates/web/vigilancia_ambiental/js/translation_strings.html:12
+#: templates/web/vigilancia_ambiental/js/translation_strings.html:16
 #: templates/web/zurich/auth/general.html:3
 #: templates/web/zurich/auth/general.html:8
 msgid "Please enter your email"
@@ -3055,32 +3276,40 @@ msgstr "Email"
 #: templates/web/oxfordshire/js/translation_strings.html:19
 #: templates/web/pormibarrio/js/translation_strings.html:26
 #: templates/web/pormibarriocr/js/translation_strings.html:26
+#: templates/web/vigilancia_ambiental/js/translation_strings.html:26
 msgid "Please enter your first name"
 msgstr "Por favor, indica tu nombre."
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:387
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:525
+#: perllib/FixMyStreet/DB/Result/Problem.pm:389
 #: templates/web/default/js/translation_strings.html:7
 #: templates/web/oxfordshire/js/translation_strings.html:7
 #: templates/web/pormibarrio/js/translation_strings.html:8
 #: templates/web/pormibarriocr/js/translation_strings.html:8
 #: templates/web/seesomething/js/translation_strings.html:4
+#: templates/web/vigilancia_ambiental/js/translation_strings.html:8
 msgid "Please enter your full name, councils need this information. If you do not wish your name to be shown on the site, untick the box below"
 msgstr "Por favor escriba su nombre completo, la Intendencia necesita esta información - si usted no desea que su nombre aparecerá en la página, desactive la casilla de abajo"
 
+#: db/perllib/FixMyStreet/DB/Result/Comment.pm:226
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:518
+#: db/perllib/FixMyStreet/DB/Result/User.pm:212
 #: perllib/FixMyStreet/App/Controller/Contact.pm:112
 #: perllib/FixMyStreet/DB/Result/Comment.pm:132
-#: perllib/FixMyStreet/DB/Result/Problem.pm:380
+#: perllib/FixMyStreet/DB/Result/Problem.pm:382
 #: perllib/FixMyStreet/DB/Result/User.pm:128
 #: templates/web/default/js/translation_strings.html:6
 #: templates/web/oxfordshire/js/translation_strings.html:6
 #: templates/web/pormibarrio/js/translation_strings.html:7
 #: templates/web/pormibarriocr/js/translation_strings.html:7
+#: templates/web/vigilancia_ambiental/js/translation_strings.html:7
 msgid "Please enter your name"
 msgstr "Por favor, introduzca su nombre"
 
 #: templates/web/default/js/translation_strings.html:22
 #: templates/web/pormibarrio/js/translation_strings.html:23
 #: templates/web/pormibarriocr/js/translation_strings.html:23
+#: templates/web/vigilancia_ambiental/js/translation_strings.html:23
 msgid "Please enter your phone number"
 msgstr "Ingresá tu teléfono"
 
@@ -3088,6 +3317,7 @@ msgstr "Ingresá tu teléfono"
 #: templates/web/oxfordshire/js/translation_strings.html:20
 #: templates/web/pormibarrio/js/translation_strings.html:27
 #: templates/web/pormibarriocr/js/translation_strings.html:27
+#: templates/web/vigilancia_ambiental/js/translation_strings.html:27
 msgid "Please enter your second name"
 msgstr "Introduzca su segundo nombre"
 
@@ -3095,6 +3325,7 @@ msgstr "Introduzca su segundo nombre"
 #: templates/web/oxfordshire/js/translation_strings.html:18
 #: templates/web/pormibarrio/js/translation_strings.html:25
 #: templates/web/pormibarriocr/js/translation_strings.html:25
+#: templates/web/vigilancia_ambiental/js/translation_strings.html:25
 msgid "Please enter your title"
 msgstr "Por favor, introduzca su título"
 
@@ -3129,6 +3360,8 @@ msgstr ""
 #: templates/web/pormibarrio/report/new/fill_in_details_text.html:8
 #: templates/web/pormibarriocr/report/new/fill_in_details_text.html:1
 #: templates/web/pormibarriocr/report/new/fill_in_details_text.html:8
+#: templates/web/vigilancia_ambiental/report/new/fill_in_details_text.html:1
+#: templates/web/vigilancia_ambiental/report/new/fill_in_details_text.html:8
 msgid "Please fill in details of the problem below."
 msgstr "Por favor, rellene los datos del siguiente problema."
 
@@ -3160,6 +3393,7 @@ msgstr ""
 #: templates/web/pormibarrio/report/new/fill_in_details_form.html:82
 #: templates/web/pormibarriocr/report/new/fill_in_details_form.html:82
 #: templates/web/seesomething/report/new/fill_in_details_form.html:20
+#: templates/web/vigilancia_ambiental/report/new/fill_in_details_form.html:82
 #: templates/web/zurich/report/new/fill_in_details_form.html:46
 msgid "Please fill in details of the problem."
 msgstr "Por favor, rellene los datos del problema."
@@ -3179,6 +3413,7 @@ msgstr "Por favor, indique si desea otro cuestionario"
 #: templates/web/fixmystreet/report/updates-sidebar-notes.html:3
 #: templates/web/pormibarrio/report/updates-sidebar-notes.html:3
 #: templates/web/pormibarriocr/report/updates-sidebar-notes.html:3
+#: templates/web/vigilancia_ambiental/report/updates-sidebar-notes.html:3
 msgid "Please note that updates are not sent to the council."
 msgstr "Tenga en cuenta que los comentarios no se envían a la Intendencia."
 
@@ -3204,6 +3439,7 @@ msgstr "Por favor, tenga en cuenta el reporte <strong>no ha sido enviado aún</ 
 #: templates/web/oxfordshire/report/new/notes.html:1
 #: templates/web/pormibarrio/report/new/notes.html:1
 #: templates/web/pormibarriocr/report/new/notes.html:1
+#: templates/web/vigilancia_ambiental/report/new/notes.html:1
 msgid "Please note:"
 msgstr "Por favor, tenga en cuenta:"
 
@@ -3269,10 +3505,13 @@ msgstr "Por favor, escriba su comentario aquí"
 #: templates/web/pormibarrio/report/display.html:105
 #: templates/web/pormibarriocr/contact/index.html:105
 #: templates/web/pormibarriocr/report/display.html:81
+#: templates/web/vigilancia_ambiental/contact/index.html:105
+#: templates/web/vigilancia_ambiental/report/display.html:105
 msgid "Post"
 msgstr "Publicar"
 
 #: templates/web/pormibarrio/report/updates.html:9
+#: templates/web/vigilancia_ambiental/report/updates.html:9
 msgid "Posted anonymously %s "
 msgstr "Publicado de forma anónima %s"
 
@@ -3290,6 +3529,7 @@ msgid "Posted by %s (<strong>%s</strong>) %s"
 msgstr "Publicado por %s (<strong>%s</strong>) en %s"
 
 #: templates/web/pormibarrio/report/updates.html:14
+#: templates/web/vigilancia_ambiental/report/updates.html:14
 msgid "Posted by %s (<strong>%s</strong>) %s "
 msgstr "Publicado por %s (<strong>%s</strong>) en %s"
 
@@ -3302,6 +3542,7 @@ msgid "Posted by %s at %s"
 msgstr "Publicado por %s en %s"
 
 #: templates/web/pormibarrio/report/updates.html:16
+#: templates/web/vigilancia_ambiental/report/updates.html:16
 msgid "Posted by %s at %s "
 msgstr "Publicado por %s en %s"
 
@@ -3313,6 +3554,7 @@ msgstr "Previo"
 #: templates/web/default/admin/body_edit.html:40
 #: templates/web/default/admin/report_edit.html:79
 #: templates/web/pormibarrio/admin/body.html:173
+#: templates/web/vigilancia_ambiental/admin/body.html:173
 msgid "Private"
 msgstr "Privado"
 
@@ -3376,6 +3618,7 @@ msgstr "Problemas recientemente notificados como arreglados en PorMiBarrio"
 #: templates/web/fixmystreet/alert/_list.html:21
 #: templates/web/pormibarrio/alert/_list.html:21
 #: templates/web/pormibarriocr/alert/_list.html:21
+#: templates/web/vigilancia_ambiental/alert/_list.html:21
 msgid "Problems within %.1fkm of this location"
 msgstr "Problemas en %.1fkm alrededor"
 
@@ -3397,6 +3640,8 @@ msgstr "Problemas en el barrio %s"
 #: templates/web/pormibarrio/reports/body.html:24
 #: templates/web/pormibarriocr/reports/body.html:0
 #: templates/web/pormibarriocr/reports/body.html:24
+#: templates/web/vigilancia_ambiental/reports/body.html:0
+#: templates/web/vigilancia_ambiental/reports/body.html:24
 msgid "Problems within %s, FixMyStreet"
 msgstr "Problemas en %s, PorMiBarrio"
 
@@ -3405,6 +3650,7 @@ msgstr "Problemas en %s, PorMiBarrio"
 #: templates/web/fixmystreet/alert/_list.html:42
 #: templates/web/pormibarrio/alert/_list.html:42
 #: templates/web/pormibarriocr/alert/_list.html:42
+#: templates/web/vigilancia_ambiental/alert/_list.html:42
 msgid "Problems within the boundary of:"
 msgstr "Problemas en los alrededores de:"
 
@@ -3420,6 +3666,7 @@ msgstr "Dirección de la propiedad:"
 #: templates/web/default/report/new/category.html:8
 #: templates/web/pormibarrio/report/new/category.html:8
 #: templates/web/pormibarriocr/report/new/category.html:8
+#: templates/web/vigilancia_ambiental/report/new/category.html:8
 msgid "Property type:"
 msgstr "Tipo de propiedad:"
 
@@ -3427,6 +3674,7 @@ msgstr "Tipo de propiedad:"
 #: templates/web/fixmystreet/report/new/fill_in_details_form.html:64
 #: templates/web/pormibarrio/report/new/fill_in_details_form.html:76
 #: templates/web/pormibarriocr/report/new/fill_in_details_form.html:76
+#: templates/web/vigilancia_ambiental/report/new/fill_in_details_form.html:76
 msgid "Provide a title"
 msgstr "Proporcionar un título"
 
@@ -3456,6 +3704,8 @@ msgstr "Proporcionar una contraseña es opcional, pero al hacerlo le permitirá 
 #: templates/web/default/admin/body.html:73
 #: templates/web/pormibarrio/admin/body.html:60
 #: templates/web/pormibarrio/admin/body.html:73
+#: templates/web/vigilancia_ambiental/admin/body.html:60
+#: templates/web/vigilancia_ambiental/admin/body.html:73
 msgid "Public"
 msgstr "Público"
 
@@ -3494,6 +3744,10 @@ msgstr "Publicar la respuesta"
 #: templates/web/pormibarriocr/questionnaire/index.html:14
 #: templates/web/pormibarriocr/questionnaire/index.html:32
 #: templates/web/pormibarriocr/questionnaire/index.html:4
+#: templates/web/vigilancia_ambiental/questionnaire/index.html:0
+#: templates/web/vigilancia_ambiental/questionnaire/index.html:14
+#: templates/web/vigilancia_ambiental/questionnaire/index.html:32
+#: templates/web/vigilancia_ambiental/questionnaire/index.html:4
 msgid "Questionnaire"
 msgstr "Cuestionario"
 
@@ -3526,6 +3780,12 @@ msgstr "Cuestionario cumplimentado por el notificador problema"
 #: templates/web/pormibarriocr/alert/updates.html:9
 #: templates/web/pormibarriocr/around/display_location.html:1
 #: templates/web/pormibarriocr/around/display_location.html:3
+#: templates/web/vigilancia_ambiental/alert/_list.html:22
+#: templates/web/vigilancia_ambiental/alert/updates.html:9
+#: templates/web/vigilancia_ambiental/around/_display_location.html:1
+#: templates/web/vigilancia_ambiental/around/_display_location.html:3
+#: templates/web/vigilancia_ambiental/around/display_location.html:1
+#: templates/web/vigilancia_ambiental/around/display_location.html:3
 msgid "RSS feed"
 msgstr "Feed RSS"
 
@@ -3553,6 +3813,7 @@ msgstr "Feed RSS para %s, en el barrio %s"
 #: templates/web/fixmystreet/alert/_list.html:22
 #: templates/web/pormibarrio/alert/_list.html:22
 #: templates/web/pormibarriocr/alert/_list.html:22
+#: templates/web/vigilancia_ambiental/alert/_list.html:22
 msgid "RSS feed of nearby problems"
 msgstr "Feed RSS de los problemas más cercanos"
 
@@ -3578,6 +3839,10 @@ msgstr "Feed RSS feed de los problemas dentro del barrio %s"
 #: templates/web/pormibarrio/around/display_location.html:4
 #: templates/web/pormibarriocr/around/display_location.html:1
 #: templates/web/pormibarriocr/around/display_location.html:4
+#: templates/web/vigilancia_ambiental/around/_display_location.html:1
+#: templates/web/vigilancia_ambiental/around/_display_location.html:4
+#: templates/web/vigilancia_ambiental/around/display_location.html:1
+#: templates/web/vigilancia_ambiental/around/display_location.html:4
 msgid "RSS feed of recent local problems"
 msgstr "Feed RSS de los problemas locales más recientes"
 
@@ -3587,6 +3852,7 @@ msgstr "Feed RSS de los problemas locales más recientes"
 #: templates/web/fixmystreet/report/display.html:61
 #: templates/web/pormibarrio/alert/updates.html:9
 #: templates/web/pormibarriocr/alert/updates.html:9
+#: templates/web/vigilancia_ambiental/alert/updates.html:9
 msgid "RSS feed of updates to this problem"
 msgstr "Feed RSS de actualizaciones sobre este problema"
 
@@ -3599,6 +3865,8 @@ msgstr "Feed RSS de actualizaciones sobre este problema"
 #: templates/web/pormibarrio/report/display.html:69
 #: templates/web/pormibarriocr/alert/updates.html:14
 #: templates/web/pormibarriocr/report/display.html:45
+#: templates/web/vigilancia_ambiental/alert/updates.html:14
+#: templates/web/vigilancia_ambiental/report/display.html:69
 msgid "Receive email when updates are left on this problem."
 msgstr "Reciba un correo cuando se dejen comentarios sobre este problema."
 
@@ -3608,6 +3876,10 @@ msgstr "Reciba un correo cuando se dejen comentarios sobre este problema."
 #: templates/web/pormibarrio/around/display_location.html:32
 #: templates/web/pormibarriocr/around/display_location.html:0
 #: templates/web/pormibarriocr/around/display_location.html:32
+#: templates/web/vigilancia_ambiental/around/_display_location.html:0
+#: templates/web/vigilancia_ambiental/around/_display_location.html:32
+#: templates/web/vigilancia_ambiental/around/display_location.html:0
+#: templates/web/vigilancia_ambiental/around/display_location.html:32
 msgid "Recent local problems, FixMyStreet"
 msgstr "Problemas locales recientes, PorMiBarrio"
 
@@ -3630,6 +3902,7 @@ msgstr "Problemas recientemente notificados"
 #: templates/web/fixmystreet/report/new/notes.html:10
 #: templates/web/pormibarrio/report/new/notes.html:10
 #: templates/web/pormibarriocr/report/new/notes.html:10
+#: templates/web/vigilancia_ambiental/report/new/notes.html:10
 msgid "Remember that FixMyStreet is primarily for reporting physical problems that can be fixed. If your problem is not appropriate for submission via this site remember that you can contact your council directly using their own website."
 msgstr "Recuerde que PorMiBarrio es principalmente para informar sobre problemas físicos que pueden ser arreglados. Si su problema no es apropiado para ser presentado a través de este sitio recuerde que puede ponerse en contacto directamente a la Inetndencia mediante su página web."
 
@@ -3667,9 +3940,11 @@ msgstr "Notificar un problema"
 
 #: templates/web/bromley/report/display.html:28
 #: templates/web/fixmystreet/report/display.html:35
-#: templates/web/pormibarrio/report/_main.html:63
+#: templates/web/pormibarrio/report/_main.html:64
 #: templates/web/pormibarrio/report/display.html:59
 #: templates/web/pormibarriocr/report/display.html:35
+#: templates/web/vigilancia_ambiental/report/_main.html:64
+#: templates/web/vigilancia_ambiental/report/display.html:59
 msgid "Report abuse"
 msgstr "Denunciar abuso"
 
@@ -3689,6 +3964,7 @@ msgstr "Notificar sobre %s"
 #: templates/web/pormibarrio/around/intro.html:1
 #: templates/web/pormibarriocr/around/intro.html:1
 #: templates/web/stevenage/around/intro.html:1
+#: templates/web/vigilancia_ambiental/around/intro.html:1
 #: templates/web/zurich/around/intro.html:1
 msgid "Report, view, or discuss local problems"
 msgstr "Notifique, vea o discuta problemas locales"
@@ -3701,11 +3977,13 @@ msgstr "Notificado %s"
 msgid "Reported %s, to %s"
 msgstr "Notificados %s, a %s"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:586
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:724
+#: perllib/FixMyStreet/DB/Result/Problem.pm:588
 #: templates/web/default/contact/index.html:45
 #: templates/web/fixmystreet/contact/index.html:58
 #: templates/web/pormibarrio/contact/index.html:58
 #: templates/web/pormibarriocr/contact/index.html:58
+#: templates/web/vigilancia_ambiental/contact/index.html:58
 msgid "Reported anonymously at %s"
 msgstr "Notificado anónimamente en %s"
 
@@ -3714,14 +3992,17 @@ msgstr "Notificado anónimamente en %s"
 #: templates/web/fixmystreet/questionnaire/index.html:71
 #: templates/web/pormibarrio/questionnaire/index.html:71
 #: templates/web/pormibarriocr/questionnaire/index.html:71
+#: templates/web/vigilancia_ambiental/questionnaire/index.html:71
 msgid "Reported before"
 msgstr "Notificado con anterioridad"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:609
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:747
+#: perllib/FixMyStreet/DB/Result/Problem.pm:611
 #: templates/web/default/contact/index.html:47
 #: templates/web/fixmystreet/contact/index.html:60
 #: templates/web/pormibarrio/contact/index.html:60
 #: templates/web/pormibarriocr/contact/index.html:60
+#: templates/web/vigilancia_ambiental/contact/index.html:60
 msgid "Reported by %s at %s"
 msgstr "Notificado por %s en %s"
 
@@ -3729,27 +4010,33 @@ msgstr "Notificado por %s en %s"
 msgid "Reported in the %s category"
 msgstr "Reportado en la categoría %s"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:582
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:720
+#: perllib/FixMyStreet/DB/Result/Problem.pm:584
 msgid "Reported in the %s category anonymously at %s"
 msgstr "Notificado anonimamente en la categoría %s en %s"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:604
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:742
+#: perllib/FixMyStreet/DB/Result/Problem.pm:606
 msgid "Reported in the %s category by %s at %s"
 msgstr "Notificado en la categoría %s por %s en %s"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:578
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:716
+#: perllib/FixMyStreet/DB/Result/Problem.pm:580
 msgid "Reported via %s anonymously at %s"
 msgstr "Notificado por %s de forma anónima en %s"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:600
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:738
+#: perllib/FixMyStreet/DB/Result/Problem.pm:602
 msgid "Reported via %s by %s at %s"
 msgstr "Notificado por %s por %s en %s"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:574
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:712
+#: perllib/FixMyStreet/DB/Result/Problem.pm:576
 msgid "Reported via %s in the %s category anonymously at %s"
 msgstr "Notificado anonimamente por %s en la categoría %s en %s"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:594
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:732
+#: perllib/FixMyStreet/DB/Result/Problem.pm:596
 msgid "Reported via %s in the %s category by %s at %s"
 msgstr "Notificado por %s en la categoría %s por %s en %s"
 
@@ -3776,6 +4063,11 @@ msgstr "Notificado por %s en la categoría %s por %s en %s"
 #: templates/web/pormibarriocr/report/new/fill_in_details_form.html:12
 #: templates/web/seesomething/around/around_index.html:1
 #: templates/web/seesomething/report/new/fill_in_details_form.html:3
+#: templates/web/vigilancia_ambiental/around/around_index.html:2
+#: templates/web/vigilancia_ambiental/js/translation_strings.html:42
+#: templates/web/vigilancia_ambiental/report/new/fill_in_details.html:0
+#: templates/web/vigilancia_ambiental/report/new/fill_in_details.html:5
+#: templates/web/vigilancia_ambiental/report/new/fill_in_details_form.html:12
 #: templates/web/zurich/report/new/fill_in_details_form.html:2
 msgid "Reporting a problem"
 msgstr "Notificar un problema"
@@ -3787,8 +4079,10 @@ msgstr "Notificar un problema"
 msgid "Reports"
 msgstr "Reportes"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:407
-#: perllib/FixMyStreet/DB/Result/Problem.pm:411
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:545
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:549
+#: perllib/FixMyStreet/DB/Result/Problem.pm:409
+#: perllib/FixMyStreet/DB/Result/Problem.pm:413
 msgid "Reports are limited to %s characters in length. Please shorten your report"
 msgstr "Los reportes tienen un límite de %s caracteres. Por favor acortá tu reporte."
 
@@ -3812,6 +4106,7 @@ msgstr "Vuelva a enviar el reporte"
 #: templates/web/oxfordshire/js/translation_strings.html:22
 #: templates/web/pormibarrio/js/translation_strings.html:29
 #: templates/web/pormibarriocr/js/translation_strings.html:29
+#: templates/web/vigilancia_ambiental/js/translation_strings.html:29
 msgid "Right place?"
 msgstr "¿Lugar correcto?"
 
@@ -3838,6 +4133,7 @@ msgstr "Rotar a la derecha"
 
 #: templates/web/pormibarrio/my/edit.html:35
 #: templates/web/pormibarriocr/my/edit.html:25
+#: templates/web/vigilancia_ambiental/my/edit.html:35
 msgid "Save"
 msgstr "Guardar"
 
@@ -3856,6 +4152,7 @@ msgstr "Buscar Usuarios"
 
 #: templates/web/pormibarrio/report/new/fill_in_details_form.html:42
 #: templates/web/pormibarriocr/report/new/fill_in_details_form.html:42
+#: templates/web/vigilancia_ambiental/report/new/fill_in_details_form.html:42
 msgid "Search an address"
 msgstr "Buscar dirección"
 
@@ -3888,8 +4185,8 @@ msgid "Select an area"
 msgstr "Elegir un área"
 
 #: templates/web/pormibarrio/static/stats.html:37
-#: templates/web/pormibarrio/static/stats_new.html:37
 #: templates/web/pormibarriocr/static/stats.html:37
+#: templates/web/vigilancia_ambiental/static/stats.html:37
 msgid "Select the period you want"
 msgstr "Por favor, seleccione el período que desea"
 
@@ -3897,10 +4194,12 @@ msgstr "Por favor, seleccione el período que desea"
 #: templates/web/fixmystreet/alert/_list.html:10
 #: templates/web/pormibarrio/alert/_list.html:10
 #: templates/web/pormibarriocr/alert/_list.html:10
+#: templates/web/vigilancia_ambiental/alert/_list.html:10
 msgid "Select which type of alert you'd like and click the button for an RSS feed, or enter your email address to subscribe to an email alert."
 msgstr "Seleccione el tipo de alerta que desea y haga clic en el botón correspondiente a un feed RSS o introduzca su dirección de e-mail para suscribirse a alerta por correo electrónico."
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:727
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:865
+#: perllib/FixMyStreet/DB/Result/Problem.pm:729
 msgid "Sent to %s %s later"
 msgstr "Enviado a %s %s después"
 
@@ -3931,6 +4230,9 @@ msgstr "Compartir"
 #: templates/web/pormibarriocr/report/new/fill_in_details_form.html:137
 #: templates/web/pormibarriocr/report/new/fill_in_details_form.html:152
 #: templates/web/pormibarriocr/report/update-form.html:62
+#: templates/web/vigilancia_ambiental/report/new/fill_in_details_form.html:137
+#: templates/web/vigilancia_ambiental/report/new/fill_in_details_form.html:152
+#: templates/web/vigilancia_ambiental/report/update-form.html:62
 msgid "Show my name publicly"
 msgstr "Mostrar mi nombre en público"
 
@@ -3942,6 +4244,8 @@ msgstr "Mostrar antiguos"
 #: templates/web/default/around/display_location.html:60
 #: templates/web/pormibarrio/around/display_location.html:63
 #: templates/web/pormibarriocr/around/display_location.html:60
+#: templates/web/vigilancia_ambiental/around/_display_location.html:63
+#: templates/web/vigilancia_ambiental/around/display_location.html:63
 msgid "Show pins"
 msgstr "Mostrar pines"
 
@@ -3960,6 +4264,8 @@ msgstr "Mostrar pines"
 #: templates/web/seesomething/auth/general.html:3
 #: templates/web/seesomething/auth/general.html:39
 #: templates/web/stevenage/header.html:101
+#: templates/web/vigilancia_ambiental/auth/social_signup.html:43
+#: templates/web/vigilancia_ambiental/auth/social_signup.html:6
 #: templates/web/zurich/auth/general.html:18
 #: templates/web/zurich/auth/general.html:35
 msgid "Sign in"
@@ -3978,6 +4284,9 @@ msgstr "Registrarse con email"
 #: templates/web/pormibarriocr/auth/general.html:2
 #: templates/web/pormibarriocr/auth/social_signup.html:1
 #: templates/web/seesomething/auth/general.html:1
+#: templates/web/vigilancia_ambiental/auth/general.html:1
+#: templates/web/vigilancia_ambiental/auth/general.html:2
+#: templates/web/vigilancia_ambiental/auth/social_signup.html:1
 #: templates/web/zurich/auth/general.html:1
 msgid "Sign in or create an account"
 msgstr "Entrar o crear una cuenta"
@@ -3993,6 +4302,7 @@ msgstr "Entrar o crear una cuenta"
 #: templates/web/pormibarriocr/auth/sign_out.html:1
 #: templates/web/reading/header.html:33
 #: templates/web/seesomething/auth/sign_out.html:1
+#: templates/web/vigilancia_ambiental/auth/sign_out.html:1
 #: templates/web/zurich/auth/sign_out.html:1
 msgid "Sign out"
 msgstr "Salir"
@@ -4011,6 +4321,7 @@ msgstr "Conectado como %s"
 #: templates/web/fixmystreet/report/new/fill_in_details_text.html:1
 #: templates/web/pormibarrio/report/new/fill_in_details_text.html:1
 #: templates/web/pormibarriocr/report/new/fill_in_details_text.html:1
+#: templates/web/vigilancia_ambiental/report/new/fill_in_details_text.html:1
 msgid "Some categories may require additional information."
 msgstr "Algunas categorías pueden requerir información adicional."
 
@@ -4062,6 +4373,7 @@ msgstr "Código fuente"
 #: templates/web/default/admin/stats.html:64
 #: templates/web/pormibarrio/dashboard/deadlines.html:8
 #: templates/web/pormibarriocr/dashboard/deadlines.html:8
+#: templates/web/vigilancia_ambiental/dashboard/deadlines.html:8
 msgid "Start Date:"
 msgstr "Fecha de inicio:"
 
@@ -4072,6 +4384,7 @@ msgstr "Fecha de inicio:"
 #: templates/web/fixmystreet/report/update-form.html:26
 #: templates/web/pormibarrio/report/update-form.html:41
 #: templates/web/pormibarriocr/report/update-form.html:39
+#: templates/web/vigilancia_ambiental/report/update-form.html:41
 msgid "State"
 msgstr "Estado"
 
@@ -4089,10 +4402,10 @@ msgstr "Estado/Prov.:"
 #: templates/web/default/admin/stats.html:1
 #: templates/web/pormibarrio/static/stats.html:2
 #: templates/web/pormibarrio/static/stats.html:3
-#: templates/web/pormibarrio/static/stats_new.html:2
-#: templates/web/pormibarrio/static/stats_new.html:3
 #: templates/web/pormibarriocr/static/stats.html:2
 #: templates/web/pormibarriocr/static/stats.html:3
+#: templates/web/vigilancia_ambiental/static/stats.html:2
+#: templates/web/vigilancia_ambiental/static/stats.html:3
 #: templates/web/zurich/admin/stats.html:1 templates/web/zurich/header.html:72
 msgid "Stats"
 msgstr "Estadísticas"
@@ -4124,6 +4437,9 @@ msgstr "Subdivisión/Organismo"
 #: templates/web/pormibarriocr/contact/index.html:91
 #: templates/web/pormibarriocr/report/display.html:73
 #: templates/web/pormibarriocr/report/new/fill_in_details_form.html:75
+#: templates/web/vigilancia_ambiental/contact/index.html:91
+#: templates/web/vigilancia_ambiental/report/display.html:97
+#: templates/web/vigilancia_ambiental/report/new/fill_in_details_form.html:75
 msgid "Subject"
 msgstr "Título:"
 
@@ -4164,6 +4480,7 @@ msgstr "Enviar Cambios"
 #: templates/web/fixmystreet/questionnaire/index.html:105
 #: templates/web/pormibarrio/questionnaire/index.html:105
 #: templates/web/pormibarriocr/questionnaire/index.html:105
+#: templates/web/vigilancia_ambiental/questionnaire/index.html:105
 msgid "Submit questionnaire"
 msgstr "Enviar cuestionario"
 
@@ -4189,6 +4506,8 @@ msgstr "Enviado"
 #: templates/web/pormibarrio/report/display.html:74
 #: templates/web/pormibarriocr/alert/updates.html:23
 #: templates/web/pormibarriocr/report/display.html:50
+#: templates/web/vigilancia_ambiental/alert/updates.html:23
+#: templates/web/vigilancia_ambiental/report/display.html:74
 msgid "Subscribe"
 msgstr "Suscribirse"
 
@@ -4197,6 +4516,7 @@ msgstr "Suscribirse"
 #: templates/web/fixmystreet/alert/_list.html:92
 #: templates/web/pormibarrio/alert/_list.html:92
 #: templates/web/pormibarriocr/alert/_list.html:92
+#: templates/web/vigilancia_ambiental/alert/_list.html:92
 msgid "Subscribe me to an email alert"
 msgstr "Suscríbeme a alertas por email"
 
@@ -4243,6 +4563,9 @@ msgstr "Resultados de la Encuesta"
 #: templates/web/pormibarriocr/report/new/fill_in_details_form.html:141
 #: templates/web/pormibarriocr/report/new/fill_in_details_form.html:156
 #: templates/web/pormibarriocr/report/update-form.html:82
+#: templates/web/vigilancia_ambiental/report/new/fill_in_details_form.html:141
+#: templates/web/vigilancia_ambiental/report/new/fill_in_details_form.html:156
+#: templates/web/vigilancia_ambiental/report/update-form.html:82
 msgid "Terms & Conditions"
 msgstr "Términos y condiciones"
 
@@ -4254,6 +4577,7 @@ msgstr "Texto"
 
 #: templates/web/default/admin/body.html:18
 #: templates/web/pormibarrio/admin/body.html:18
+#: templates/web/vigilancia_ambiental/admin/body.html:18
 msgid "Text only version"
 msgstr "Versión solo texto"
 
@@ -4297,6 +4621,7 @@ msgstr "Gracias por usar ReportEmptyHomes.com. Su acción ya está ayudando a re
 #: templates/web/fixmystreet/around/around_index.html:27
 #: templates/web/pormibarrio/around/around_index.html:27
 #: templates/web/pormibarriocr/around/around_index.html:27
+#: templates/web/vigilancia_ambiental/around/around_index.html:27
 msgid "Thanks for uploading your photo. We now need to locate your problem, so please enter a nearby street name or postcode in the box above&nbsp;:"
 msgstr "Gracias por subir tu foto. Ahora necesitamos situar el problema, así que por favor escriba el nombre o código postal de una calle cercana en el cuadro de arriba:"
 
@@ -4338,6 +4663,7 @@ msgid "That report has been removed from FixMyStreet."
 msgstr "Ese reporte ha sido eliminado de PorMiBarrio."
 
 #: templates/web/pormibarrio/admin/body.html:115
+#: templates/web/vigilancia_ambiental/admin/body.html:115
 #, fuzzy
 msgid ""
 "The <strong>email address</strong> is the destination to which reports about this category will be sent.\n"
@@ -4383,6 +4709,7 @@ msgstr ""
 
 #: templates/web/pormibarrio/my/my.html:35
 #: templates/web/pormibarriocr/my/my.html:35
+#: templates/web/vigilancia_ambiental/my/my.html:35
 msgid "The Facebook account is already asociated to other user. If you want to change it, login with twitter and unlink your account"
 msgstr "La cuenta de Facebook ya se encuentra asociada a otro usuario. De querer cambiarla cierre la sesión presente, ingrese a través de su cuenta de Facebook y desvincule dicha cuenta."
 
@@ -4403,6 +4730,7 @@ msgstr ""
 #: templates/web/default/email_sent.html:6
 #: templates/web/pormibarrio/email_sent.html:6
 #: templates/web/pormibarriocr/email_sent.html:6
+#: templates/web/vigilancia_ambiental/email_sent.html:6
 msgid "The confirmation email <strong>may</strong> take a few minutes to arrive &mdash; <em>please</em> be patient."
 msgstr "El email de confirmación <strong>puede</strong> tardar unos minutos en llegar - <em>por favor</em>, se paciente."
 
@@ -4412,12 +4740,15 @@ msgstr "El email de confirmación <strong>puede</strong> tardar unos minutos en 
 #: templates/web/pormibarrio/report/new/fill_in_details_text.html:3
 #: templates/web/pormibarriocr/report/new/fill_in_details_text.html:1
 #: templates/web/pormibarriocr/report/new/fill_in_details_text.html:3
+#: templates/web/vigilancia_ambiental/report/new/fill_in_details_text.html:1
+#: templates/web/vigilancia_ambiental/report/new/fill_in_details_text.html:3
 msgid "The council won&rsquo;t be able to help unless you leave as much detail as you can. Please describe the exact location of the problem (e.g. on a wall), what it is, how long it has been there, a description (and a photo of the problem if you have one), etc."
 msgstr "La intendencia no podrá ayudar a menos que dejes tanto detalle como puedas. Por favor escribe la ubicación exacta del problema (ej. en la pared), qué es, hace cuánto que está, una descripción (y una foto si tenés), etc."
 
 #: templates/web/fixmystreet/questionnaire/index.html:43
 #: templates/web/pormibarrio/questionnaire/index.html:43
 #: templates/web/pormibarriocr/questionnaire/index.html:43
+#: templates/web/vigilancia_ambiental/questionnaire/index.html:43
 msgid "The details of your problem are available from the other tab above."
 msgstr "Los detalles de su problema están disponibles en la otra pestaña de arriba"
 
@@ -4498,6 +4829,8 @@ msgstr "La lista de areas disponibles es provista por Mapit en %s."
 #: templates/web/pormibarrio/my/edit.html:68
 #: templates/web/pormibarriocr/my/edit.html:54
 #: templates/web/pormibarriocr/my/edit.html:58
+#: templates/web/vigilancia_ambiental/my/edit.html:64
+#: templates/web/vigilancia_ambiental/my/edit.html:68
 msgid "The passwords do not match"
 msgstr "Las contraseñas no coinciden."
 
@@ -4510,6 +4843,7 @@ msgstr "La URL '%s' solicitada no fue encontrada en el servidor"
 #: templates/web/fixmystreet/alert/_list.html:16
 #: templates/web/pormibarrio/alert/_list.html:16
 #: templates/web/pormibarriocr/alert/_list.html:16
+#: templates/web/vigilancia_ambiental/alert/_list.html:16
 msgid "The simplest alert is our geographic one:"
 msgstr "La alerta más sencilla es nuestra alerta geográfica:"
 
@@ -4521,11 +4855,13 @@ msgstr "La alerta más sencilla es nuestra alerta geográfica:"
 #: templates/web/fixmystreet/report/new/fill_in_details_form.html:12
 #: templates/web/pormibarrio/report/new/fill_in_details_form.html:22
 #: templates/web/pormibarriocr/report/new/fill_in_details_form.html:22
+#: templates/web/vigilancia_ambiental/report/new/fill_in_details_form.html:22
 msgid "The subject and details of the problem will be public, plus your name if you give us permission."
 msgstr "El título y detalles del problema serán públicos, además de su nombre, si nos da su permiso."
 
 #: templates/web/pormibarrio/my/my.html:29
 #: templates/web/pormibarriocr/my/my.html:29
+#: templates/web/vigilancia_ambiental/my/my.html:29
 msgid "The twitter account is already asociated to other user. If you want to change it, login with twitter and unlink your account"
 msgstr "La cuenta de Twitter ya se encuentra asociada a otro usuario. De querer cambiarla cierre la sesión presente, ingrese a PMB través de su cuenta de Twitter y desvincule las cuenta."
 
@@ -4601,6 +4937,7 @@ msgstr "Esta zona se encuentra fuera del área de cobertura de la IMM."
 
 #: templates/web/default/admin/body.html:33
 #: templates/web/pormibarrio/admin/body.html:33
+#: templates/web/vigilancia_ambiental/admin/body.html:33
 msgid ""
 "This body covers no area. This means that it has no jurisdiction over problems reported <em>at any location</em>.\n"
 "            Consequently, none of its categories will appear in the drop-down category menu when users report problems.\n"
@@ -4612,6 +4949,7 @@ msgstr ""
 
 #: templates/web/default/admin/body.html:43
 #: templates/web/pormibarrio/admin/body.html:43
+#: templates/web/vigilancia_ambiental/admin/body.html:43
 msgid "This body has no contacts. This means that currently problems reported to this body <strong>will not be sent</strong>."
 msgstr "Este organismo no tiene contactos. Esto significa que los problemas reportados actualmente <strong>no serán enviados</strong>."
 
@@ -4672,6 +5010,7 @@ msgstr "Este problema ha sido cerrado"
 #: templates/web/fixmystreet/report/update-form.html:46
 #: templates/web/pormibarrio/report/update-form.html:76
 #: templates/web/pormibarriocr/report/update-form.html:76
+#: templates/web/vigilancia_ambiental/report/update-form.html:76
 msgid "This problem has been fixed"
 msgstr "Este problema se ha arreglado"
 
@@ -4680,6 +5019,7 @@ msgstr "Este problema se ha arreglado"
 #: templates/web/fixmystreet/report/update-form.html:40
 #: templates/web/pormibarrio/report/update-form.html:71
 #: templates/web/pormibarriocr/report/update-form.html:71
+#: templates/web/vigilancia_ambiental/report/update-form.html:71
 msgid "This problem has not been fixed"
 msgstr "Este problema no se ha arreglado"
 
@@ -4743,6 +5083,7 @@ msgstr "Categoría de transporte"
 #: templates/web/oxfordshire/js/translation_strings.html:23
 #: templates/web/pormibarrio/js/translation_strings.html:30
 #: templates/web/pormibarriocr/js/translation_strings.html:30
+#: templates/web/vigilancia_ambiental/js/translation_strings.html:30
 msgid "Try again"
 msgstr "Probar nuevamente"
 
@@ -4767,6 +5108,7 @@ msgstr "No se puede arreglar"
 #: templates/web/default/admin/update_edit.html:28
 #: templates/web/pormibarrio/my/my.html:85
 #: templates/web/pormibarriocr/my/my.html:85
+#: templates/web/vigilancia_ambiental/my/my.html:85
 #: templates/web/zurich/admin/report_edit-sdm.html:48
 #: templates/web/zurich/admin/report_edit.html:61
 #: templates/web/zurich/admin/update_edit.html:18
@@ -4776,6 +5118,7 @@ msgstr "Sin confirmar"
 #: templates/web/fixmystreet/report/banner.html:9
 #: templates/web/pormibarrio/report/banner.html:9
 #: templates/web/pormibarriocr/report/banner.html:9
+#: templates/web/vigilancia_ambiental/report/banner.html:9
 msgid "Unknown"
 msgstr "Desconocido"
 
@@ -4787,6 +5130,7 @@ msgstr "Tipo de alerta desconocida"
 #: templates/web/oxfordshire/js/translation_strings.html:33
 #: templates/web/pormibarrio/js/translation_strings.html:40
 #: templates/web/pormibarriocr/js/translation_strings.html:40
+#: templates/web/vigilancia_ambiental/js/translation_strings.html:40
 msgid "Unknown error"
 msgstr "Error desconocido"
 
@@ -4795,8 +5139,8 @@ msgid "Unknown problem ID"
 msgstr "ID de problema desconocido"
 
 #: templates/web/pormibarrio/static/stats.html:11
-#: templates/web/pormibarrio/static/stats_new.html:11
 #: templates/web/pormibarriocr/static/stats.html:11
+#: templates/web/vigilancia_ambiental/static/stats.html:11
 msgid "Until"
 msgstr "Hasta"
 
@@ -4813,6 +5157,7 @@ msgstr "Actualización %s creada para el problema %d; por %s"
 #: templates/web/fixmystreet/contact/index.html:34
 #: templates/web/pormibarrio/contact/index.html:34
 #: templates/web/pormibarriocr/contact/index.html:34
+#: templates/web/vigilancia_ambiental/contact/index.html:34
 msgid "Update below added anonymously at %s"
 msgstr "El comentario de abajo fue añadido de forma anónima en %s"
 
@@ -4820,6 +5165,7 @@ msgstr "El comentario de abajo fue añadido de forma anónima en %s"
 #: templates/web/fixmystreet/contact/index.html:36
 #: templates/web/pormibarrio/contact/index.html:36
 #: templates/web/pormibarriocr/contact/index.html:36
+#: templates/web/vigilancia_ambiental/contact/index.html:36
 msgid "Update below added by %s at %s"
 msgstr "El comentario de abajo fue añadido por %s en %s"
 
@@ -4851,6 +5197,7 @@ msgstr "La actualización reabrió el problema"
 
 #: templates/web/default/admin/body.html:83
 #: templates/web/pormibarrio/admin/body.html:83
+#: templates/web/vigilancia_ambiental/admin/body.html:83
 msgid "Update statuses"
 msgstr "Actualización de estados"
 
@@ -4881,6 +5228,7 @@ msgstr "¡Actualizado!"
 msgid "Updates"
 msgstr "Actualizaciones"
 
+#: db/perllib/FixMyStreet/DB/Result/Comment.pm:234
 #: perllib/FixMyStreet/DB/Result/Comment.pm:140
 msgid "Updates are limited to 2000 characters in length. Please shorten your update"
 msgstr "Los comentarios se limitan a 2000 caracteres. Por favor acortá el tuyo."
@@ -4900,6 +5248,7 @@ msgstr "Actualizaciones para este problema, PorMiBarrio"
 
 #: templates/web/default/admin/body.html:153
 #: templates/web/pormibarrio/admin/body.html:153
+#: templates/web/vigilancia_ambiental/admin/body.html:153
 msgid "Use the <strong>note</strong> to record details that are only displayed in the admin. Notes are not shown publicly, and are not sent to the body."
 msgstr "Usá la <strong>nota</strong> para registrar detalles visibles sólo para administradores. Las notas no son públicamente visibles, ni se envían al organismo."
 
@@ -4948,6 +5297,7 @@ msgstr "Ver reporte en el sitio"
 #: templates/web/default/reports/body.html:14
 #: templates/web/pormibarrio/reports/body.html:14
 #: templates/web/pormibarriocr/reports/body.html:14
+#: templates/web/vigilancia_ambiental/reports/body.html:14
 msgid "View reports by ward"
 msgstr "Ver reportes por barrio"
 
@@ -4963,6 +5313,10 @@ msgstr "Ver tus reportes"
 #: templates/web/pormibarriocr/around/display_location.html:34
 #: templates/web/seesomething/around/display_location.html:0
 #: templates/web/seesomething/around/display_location.html:16
+#: templates/web/vigilancia_ambiental/around/_display_location.html:0
+#: templates/web/vigilancia_ambiental/around/_display_location.html:34
+#: templates/web/vigilancia_ambiental/around/display_location.html:0
+#: templates/web/vigilancia_ambiental/around/display_location.html:34
 msgid "Viewing a location"
 msgstr "Visualizando una ubicación"
 
@@ -4975,11 +5329,13 @@ msgstr "Visualizando un problema"
 #: templates/web/default/reports/body.html:16
 #: templates/web/pormibarrio/reports/body.html:16
 #: templates/web/pormibarriocr/reports/body.html:16
+#: templates/web/vigilancia_ambiental/reports/body.html:16
 msgid "Wards of this council"
 msgstr "Barrios de esta Intendencia"
 
 #: templates/web/pormibarrio/dashboard/deadlines.html:45
 #: templates/web/pormibarriocr/dashboard/deadlines.html:45
+#: templates/web/vigilancia_ambiental/dashboard/deadlines.html:45
 msgid "Warning"
 msgstr "Alerta"
 
@@ -4989,6 +5345,7 @@ msgstr "Alerta"
 #: templates/web/pormibarrio/around/around_index.html:16
 #: templates/web/pormibarriocr/around/around_index.html:16
 #: templates/web/seesomething/around/around_index.html:13
+#: templates/web/vigilancia_ambiental/around/around_index.html:16
 msgid "We found more than one match for that location. We show up to ten matches, please try a different search if yours is not here."
 msgstr "Hemos encontrado más de una coincidencia para esa ubicación. Se muestra un máximo de diez, intenta una búsqueda diferente si no lo encuentra aquí."
 
@@ -5036,6 +5393,7 @@ msgstr "Sólo utilizaremos su información personal de acuerdo a nuestra <a href
 #: templates/web/oxfordshire/report/new/notes.html:4
 #: templates/web/pormibarrio/report/new/notes.html:4
 #: templates/web/pormibarriocr/report/new/notes.html:4
+#: templates/web/vigilancia_ambiental/report/new/notes.html:4
 msgid "We will only use your personal information in accordance with our <a href=\"/privacy\">privacy policy.</a>"
 msgstr "Sólo utilizaremos su información personal de acuerdo a nuestra <a href=\"/faq#privacy\">política de privacidad</a>."
 
@@ -5050,6 +5408,7 @@ msgstr "Nos encantaría saber lo que piensas acerca de este sitio. Sólo tienes 
 #: templates/web/default/admin/body.html:61
 #: templates/web/default/admin/body_edit.html:82
 #: templates/web/pormibarrio/admin/body.html:61
+#: templates/web/vigilancia_ambiental/admin/body.html:61
 #: templates/web/zurich/admin/body.html:17
 msgid "When edited"
 msgstr "Una vez editada"
@@ -5080,6 +5439,7 @@ msgstr "¿Le gustaría contribuir a PorMiBarrio? Nuestro código es open source 
 #: templates/web/fixmystreet/questionnaire/index.html:96
 #: templates/web/pormibarrio/questionnaire/index.html:96
 #: templates/web/pormibarriocr/questionnaire/index.html:96
+#: templates/web/vigilancia_ambiental/questionnaire/index.html:96
 msgid "Would you like to receive another questionnaire in 4 weeks, reminding you to check the status?"
 msgstr "¿Quieres recibir otro cuestionario en 4 semanas, recordándote que debes comprobar el estado?"
 
@@ -5089,6 +5449,7 @@ msgstr "¿Quieres recibir otro cuestionario en 4 semanas, recordándote que debe
 #: templates/web/oxfordshire/report/new/notes.html:7
 #: templates/web/pormibarrio/report/new/notes.html:8
 #: templates/web/pormibarriocr/report/new/notes.html:8
+#: templates/web/vigilancia_ambiental/report/new/notes.html:8
 msgid "Writing your message entirely in block capitals makes it hard to read, as does a lack of punctuation."
 msgstr "Escribir su mensaje completamente en mayúsculas hace que sea difícil de leer, al igual que la falta de puntuacion."
 
@@ -5122,6 +5483,11 @@ msgstr "Año"
 #: templates/web/pormibarrio/questionnaire/index.html:99
 #: templates/web/pormibarriocr/questionnaire/index.html:60
 #: templates/web/pormibarriocr/questionnaire/index.html:99
+#: templates/web/vigilancia_ambiental/admin/body.html:68
+#: templates/web/vigilancia_ambiental/admin/body.html:69
+#: templates/web/vigilancia_ambiental/admin/body.html:70
+#: templates/web/vigilancia_ambiental/questionnaire/index.html:60
+#: templates/web/vigilancia_ambiental/questionnaire/index.html:99
 msgid "Yes"
 msgstr "SÍ"
 
@@ -5138,6 +5504,8 @@ msgstr "Sí, tengo una contraseña"
 #: templates/web/pormibarrio/report/display.html:86
 #: templates/web/pormibarriocr/contact/index.html:50
 #: templates/web/pormibarriocr/report/display.html:62
+#: templates/web/vigilancia_ambiental/contact/index.html:50
+#: templates/web/vigilancia_ambiental/report/display.html:86
 msgid "You are reporting the following problem report for being abusive, containing personal information, or similar:"
 msgstr "Estás reportando por abusiva al siguiente reporte, que contiene información personal, o similar:"
 
@@ -5145,6 +5513,7 @@ msgstr "Estás reportando por abusiva al siguiente reporte, que contiene informa
 #: templates/web/fixmystreet/contact/index.html:28
 #: templates/web/pormibarrio/contact/index.html:28
 #: templates/web/pormibarriocr/contact/index.html:28
+#: templates/web/vigilancia_ambiental/contact/index.html:28
 msgid "You are reporting the following update for being abusive, containing personal information, or similar:"
 msgstr "Estás reportando por abusiva al siguiente comentario, que contiene información personal, o similar:"
 
@@ -5184,6 +5553,7 @@ msgstr "Podés marcar un organismo como eliminado si no querés que esté activo
 #: templates/web/oxfordshire/js/translation_strings.html:30
 #: templates/web/pormibarrio/js/translation_strings.html:37
 #: templates/web/pormibarriocr/js/translation_strings.html:37
+#: templates/web/vigilancia_ambiental/js/translation_strings.html:37
 msgid "You declined; please fill in the box above"
 msgstr "No aceptaste, por favor llena el campo de arriba"
 
@@ -5202,6 +5572,8 @@ msgstr "Usted ya respondió a esta encuesta. Si tiene alguna pregunta, por favor
 #: templates/web/pormibarriocr/questionnaire/index.html:87
 #: templates/web/pormibarriocr/report/new/fill_in_details_form.html:99
 #: templates/web/seesomething/report/new/fill_in_details_form.html:59
+#: templates/web/vigilancia_ambiental/questionnaire/index.html:87
+#: templates/web/vigilancia_ambiental/report/new/fill_in_details_form.html:99
 #: templates/web/zurich/report/new/fill_in_details_form.html:75
 msgid "You have already attached a photo to this report, attaching another one will replace it."
 msgstr "Usted ya adjuntó una foto para este reporte, adjuntando otra la reemplazará."
@@ -5211,6 +5583,7 @@ msgstr "Usted ya adjuntó una foto para este reporte, adjuntando otra la reempla
 #: templates/web/fixmystreet/report/update-form.html:56
 #: templates/web/pormibarrio/report/update-form.html:23
 #: templates/web/pormibarriocr/report/update-form.html:23
+#: templates/web/vigilancia_ambiental/report/update-form.html:23
 msgid "You have already attached a photo to this update, attaching another one will replace it."
 msgstr "Usted ya ha adjuntado una foto para este comentario, adjuntando otra la reemplazará."
 
@@ -5218,6 +5591,7 @@ msgstr "Usted ya ha adjuntado una foto para este comentario, adjuntando otra la 
 #: templates/web/pormibarrio/auth/sign_out.html:3
 #: templates/web/pormibarriocr/auth/sign_out.html:3
 #: templates/web/seesomething/auth/sign_out.html:3
+#: templates/web/vigilancia_ambiental/auth/sign_out.html:3
 #: templates/web/zurich/auth/sign_out.html:3
 msgid "You have been signed out"
 msgstr "Ha cerrado la sesión correctamente."
@@ -5265,6 +5639,7 @@ msgstr "Ha iniciado sesión correctamente, por favor revise y confirme si sus de
 #: templates/web/default/email_sent.html:13
 #: templates/web/pormibarrio/email_sent.html:13
 #: templates/web/pormibarriocr/email_sent.html:13
+#: templates/web/vigilancia_ambiental/email_sent.html:13
 msgid "You must now click the link in the email we've just sent you."
 msgstr "Ahora hacé click en el correo que te enviamos."
 
@@ -5288,6 +5663,7 @@ msgstr "¿De verdad quiere volver a enviar?"
 
 #: templates/web/pormibarrio/my/my.html:32
 #: templates/web/pormibarriocr/my/my.html:32
+#: templates/web/vigilancia_ambiental/my/my.html:32
 msgid "Your Facebook account has been asociated. You can now login using this account"
 msgstr "Se ha asociado su cuenta de Facebook. Ahora puedes loguearte usando dicha cuenta."
 
@@ -5299,15 +5675,19 @@ msgstr "Se ha asociado su cuenta de Facebook. Ahora puedes loguearte usando dich
 #: templates/web/pormibarrio/my/my.html:3
 #: templates/web/pormibarriocr/my/my.html:0
 #: templates/web/pormibarriocr/my/my.html:3
+#: templates/web/vigilancia_ambiental/my/my.html:0
+#: templates/web/vigilancia_ambiental/my/my.html:3
 msgid "Your Reports"
 msgstr "Sus reportes"
 
 #: templates/web/pormibarrio/my/my.html:26
 #: templates/web/pormibarriocr/my/my.html:26
+#: templates/web/vigilancia_ambiental/my/my.html:26
 msgid "Your Twitter account has been asociated. You can now login using this account"
 msgstr "Se ha asociado su cuenta de Twitter. Ahora puedes loguearte usando dicha cuenta."
 
 #: templates/web/pormibarrio/my/my.html:23
+#: templates/web/vigilancia_ambiental/my/my.html:23
 msgid "Your changes have been saved"
 msgstr "Sus cambios se han guardado."
 
@@ -5334,6 +5714,10 @@ msgstr "Su documento no es válido"
 #: templates/web/pormibarriocr/alert/updates.html:19
 #: templates/web/pormibarriocr/alert/updates.html:22
 #: templates/web/pormibarriocr/contact/index.html:84
+#: templates/web/vigilancia_ambiental/alert/_list.html:89
+#: templates/web/vigilancia_ambiental/alert/updates.html:19
+#: templates/web/vigilancia_ambiental/alert/updates.html:22
+#: templates/web/vigilancia_ambiental/contact/index.html:84
 #: templates/web/zurich/report/new/fill_in_details_form.html:88
 msgid "Your email"
 msgstr "Su email:"
@@ -5348,6 +5732,7 @@ msgstr "Tu correo (opcional)"
 #: templates/web/pormibarrio/auth/social_signup.html:24
 #: templates/web/pormibarriocr/auth/social_signup.html:24
 #: templates/web/seesomething/auth/general.html:26
+#: templates/web/vigilancia_ambiental/auth/social_signup.html:24
 #: templates/web/zurich/auth/general.html:30
 #: templates/web/zurich/auth/general.html:58
 msgid "Your email address"
@@ -5373,12 +5758,14 @@ msgstr "Su nombre:"
 
 #: templates/web/pormibarrio/report/new/fill_in_details_form.html:127
 #: templates/web/pormibarriocr/report/new/fill_in_details_form.html:127
+#: templates/web/vigilancia_ambiental/report/new/fill_in_details_form.html:127
 msgid "Your identity document"
 msgstr "Su número de documento"
 
 #: templates/web/fixmystreet/report/updates-sidebar-notes.html:5
 #: templates/web/pormibarrio/report/updates-sidebar-notes.html:5
 #: templates/web/pormibarriocr/report/updates-sidebar-notes.html:5
+#: templates/web/vigilancia_ambiental/report/updates-sidebar-notes.html:5
 msgid "Your information will only be used in accordance with our <a href=\"/privacy\">privacy policy</a>"
 msgstr "Su información sólo será usada de acuerdo con nuestra <a href=\"/privacy\">política de privacidad</a>"
 
@@ -5400,6 +5787,9 @@ msgstr "Sus Apellidos"
 #: templates/web/pormibarriocr/contact/index.html:77
 #: templates/web/pormibarriocr/report/new/fill_in_details_form.html:131
 #: templates/web/seesomething/report/new/fill_in_details_form.html:79
+#: templates/web/vigilancia_ambiental/auth/social_signup.html:20
+#: templates/web/vigilancia_ambiental/contact/index.html:77
+#: templates/web/vigilancia_ambiental/report/new/fill_in_details_form.html:131
 #: templates/web/zurich/auth/general.html:61
 #: templates/web/zurich/report/new/fill_in_details_form.html:104
 msgid "Your name"
@@ -5421,6 +5811,7 @@ msgstr "Su Nombre:"
 #: templates/web/pormibarrio/auth/social_signup.html:36
 #: templates/web/pormibarriocr/auth/social_signup.html:32
 #: templates/web/seesomething/auth/general.html:30
+#: templates/web/vigilancia_ambiental/auth/social_signup.html:36
 #: templates/web/zurich/auth/general.html:34
 msgid "Your password"
 msgstr "Su contraseña"
@@ -5433,10 +5824,14 @@ msgstr "Su contraseña"
 #: templates/web/pormibarriocr/my/edit.html:10
 #: templates/web/pormibarriocr/my/my.html:38
 #: templates/web/pormibarriocr/my/my.html:54
+#: templates/web/vigilancia_ambiental/my/edit.html:19
+#: templates/web/vigilancia_ambiental/my/my.html:38
+#: templates/web/vigilancia_ambiental/my/my.html:54
 msgid "Your password has been changed"
 msgstr "Su contraseña ha cambiado."
 
 #: templates/web/pormibarrio/my/edit.html:9
+#: templates/web/vigilancia_ambiental/my/edit.html:9
 msgid "Your password needs to be changed"
 msgstr "Su contraseña necesita ser cambiada."
 
@@ -5447,6 +5842,7 @@ msgstr "Su contraseña necesita ser cambiada."
 #: templates/web/pormibarrio/report/new/fill_in_details_form.html:132
 #: templates/web/pormibarriocr/report/new/fill_in_details_form.html:132
 #: templates/web/seesomething/report/new/fill_in_details_form.html:90
+#: templates/web/vigilancia_ambiental/report/new/fill_in_details_form.html:132
 #: templates/web/zurich/report/new/fill_in_details_form.html:110
 msgid "Your phone number"
 msgstr "Su número de teléfono"
@@ -5454,6 +5850,7 @@ msgstr "Su número de teléfono"
 #: templates/web/fixmystreet/questionnaire/index.html:15
 #: templates/web/pormibarrio/questionnaire/index.html:15
 #: templates/web/pormibarriocr/questionnaire/index.html:15
+#: templates/web/vigilancia_ambiental/questionnaire/index.html:15
 msgid "Your report"
 msgstr "Su reporte"
 
@@ -5481,7 +5878,8 @@ msgstr "Sus comentarios"
 msgid "Your&nbsp;email:"
 msgstr "Su email:"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:275
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:415
+#: perllib/FixMyStreet/DB/Result/Problem.pm:279
 msgid "action scheduled"
 msgstr "acción agendada"
 
@@ -5489,17 +5887,21 @@ msgstr "acción agendada"
 msgid "by %s"
 msgstr "por %s"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:285
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:424
+#: perllib/FixMyStreet/DB/Result/Problem.pm:288
 msgid "clarify"
 msgstr "clarificar reporte"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:283
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:422
+#: perllib/FixMyStreet/DB/Result/Problem.pm:286
 #: templates/web/pormibarrio/report/_item.html:21
 #: templates/web/pormibarriocr/report/_item.html:21
+#: templates/web/vigilancia_ambiental/report/_item.html:21
 msgid "closed"
 msgstr "cerrado"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:271
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:411
+#: perllib/FixMyStreet/DB/Result/Problem.pm:275
 msgid "confirmed"
 msgstr "abierto"
 
@@ -5509,10 +5911,13 @@ msgstr "abierto"
 #: templates/web/pormibarrio/reports/body.html:7
 #: templates/web/pormibarriocr/reports/body.html:6
 #: templates/web/pormibarriocr/reports/body.html:7
+#: templates/web/vigilancia_ambiental/reports/body.html:6
+#: templates/web/vigilancia_ambiental/reports/body.html:7
 msgid "council"
 msgstr "Intendencia"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:712
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:850
+#: perllib/FixMyStreet/DB/Result/Problem.pm:714
 msgid "council ref:&nbsp;%s"
 msgstr "intendencia ref:&nbsp;%s"
 
@@ -5522,7 +5927,8 @@ msgstr "intendencia ref:&nbsp;%s"
 msgid "didn't use map"
 msgstr "no utilizó mapa"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:282
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:421
+#: perllib/FixMyStreet/DB/Result/Problem.pm:285
 msgid "duplicate"
 msgstr "duplicado"
 
@@ -5536,18 +5942,24 @@ msgstr "por ejemplo, '%s' o '%s'"
 msgid "edit user"
 msgstr "Editar usuario"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:190
-#: perllib/FixMyStreet/DB/Result/Problem.pm:276
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:332
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:416
+#: perllib/FixMyStreet/DB/Result/Problem.pm:196
+#: perllib/FixMyStreet/DB/Result/Problem.pm:280
 msgid "fixed"
 msgstr "arreglado"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:191
-#: perllib/FixMyStreet/DB/Result/Problem.pm:277
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:333
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:417
+#: perllib/FixMyStreet/DB/Result/Problem.pm:197
+#: perllib/FixMyStreet/DB/Result/Problem.pm:281
 msgid "fixed - council"
 msgstr "arreglado - municipalidad"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:192
-#: perllib/FixMyStreet/DB/Result/Problem.pm:278
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:334
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:418
+#: perllib/FixMyStreet/DB/Result/Problem.pm:198
+#: perllib/FixMyStreet/DB/Result/Problem.pm:282
 msgid "fixed - user"
 msgstr "arreglado - usuario"
 
@@ -5556,19 +5968,23 @@ msgstr "arreglado - usuario"
 msgid "from %d different users"
 msgstr "de %d usuarios diferentes"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:268
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:408
+#: perllib/FixMyStreet/DB/Result/Problem.pm:272
 msgid "hidden"
 msgstr "oculto"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:273
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:413
+#: perllib/FixMyStreet/DB/Result/Problem.pm:277
 msgid "in progress"
 msgstr "en progreso"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:284
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:423
+#: perllib/FixMyStreet/DB/Result/Problem.pm:287
 msgid "internal referral"
 msgstr "referencia interna"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:272
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:412
+#: perllib/FixMyStreet/DB/Result/Problem.pm:276
 msgid "investigating"
 msgstr "investigando"
 
@@ -5576,6 +5992,7 @@ msgstr "investigando"
 #: templates/web/fixmystreet/report/_item.html:12
 #: templates/web/pormibarrio/report/_item.html:11
 #: templates/web/pormibarriocr/report/_item.html:11
+#: templates/web/vigilancia_ambiental/report/_item.html:11
 #: templates/web/zurich/report/_item.html:16
 msgid "last updated %s"
 msgstr "última actualización %s"
@@ -5587,18 +6004,21 @@ msgstr "menos de un minuto"
 #: templates/web/default/report/updates.html:57
 #: templates/web/pormibarrio/report/updates.html:45
 #: templates/web/pormibarriocr/report/updates.html:45
+#: templates/web/vigilancia_ambiental/report/updates.html:45
 msgid "marked as a duplicate report"
 msgstr "marcado como reporte duplicado"
 
 #: templates/web/default/report/updates.html:47
 #: templates/web/pormibarrio/report/updates.html:35
 #: templates/web/pormibarriocr/report/updates.html:35
+#: templates/web/vigilancia_ambiental/report/updates.html:35
 msgid "marked as action scheduled"
 msgstr "marcado como acción agendada"
 
 #: templates/web/default/report/updates.html:59
 #: templates/web/pormibarrio/report/updates.html:47
 #: templates/web/pormibarriocr/report/updates.html:47
+#: templates/web/vigilancia_ambiental/report/updates.html:47
 msgid "marked as an internal referral"
 msgstr "marcado como referencia interna"
 
@@ -5609,6 +6029,7 @@ msgstr "marcado como clarificar"
 #: templates/web/default/report/updates.html:49
 #: templates/web/pormibarrio/report/updates.html:37
 #: templates/web/pormibarriocr/report/updates.html:37
+#: templates/web/vigilancia_ambiental/report/updates.html:37
 msgid "marked as closed"
 msgstr "marcado como cerrado"
 
@@ -5618,36 +6039,43 @@ msgstr "marcado como cerrado"
 #: templates/web/pormibarrio/report/updates.html:39
 #: templates/web/pormibarriocr/report/updates.html:20
 #: templates/web/pormibarriocr/report/updates.html:39
+#: templates/web/vigilancia_ambiental/report/updates.html:20
+#: templates/web/vigilancia_ambiental/report/updates.html:39
 msgid "marked as fixed"
 msgstr "marcado como arreglado"
 
 #: templates/web/default/report/updates.html:45
 #: templates/web/pormibarrio/report/updates.html:33
 #: templates/web/pormibarriocr/report/updates.html:33
+#: templates/web/vigilancia_ambiental/report/updates.html:33
 msgid "marked as in progress"
 msgstr "marcado como en progreso"
 
 #: templates/web/default/report/updates.html:41
 #: templates/web/pormibarrio/report/updates.html:29
 #: templates/web/pormibarriocr/report/updates.html:29
+#: templates/web/vigilancia_ambiental/report/updates.html:29
 msgid "marked as investigating"
 msgstr "marcado como investigando"
 
 #: templates/web/default/report/updates.html:55
 #: templates/web/pormibarrio/report/updates.html:43
 #: templates/web/pormibarriocr/report/updates.html:43
+#: templates/web/vigilancia_ambiental/report/updates.html:43
 msgid "marked as not the council's responsibility"
 msgstr "marcado como no es responsabilidad de la intendencia"
 
 #: templates/web/default/report/updates.html:43
 #: templates/web/pormibarrio/report/updates.html:31
 #: templates/web/pormibarriocr/report/updates.html:31
+#: templates/web/vigilancia_ambiental/report/updates.html:31
 msgid "marked as planned"
 msgstr "marcado como planificado"
 
 #: templates/web/default/report/updates.html:53
 #: templates/web/pormibarrio/report/updates.html:41
 #: templates/web/pormibarriocr/report/updates.html:41
+#: templates/web/vigilancia_ambiental/report/updates.html:41
 msgid "marked as unable to fix"
 msgstr "marcado como no se puede resolver"
 
@@ -5657,11 +6085,8 @@ msgstr "marcado como no se puede resolver"
 msgid "n/a"
 msgstr "n/a"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:281
-msgid "not applicable"
-msgstr "no procede"
-
-#: perllib/FixMyStreet/DB/Result/Problem.pm:280
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:420
+#: perllib/FixMyStreet/DB/Result/Problem.pm:284
 msgid "not responsible"
 msgstr "no responsable"
 
@@ -5670,6 +6095,7 @@ msgstr "no responsable"
 #: templates/web/fixmystreet/alert/_list.html:85
 #: templates/web/pormibarrio/alert/_list.html:85
 #: templates/web/pormibarriocr/alert/_list.html:85
+#: templates/web/vigilancia_ambiental/alert/_list.html:85
 msgid "or"
 msgstr "o"
 
@@ -5677,6 +6103,7 @@ msgstr "o"
 #: templates/web/oxfordshire/js/translation_strings.html:21
 #: templates/web/pormibarrio/js/translation_strings.html:28
 #: templates/web/pormibarriocr/js/translation_strings.html:28
+#: templates/web/vigilancia_ambiental/js/translation_strings.html:28
 msgid "or locate me automatically"
 msgstr "o ubicarme automáticamente"
 
@@ -5699,15 +6126,18 @@ msgstr "originalmente ingresado: &ldquo;%s&rdquo;"
 msgid "other areas:"
 msgstr "otras áreas:"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:269
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:409
+#: perllib/FixMyStreet/DB/Result/Problem.pm:273
 msgid "partial"
 msgstr "parcial"
 
 #: templates/web/pormibarrio/auth/social_signup.html:32
+#: templates/web/vigilancia_ambiental/auth/social_signup.html:32
 msgid "phone"
 msgstr "Teléfono:"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:274
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:414
+#: perllib/FixMyStreet/DB/Result/Problem.pm:278
 msgid "planned"
 msgstr "planificado"
 
@@ -5717,6 +6147,8 @@ msgstr "planificado"
 #: templates/web/pormibarrio/report/updates.html:27
 #: templates/web/pormibarriocr/report/updates.html:21
 #: templates/web/pormibarriocr/report/updates.html:27
+#: templates/web/vigilancia_ambiental/report/updates.html:21
+#: templates/web/vigilancia_ambiental/report/updates.html:27
 msgid "reopened"
 msgstr "reabierto"
 
@@ -5747,6 +6179,8 @@ msgstr "Salir"
 #: templates/web/pormibarrio/report/new/fill_in_details_form.html:19
 #: templates/web/pormibarriocr/report/new/fill_in_details_form.html:16
 #: templates/web/pormibarriocr/report/new/fill_in_details_form.html:19
+#: templates/web/vigilancia_ambiental/report/new/fill_in_details_form.html:16
+#: templates/web/vigilancia_ambiental/report/new/fill_in_details_form.html:19
 msgid "the local council"
 msgstr "la Intendencia local"
 
@@ -5763,11 +6197,13 @@ msgstr "este tipo de problema local"
 msgid "today"
 msgstr "hoy"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:279
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:419
+#: perllib/FixMyStreet/DB/Result/Problem.pm:283
 msgid "unable to fix"
 msgstr "no se puede arreglar"
 
-#: perllib/FixMyStreet/DB/Result/Problem.pm:270
+#: db/perllib/FixMyStreet/DB/Result/Problem.pm:410
+#: perllib/FixMyStreet/DB/Result/Problem.pm:274
 msgid "unconfirmed"
 msgstr "sin confirmar"
 
@@ -5791,6 +6227,8 @@ msgstr "El usuario es el propietario del problema"
 #: templates/web/pormibarrio/reports/body.html:3
 #: templates/web/pormibarriocr/reports/body.html:0
 #: templates/web/pormibarriocr/reports/body.html:3
+#: templates/web/vigilancia_ambiental/reports/body.html:0
+#: templates/web/vigilancia_ambiental/reports/body.html:3
 msgid "ward"
 msgstr "barrio"
 
@@ -5801,13 +6239,6 @@ msgid_plural "<big>%s</big> reports recently"
 msgstr[0] "<big>%s</big> notificadas recientemente"
 msgstr[1] "<big>%s</big> notificadas recientemente"
 
-#: templates/web/default/report/new/councils_text_some.html:14
-#, perl-format
-msgid "We do <strong>not</strong> yet have details for the other council that covers this location."
-msgid_plural "We do <strong>not</strong> yet have details for the other councils that cover this location."
-msgstr[0] "Todavía <strong>no</strong> tenemos detalles para la Intendencia que cubre esta zona."
-msgstr[1] "Todavía <strong>no</strong> tenemos detalles para las Intendencias que cubre esta zona."
-
 #: templates/web/default/report/_support.html:6
 #, perl-format
 msgid "%d supporter"
@@ -5815,12 +6246,12 @@ msgid_plural "%d supporters"
 msgstr[0] "%d apoyo"
 msgstr[1] "%d apoyos"
 
-#: templates/web/default/front/stats.html:12
+#: perllib/Utils.pm:284
 #, perl-format
-msgid "<big>%s</big> report in past week"
-msgid_plural "<big>%s</big> reports in past week"
-msgstr[0] "<big>%s</big> notificadas la semana pasada"
-msgstr[1] "<big>%s</big> notificadas la semana pasada"
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d minuto"
+msgstr[1] "%d minutos"
 
 #: perllib/Utils.pm:278
 #, perl-format
@@ -5829,19 +6260,26 @@ msgid_plural "%d weeks"
 msgstr[0] "%d semana"
 msgstr[1] "%d semanas"
 
-#: templates/web/emptyhomes/report/new/councils_text_none.html:3
-#, perl-format
-msgid "We do not yet have details for the council that covers this location."
-msgid_plural "We do not yet have details for the councils that cover this location."
-msgstr[0] "Todavía no tenemos detalles para la Intendencia que cubre esta zona."
-msgstr[1] "Todavía no tenemos detalles para las Intendencias que cubren esta zona."
-
 #: templates/web/default/front/stats.html:29
 #, perl-format
 msgid "<big>%s</big> update on reports"
 msgid_plural "<big>%s</big> updates on reports"
 msgstr[0] "<big>%s</big> reporte actualizado"
 msgstr[1] "<big>%s</big> reportes actualizados"
+
+#: templates/web/default/front/stats.html:12
+#, perl-format
+msgid "<big>%s</big> report in past week"
+msgid_plural "<big>%s</big> reports in past week"
+msgstr[0] "<big>%s</big> notificadas la semana pasada"
+msgstr[1] "<big>%s</big> notificadas la semana pasada"
+
+#: perllib/Utils.pm:282
+#, perl-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d hora"
+msgstr[1] "%d horas"
 
 #: perllib/Utils.pm:280
 #, perl-format
@@ -5857,19 +6295,22 @@ msgid_plural "<big>%s</big> fixed in past month"
 msgstr[0] "<big>%s</big> arregladas la semana pasada"
 msgstr[1] "<big>%s</big> arregladas la semana pasada"
 
-#: perllib/Utils.pm:284
+#: templates/web/default/report/new/councils_text_some.html:14
 #, perl-format
-msgid "%d minute"
-msgid_plural "%d minutes"
-msgstr[0] "%d minuto"
-msgstr[1] "%d minutos"
+msgid "We do <strong>not</strong> yet have details for the other council that covers this location."
+msgid_plural "We do <strong>not</strong> yet have details for the other councils that cover this location."
+msgstr[0] "Todavía <strong>no</strong> tenemos detalles para la Intendencia que cubre esta zona."
+msgstr[1] "Todavía <strong>no</strong> tenemos detalles para las Intendencias que cubre esta zona."
 
-#: perllib/Utils.pm:282
+#: templates/web/default/report/new/councils_text_none.html:2
 #, perl-format
-msgid "%d hour"
-msgid_plural "%d hours"
-msgstr[0] "%d hora"
-msgstr[1] "%d horas"
+msgid "We do not yet have details for the council that covers this location."
+msgid_plural "We do not yet have details for the councils that cover this location."
+msgstr[0] "Todavía no tenemos detalles para la Intendencia que cubre esta zona."
+msgstr[1] "Todavía no tenemos detalles para las Intendencias que cubren esta zona."
+
+#~ msgid "not applicable"
+#~ msgstr "no procede"
 
 #~ msgid "e.g. ‘%s’ or ‘%s’"
 #~ msgstr "por ejemplo, '%s' o '%s'"
