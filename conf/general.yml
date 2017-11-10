@@ -44,6 +44,7 @@ EXAMPLE_PLACES: [ 'High Street', 'Main Street' ]
 # <language code>,<pretty name>,<locale>
 # Do not remove the en-gb line as it is needed for correct operation.
 LANGUAGES:
+  - 'es, Español, es_UY'
   - 'en-gb,English,en_GB'
 
 # If you're running an installation that is being used in a different time zone
