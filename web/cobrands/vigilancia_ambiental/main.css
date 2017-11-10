@@ -172,9 +172,9 @@ div.steps{
 }
 
 div.step{
-	width:33.3333%;
+	width:25%;
 	float:left;
-	min-width:276px;
+	min-width:235px;
 	text-align:center
 }
 
