@@ -1,0 +1,122 @@
+[% USE date %]
+[% INCLUDE header.html
+    title = loc('Stats')
+%]
+<div id="chart-options">
+  <h3>Estadísticas</h3>
+  <h4>Datos generales de la plataforma</h4>
+		<div id="chart-options-dates" class="stats-form stats-form-first">
+		    <input type="text" class="from" placeholder="[% loc('From') %]" name="start_date" id="stats-start-date"
+		      value="" />
+		    <input type="text" class="until" placeholder="[% loc('Until') %]" name="end_date" id="stats-end-date" size="5"
+          value="" />
+		</div>
+    <div id="chart-options-filters">
+      <select id="body-select" class="stats_filter_select"><option value="-1">[% loc('All bodies') %]</option></select>
+      <div id="area-select" class="stats_filter_select hidden"></div>
+    </div>
+    <select id="category-group-select" class="stats_filter_select">
+      <option value="-1">[% loc('All reports') %]</option>
+    </select>
+    <select id="category-select" class="stats_filter_select hidden"></select>
+    <input class="btn-stats" type="button" onclick="getCharts();"name="getcounts"  size="30" id="getcounts" value="Actualizar valores" />
+  [% IF errors %]
+      [% FOREACH error IN errors %]
+      <p class="error">[% error %]</p>
+      [% END %]
+  [% END %]
+  <div id="downloads">
+    <h4>Datos abiertos</h4>
+    <p>Todos los datos de PorMiBarrio son abiertos y se pueden descargar.</p>
+    <!--<a onclick="download_totals()" class="download-links">Descargar datos en pantalla (csv)</a>-->
+    <a onclick="download_totals()" class="download-links">Descargar totales (csv)</a>
+    <a onclick="download_reports()" class="download-links">Descargar reportes (csv)</a>
+    <!--<a class="download-links">Datos en catálogo nacional</a>-->
+  </div>
+</div>
+<h3 id="select-period-title" style="margin-top: 4%; text-align: center;">[% loc('Select the period you want') %]</h3>
+<div id="chart-container" class="hidden">
+  <script type="text/javascript" src="[% start %][% version('/js/d3.v3.min.js') %]" ></script>
+	<script src="[% start %][% version('/js/jquery-ui/js/jquery-ui-1.10.3.custom.min.js') %]" charset="utf-8"></script>
+  <script type="text/javascript" src="[% start %][% version('/js/stats.js') %]" ></script>
+	<link rel="stylesheet" href="[% start %][% version('/js/jquery-ui/css/smoothness/jquery-ui-1.10.3.custom.min.css') %]">
+
+	<h3 style="margin-top: 4%; text-align: center;">Visualizando desde <span id="date_from"></span> hasta <span id="date_to"></span></h3>
+	<div id="graphs">
+
+		<div class="graph-totals-values" class="chart-group">
+      <h4 class="graph-title">TOTALES</h4>
+      <div id="graph-total-users">
+        <h3 id="graph-total-users-value"></h3>
+        <p>Usuarios registrados</p>
+      </div>
+      <div id="graph-total-reports">
+        <h3 id="graph-total-reports-value"></h3>
+        <p>Reclamos online</p>
+      </div>
+    </div>
+
+    <div class="graph-reports-per-categories" class="chart-group">
+      <h4 class="graph-title">REPORTES POR CATEGORÍA</h4>
+      <div id="graph-reports-categories">
+      </div>
+      <div id="graph-reports-categories-legend">
+        <p>Categorías:</p>
+        <ul id="categories-list">
+        </ul>
+      </div>
+    </div>
+
+    <div class="graph-reports-by-state" class="chart-group">
+      <h4 id="graph-reports-by-state-title" class="graph-title">REPORTES POR ESTADO</h4>
+      <table id="graph-reports-by-state-table" class="graph-reports-by-state-table">
+      </table>
+    </div>
+
+    <div class="graph-reports-evolution" class="chart-group">
+      <h4 class="graph-title">EVOLUCIÓN DE RECLAMOS</h4>
+      <div id="graph-reports-evolution-chart">
+        <svg id="graph-reports-evolution-chart-visualisation" width="100%" height="250"></svg>
+      </div>
+      <ul id="categories-list-evolution">
+      </ul>
+    </div>
+
+    <div style="display: none;">
+  		<div id="graph-totals" style="height: 300px; width: 60%;" class="chart-group"></div>
+  		<div id="graph-total-cat" style="height: 400px; width: 100%;" class="chart-group"></div>
+  		<div id="graph-evolution" style="height: 400px; width: 100%;" class="chart-group"></div>
+  		<div id="chart-subcat">
+  			<select id="subcat-select"></select>
+  		</div>
+  		<div id="graph-subcat" style="height: 400px;"></div>
+    </div>
+
+    <div class="graph-reports-by-state" class="chart-group">
+      <h4 id="graph-average-answertime-title" class="graph-title">Tiempo de respuesta promedio</h4>
+      <div id="averageDays">
+      </div>
+      <table id="graph-average-answertime-table" class="graph-reports-by-state-table">
+      </table>
+    </div>
+
+    <div class="graph-average-answertime-by-category" class="chart-group">
+      <h4 class="graph-title">Tiempo de respuesta por categoría</h4>
+      <div id="graph-average-answertime-by-category-chart">
+      </div>
+      <div id="graph-average-answertime-by-category-chart-legend">
+        <ul id="ansertime-categories-list">
+        </ul>
+      </div>
+    </div>
+
+	</div>
+	<script>
+    $( document ).ready(function() {
+      getCategoriesFilter();
+      getBodiesFilter();
+    });
+	</script>
+</div>
+
+[% INCLUDE footer.html %]

@@ -1,0 +1,122 @@
+<div id="s-calles" class="s-calles" style="float:right;z-index:1">
+  [% IF all_areas.keys.first %]
+    <form role="form" class="form-inline">
+        <div class="form-group pull-left">
+            <input class="" placeholder="Calle" id="calle" onkeyup="searchLocationAjax(event, this)"/>
+            <input class="" placeholder="Esquina/numero" id="esquina" onkeyup="searchLocationAjax(event, this)"/>
+            <input type="hidden" id="main-street-code" />
+            <input type="hidden" id="second-street-code" />
+        </div>
+        <div class="btn btn-search" onclick="streetLocateSubmit()" >Buscar</div>
+    </form>
+    <script type="text/javascript" language="javascript" src="js/postcodes/areas_UY.js"></script>
+    <script>var area=[% all_areas.keys.first %];</script>
+  [% ELSE %]
+  <div id="s-calles-selects" class="form-group pull-left">
+    <select id="muniSelect" class="locate">
+      <option disabled selected>Eleg&iacute; tu departamento</option>
+      <option value="artigas" class="muni">Artigas</option>
+      <option value="canelones" class="muni">Canelones</option>
+     <option value="cerrolargo" class="muni">Cerro Largo</option>
+     <option value="colonia" class="muni">Colonia</option>
+     <option value="durazno" class="muni">Durazno</option>
+     <option value="flores" class="muni">Flores</option>
+     <option value="florida" class="muni">Florida</option>
+     <option value="lavalleja" class="muni">Lavalleja</option>
+     <option value="maldonado" class="muni">Maldonado</option>
+     <option value="montevideo" class="muni">Montevideo</option>
+     <option value="paysandu" class="muni">Paysandú</option>
+     <option value="rionegro" class="muni">Río Negro</option>
+     <option value="rivera" class="muni">Rivera</option>
+     <option value="rocha" class="muni">Rocha</option>
+     <option value="salto" class="muni">Salto</option>
+     <option value="sanjose" class="muni">San José</option>
+     <option value="soriano" class="muni">Soriano</option>
+     <option value="tacuarembo" class="muni">Tacuarembó</option>
+     <option value="treintaytres" class="muni">Treinta y Tres</option>
+    </select>
+  </div>
+  <script>
+    $('option.muni').click(function(){
+        $('#muniSelect').change();
+    });
+    $('#muniSelect').on('change', function(){
+        var muni = $("#muniSelect").val();
+        switch(muni) {
+        case 'artigas':
+            location.href = '/around?latitude=-30.6175546567863;longitude=-56.9593069932048&zoom=7&list=1';
+            break;
+	case 'canelones':
+            location.href = '/around?latitude=-34.5409844486189;longitude=-55.931282162881&zoom=7&list=1';
+            break;
+	case 'cerrolargo':
+            location.href = '/around?latitude=-32.4412210253825;longitude=-54.3513149481087&zoom=7&list=1';
+            break;
+	case 'colonia':
+            location.href = '/around?latitude=-34.129470624906;longitude=-57.6607768839169&zoom=7&list=1';
+            break;
+	case 'durazno':
+            location.href = '/around?latitude=-33.0232297288749;longitude=-56.0283918329857&zoom=7&list=1';
+            break;
+	case 'flores':
+            location.href = '/around?latitude=-33.573253038786;longitude=-56.8943897514538&zoom=7&list=1';
+            break;
+	case 'florida':
+            location.href = '/around?latitude=-33.7757068465279;longitude=-55.8595711462911&zoom=7&list=1';
+            break;
+	case 'lavalleja':
+            location.href = '/around?latitude=-33.9224103151635;longitude=-54.9763780755952&zoom=7&list=1';
+            break;
+	case 'maldonado':
+            location.href = '/around?latitude=-34.5596412460483;longitude=-54.8627448372998&zoom=7&list=1';
+            break;
+        case 'montevideo':
+            location.href = '/around?latitude=-34.818084350056;longitude=-56.2137454093961&zoom=7&list=1';
+            break;
+	case 'paysandu':
+            location.href = '/around?latitude=-32.0667986263044;longitude=-57.3365171485555&zoom=7&list=1';
+            break;
+	case 'rionegro':
+            location.href = '/around?latitude=-32.7677502892637;longitude=-57.4297015570497&zoom=7&list=1';
+            break;
+        case 'rivera':
+            location.href = '/around?latitude=-31.4818528477333;longitude=-55.243406972351&zoom=7&list=1';
+            break;
+	case 'rocha':
+            location.href = '/around?latitude=-33.9688360883101;longitude=-54.0213867214657&zoom=7&list=1';
+            break;
+	case 'salto':
+            location.href = '/around?latitude=-31.3275005296416;longitude=-57.0174973077399&zoom=7&list=1';
+            break;
+	case 'sanjose':
+            location.href = '/around?latitude=-34.3082122318833;longitude=-56.7259434062286&zoom=7&list=1';
+            break;
+	case 'soriano':
+            location.href = '/around?latitude=-33.510345473615;longitude=-57.749659872691&zoom=7&list=1';
+            break;
+	case 'tacuarembo':
+            location.href = '/around?latitude=-32.1082344276346;longitude=-55.7707638756838&zoom=7&list=1';
+            break;
+	case 'treintaytres':
+            location.href = '/around?latitude=-33.068545471729;longitude=-54.285611834231&zoom=7&list=1';
+            break;
+        default:
+            window.location.href = "https://vigilancia.ambiental.uy";
+        }
+    });
+  </script>
+  [% END %]
+</div>
+
+<!--lista CALLES-->
+<ul class="list-unstyled l-calles">
+</ul>
+<!--/lista CALLES-->
+<div style="width:100%; background-color: #3C8C40; height: 30px; top:100px; z-index:6000;position:fixed">
+<a href="mailto:dahiana166@gmail.com" class="menu-principal"><img src="/cobrands/va/images/correo.png"/></a>
+<a href="https://www.facebook.com/" target="_blank" class="menu-principal"><img src="/cobrands/va/images/fb.png" /></a>
+<a href="" class="menu-principal">AYUDA</a>
+<a href="" class="menu-principal">COMO FUNCIONA</a>
+<a href="" class="menu-principal">VER REPORTES</a>
+<a href="" class="menu-principal">REPORTAR</a>
+</div> 
