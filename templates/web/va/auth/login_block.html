@@ -66,7 +66,7 @@
       <div id="my-no-account" class="page-tabs">
         <div class="ir">
             <h2>Regístrate y se parte</h2>
-            <p>Crea una cuenta en PorMiBarrio y comienza a colaborar.</p>
+            <p>Crea una cuenta en Vigilancia Ambiental y comienza a colaborar.</p>
         </div>
         <div class="form-group">
             <input type="text" placeholder="Nombre y apellido" class="form-focus-trigger validName form-control [% IF field_errors.name %] error [% END %]" value="[% user.name | html %]" name="name" id="form_name" >
@@ -143,7 +143,10 @@
       $('.btn.btn-block.btn-green.btn-social.registrate').click();
       setTimeout(function () {
         $('#have-account').click();
-      }, 100);
+      }, 500);
     [% END %]
+    $('.btn.btn-block.btn-green.btn-social.registrate').click(function(e){
+	$('#have-account').click();
+    });
   });
 </script>
