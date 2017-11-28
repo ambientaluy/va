@@ -1,5 +1,21 @@
 [%# XXX The below type checking is assuming that a body ID can be used to look up a mapit type. %]
 <p>
+
+[% FOREACH x IN all_areas.keys %]        
+    [% IF all_areas.${x}.type == 'MUN' %]		
+		[% obj = all_areas.${x}.name %]
+	[% ELSIF all_areas.${x}.type == 'DEPTO' %]		
+		[% obj = all_areas.${x}.name %]
+	[% END %]
+[% END %]      
+
+[%
+    tprintf(
+        'La ubicación seleccionada se encuentra en <strong>%s</strong>.',
+        obj 
+    );
+%]
+
 [% IF bodies_to_list.0 != 2489 && bodies_to_list.0 != 2482 && all_areas.${bodies_to_list.0}.type == 'LBO' %]
 [%
     tprintf(
