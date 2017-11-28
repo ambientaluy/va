@@ -20,7 +20,7 @@ BASE_URL: 'http://vigilancia.ambiental.uy'
 
 # Email domain used for emails, and contact name/email for admin use.
 EMAIL_DOMAIN: 'gmail.com'
-CONTACT_EMAIL: 'uyambiental@gmail.com'
+CONTACT_EMAIL: 'uy.ambiental@gmail.com'
 CONTACT_NAME: 'Vigilancia Ambiental'
 # Address used for emails you don't expect a reply to (e.g. confirmation
 # emails); can be same as CONTACT_EMAIL above, of course, if you don't have a
@@ -60,8 +60,8 @@ GEO_CACHE: '../cache/'
 # everywhere (a URL needs to be given for non-web things, like sending of
 # reports, to function).
 # If using the Catalyst development server, set to
-#   MAPIT_URL: 'http://localhost:3000/fakemapit/'
-#   MAPIT_TYPES: [ 'ZZZ' ]
+#MAPIT_URL: 'http://localhost:3000/fakemapit/'
+#MAPIT_TYPES: [ 'ZZZ' ]
 # In the UK, you probably want, to cover all councils:
 #   MAPIT_URL: 'http://mapit.mysociety.org/'
 #   MAPIT_TYPES: [ 'DIS', 'LBO', 'MTD', 'UTA', 'CTY', 'COI', 'LGD' ]
