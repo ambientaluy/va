@@ -435,7 +435,7 @@ function geolocate(timeout, zoom, is_list ){
 	        location.href = '/around?latitude=' + latitude + ';longitude=' + longitude + '&zoom=' + zoom + list;
 	    },
 	    function(err) {
-	        $('#loader_throbber').append('<br/>No hemos podido geolocalizarlo.<br/>Por favor selecciona una municipalidad en el menú superior para comenzar.');
+	        $('#loader_throbber').append('<br/>No hemos podido geolocalizarlo.<br/>Por favor selecciona un departamento en el menú superior para comenzar.');
 					console.log('Entra a ERROR: '+window.location.hostname);
 
 					if ( window.location.hostname == 'rivera.pormibarrio.uy'){

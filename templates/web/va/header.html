@@ -168,7 +168,8 @@
         <div class="top-container">
 	
 	<div id="logo" style="float:left;z-index:1000;position:absolute;">
-		<img src="/cobrands/va/images/logoVA.jpg">
+		<a href="http://vigilancia.ambiental.uy/"><img class="escritorio" src="/cobrands/va/images/logoVA.jpg">
+		<img class="movil" src="/cobrands/va/images/logoVA-ch.jpg"></a>
 	</div>
 	   
             <!--BUSCAR CALLES-->
@@ -235,16 +236,19 @@
                  [% ELSE %]
                  <!--Vista sin login-->
 		 
-		 <div style="position:relative;">
+		 <div class="usuario">
 	
 			<div style="z-index:1">					
-				<svg width="285" height="45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink">
+				 <a href="http://vigilancia.ambiental.uy/auth"><svg width="285" height="45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink" class="escritorio">
 					<image xlink:href="/cobrands/va/images/curva-log-l.svg" x="0" y="0" height="45" width="285"/>
 				</svg>			
+				<svg width="20" height="20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink" class="movil user-login-movil">
+					<image xlink:href="/cobrands/va/images/curva-log-l-ch.svg" x="0" y="0" height="20" width="20"/>
+				</svg></a>	
 			</div>
 			
-			<div class="list-inline dropdown user-log-on" style="position:absolute;left:100px;top:0px;width:100%;z-index:10">                        				
-				<a class="green" href="/auth">Usuario: An&oacute;nimo </br>Inicia sesión ó Registrate</a>
+			<div class="list-inline dropdown user-log-on escritorio">                        				
+				<a class="green" href="/auth">Inicia sesión ó Registrate</a>
 			</div>
 		</div>
                 <!-- /Vista sin login-->
@@ -253,7 +257,14 @@
 		 
             </div>
             <!--.end info user-->
-	   
+	    <div class="barra-menu">
+		<a href="mailto:uy.ambiental@gmail.com" class="menu-principal"><img src="/cobrands/va/images/correo.png"/></a>
+		<a href="https://www.facebook.com/VigilanciaAmbiental-366616993791489/" target="_blank" class="menu-principal"><img src="/cobrands/va/images/fb.png" /></a>
+		<a href="http://vigilancia.ambiental.uy/faq" class="menu-principal">AYUDA</a>
+		<a  href="http://vigilancia.ambiental.uy/stats" class="menu-principal">ESTAD&Iacute;STICAS</a>
+		<a  href="javascript:void(0);" onClick="report_list(4000, 2)" class="menu-principal">VER REPORTES</a>
+		<a href="javascript:void(0);" onClick="report(4000, 4)" class="menu-principal">REPORTAR</a>
+	      </div> 
 	    
         </div>
         <!--.end top container-->

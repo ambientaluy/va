@@ -338,7 +338,7 @@ $(function(){
             $('#fms_pan_zoom').css({ top: '2.75em' });
         }
     } else {
-        $('#fms_pan_zoom').css({ top: '4.75em' });
+        $('#fms_pan_zoom').css({ top: '6em' });
     }
 
     // Set it up our way

@@ -145,7 +145,7 @@ $(function(){
             if (typeof fixmystreet !== 'undefined' && fixmystreet.page == 'around') {
                 // Remove full-screen-ness
                 $('#site-header').show();
-                $('#fms_pan_zoom').css({ top: '4.75em !important' });
+                $('#fms_pan_zoom').css({ top: '6em !important' });
                 $('.big-green-banner')
                     .removeClass('mobile-map-banner')
                     .prependTo('#side')
