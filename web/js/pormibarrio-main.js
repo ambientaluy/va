@@ -55,7 +55,7 @@ $('div.scrolled-88').slimScroll({
 
 $('div.scrolled-95').slimScroll({
 	position: 'right',
-	height: '95%',
+	height: '90%',
 	railVisible: true,
 	alwaysVisible: true,
 	railOpacity:1,

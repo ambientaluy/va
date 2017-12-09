@@ -250,7 +250,7 @@ body.twothirdswidthpage .content .sticky-sidebar aside{position:fixed;top:7em;le
 .full-width{margin:0 0 0em -1em;width:29em}
 input[type=text],input[type=password],input[type=email],textarea{
 	max-width:25em;
-	color: #fff;
+	color: #000;
 }
 div.form-error,p.form-error{display:block}input.form-error,textarea.form-error{-webkit-border-radius:0 0 0.25em 0.25em;-moz-border-radius:0 0 0.25em 0.25em;-ms-border-radius:0 0 0.25em 0.25em;-o-border-radius:0 0 0.25em 0.25em;border-radius:0 0 0.25em 0.25em}#report-a-problem-sidebar,.general-sidebar-notes{position:absolute;left:29em;width:15em;-webkit-box-shadow:rgba(0,0,0,0.6) 0px 0px 4px 1px;-moz-box-shadow:rgba(0,0,0,0.6) 0px 0px 4px 1px;box-shadow:rgba(0,0,0,0.6) 0px 0px 4px 1px}#report-a-problem-sidebar{top:5em}#report-a-problem-sidebar div{padding:1em;font-size:0.75em;background:#eeeeee}#report-a-problem-sidebar .sidebar-notes{background:#333333;color:#ffffff}.ie6 #report-a-problem-sidebar,.ie6 .general-sidebar-notes,.ie7 #report-a-problem-sidebar,.ie7 .general-sidebar-notes{left:28.5em;z-index:1}.no-js .general-sidebar-notes,.no-js #report-a-problem-sidebar{position:static;width:auto;-webkit-box-shadow:rgba(0,0,0,0) 0 0 0;-moz-box-shadow:rgba(0,0,0,0) 0 0 0;box-shadow:rgba(0,0,0,0) 0 0 0}.no-js .general-sidebar-notes .sidebar-tips,.no-js .general-sidebar-notes .sidebar-notes,.no-js #report-a-problem-sidebar .sidebar-tips,.no-js #report-a-problem-sidebar .sidebar-notes{font-size:1em}
 .general-sidebar-notes p{background:#eeeeee;font-size:0.75em;padding:0.75em;margin:0}

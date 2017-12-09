@@ -2,11 +2,13 @@
   [% IF all_areas.keys.first %]
       <div id="buscador" class="form-group pull-left">
 	<form role="form">    
-            <input class="" placeholder="Calle" id="calle" onkeyup="searchLocationAjax(event, this)"/>
+	<input class="" placeholder="Buscar ubicación" id="ubicacion" style=""/>
+	 
+	<!--<input class="" placeholder="Calle" id="calle" onkeyup="searchLocationAjax(event, this)"/>
             <input class="" placeholder="Esquina/numero" id="esquina" onkeyup="searchLocationAjax(event, this)"/>
             <input type="hidden" id="main-street-code" />
-            <input type="hidden" id="second-street-code" />
-	   <div class="btn btn-search" onclick="streetLocateSubmit()">Buscar</div>
+            <input type="hidden" id="second-street-code" />-->
+	   <div class="btn btn-search" onclick="streetLocateSubmit()"><img src="/cobrands/va/images/icon-search.png"></div>
 	</div>
     </form>
     <script type="text/javascript" language="javascript" src="js/postcodes/areas_UY.js"></script>
