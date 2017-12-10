@@ -6,11 +6,10 @@ dd { margin-left: 8em; }
 .error { color: red; }
 select { width: auto; }
 </style>
+	    <p><strong>[% loc('FixMyStreet admin:') %]</strong>
+	    [%- FOREACH link IN allowed_links %]
+	    <a href="[% c.uri_for( link ) %]">[% allowed_pages.$link.0 %]</a>
+	    [% IF NOT loop.last %]|[% END %]
+	    [% END %]</p>
 
-    <p><strong>[% loc('FixMyStreet admin:') %]</strong>
-    [%- FOREACH link IN allowed_links %]
-    <a href="[% c.uri_for( link ) %]">[% allowed_pages.$link.0 %]</a>
-    [% IF NOT loop.last %]|[% END %]
-    [% END %]</p>
-
-    <h1>[% title %]</h1>
+	    <h1>[% title %]</h1>

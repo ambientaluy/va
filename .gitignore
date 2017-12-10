@@ -32,6 +32,7 @@ FixMyBarangay.po
 /local
 /commonlib
 /web/upload/*
+/conf/general.yml
 
 /web/cobrands/fixmystreet/compass_app_log.txt
 blog/web/wp

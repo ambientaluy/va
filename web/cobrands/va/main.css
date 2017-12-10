@@ -95,7 +95,7 @@ body.intro .container{
  }
 
 .content-horizontal{
-	padding: 155px 30px 20px 0px;
+	padding: 155px 0px 20px 0px;
 }
 
 body.mappage .content-horizontal{
@@ -136,8 +136,39 @@ div#fms_pan_zoom.pan-horizontal div{
 	text-align:justify;
 	}
 	
+div.privacidad a {
+	color:#3C8C40;
+	}
+	
 #faq-list {
 	margin-top:25px;
+	}
+	
+div.content-padding {
+	padding-left:30px;
+	}
+	
+	.menu-principal {
+	float:right;
+	padding: 5px 20px;
+	color:#fff;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size:14px;	
+	font-weight: 500;
+	outline: none;
+	}
+
+.menu-principal:hover { 
+	color:#fff; 
+	background-color:#DBA914; 
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	padding: 5px 20px;
+	}
+	
+	.menu-principal:active { 
+	color:#000;
 	}
 
 /*PAGE INTRO--------------------------------------*/
@@ -161,8 +192,8 @@ div.c-intro{
 	margin:0 auto;
 	text-align:center;
 	color:#fff;
-	padding-top:6rem;
-	/*padding-left:15px;
+	/*padding-top:6rem;
+	padding-left:15px;
 	padding-right:15px*/
 }
 
@@ -207,7 +238,7 @@ div.c-buttons-intro{
   font-size:0.875em;
   color:#fff;
   margin-top:60px;
-  padding-bottom:20px
+  padding-bottom:20px;
 }
 
 a.know-more{
@@ -363,7 +394,7 @@ div.s-calles input:focus{
 }
 
 .btn-search{
-	background-color:rgba(88,190,247,0.30);
+	background-color:rgba(60,140,64,0.30);
 	color:#ccc;
 	padding:4px 15px!important;
 }
@@ -476,6 +507,10 @@ div.user-log-on{
 	width:100%;
 	z-index:10;	
 }
+
+div.list-inline, .dropdown, .user-log-on, .escritorio {
+	top:12px;
+	}
 
 div.user-log-on img.img-circle{
 	width:30px;
@@ -851,7 +886,7 @@ img.r-icon{
 	width:60px;
 	height:60px;
 	float:left;
-	margin-right:19px
+	margin-right:18px
 }
 
 div.it-r-info{
@@ -2051,7 +2086,7 @@ p.no-reportes{
 
 .page-tabs{
 	height: 40%;
-	margin-top:10px;
+	/*margin-top:10px;*/
 }
 
 .profile-back{
@@ -2391,7 +2426,7 @@ div.content-vertical{
 
 @media (max-width: 860px) {
 	div.top-container {
-		height: 55px;
+		height: 80px;
 	}
 
 
@@ -2691,11 +2726,12 @@ div.content-vertical{
 	}
 
 	a.menu-principal {
-		padding: 5px 8px;
+		padding: 5px;
+		font-size:0.9em;
 	}
 	
 	a.menu-principal:hover { 
-		padding: 5px 8px;
+		padding: 5px;
 	}
 	
 	.escritorio{
@@ -2715,9 +2751,9 @@ div.content-vertical{
 		margin-top: 40px;
 	}
 	/* profile */
-	div.sub {
-		
-		height: 76%;
+	
+	div.sub {		
+		height: 80%;
 		margin-bottom: 20px;
 	}
 
@@ -2733,6 +2769,7 @@ div.content-vertical{
 	div.it-r div.it-r-info {
 		width: 65%;
 	}
+	
 	#stats-menu{
 		display: none;
 	}
@@ -2740,7 +2777,48 @@ div.content-vertical{
 	.locate {
 		width: 75%;
 		margin-left:85px;
+	}
+
+	div#buscador{
+	margin-top: 10px;
+	margin-bottom:10px;
+	margin-left:85px;
+	}
+	
+	#faq-list{
+	margin-top:0px;	
+	}
+	
+	#chart-options{
+		width:100%!important;
+	}
+	
+	#chart-container{
+		width:100%!important;
+		float:left!important;
+		padding-left:5px!important;
+		margin-top: 0px!important;
+	}
+	
+	#graphs{
+		margin-left:0px!important;
+	}
+		
+		
+	.graph-reports-per-categories{
+		width:100%!important;
 		}
+		
+	.graph-average-answertime-by-category{
+		width:100%!important;
+		}
+		
+
+	.ui-datepicker{
+	margin-top:100px;
+	left:10px;
+	}
+	
 
 }
 
@@ -2755,6 +2833,7 @@ div.content-vertical{
 	margin-top: 6px;
 	border-radius: 2px;
 }
+
 #stats-menu svg{
 	width: 30px;
 	height: 30px;
@@ -2767,7 +2846,7 @@ div#stats-menu:hover{
 #graphs{
 	margin-top: 20px;
 	margin-left: 40px;
-	margin-right: 40px;
+	/*margin-right: 40px;*/
 }
 #graph-subcat{
 	float: left;
@@ -2801,7 +2880,7 @@ div#stats-menu:hover{
 	
 	
 #chart-options{
-	width: 380px;
+	width: 25%;
 	padding-bottom: 10px;
 	border-bottom: #ebebeb solid 1px;
 	float: left;
@@ -2853,9 +2932,9 @@ div#stats-menu:hover{
 }
 
 #chart-container{
-	width: -webkit-calc(100% - 410px);
-	width:    -moz-calc(100% - 410px);
-	width:         calc(100% - 410px);
+	/*width: -webkit-calc(100% - 410px);
+	width:    -moz-calc(100% - 410px);*/
+	width: 70%;
 	float: right;
 	background-color: #efefef;
 	border-left: solid #e6e6e6 1px;
@@ -2939,7 +3018,7 @@ input#getcounts{
 
 .graph-totals-values{
 	height: 265px;
-	width: 320px;
+	width: 100%;
 	float: left;
 	background-color: #FFFFFF;
 	border-radius: 10px 10px 10px 10px;
@@ -2950,7 +3029,7 @@ input#getcounts{
 .graph-reports-by-state{
 	margin-top: 15px;
   height: 210pt;
-  width: 240pt;
+  width: 100%;
 	float: left;
 	background-color: #FFFFFF;
 	border-radius: 10px 10px 10px 10px;
@@ -3423,31 +3502,8 @@ tr.noDeadLine{
 	margin: 4px;
 }
 
-
 .slimScrollBar{
 	background-color:#fff;	
 }
 
-.menu-principal {
-	float:right;
-	padding: 5px 20px;
-	color:#fff;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size:14px;	
-	font-weight: 500;
-	outline: none;
-	}
 
-
-.menu-principal:hover { 
-	color:#fff; 
-	background-color:#DBA914; 
-	text-decoration: none;
-	display: inline-block;
-	text-align: center;
-	padding: 5px 20px;
-	}
-	
-	.menu-principal:active { 
-	color:#000;
-	}

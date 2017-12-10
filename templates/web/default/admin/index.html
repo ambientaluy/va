@@ -1,5 +1,5 @@
 [% INCLUDE 'admin/header.html' title=loc('Summary') -%]
-
+<div class="content-padding">
 [% IF total_bodies == 0 %]
   <p class="fms-admin-info">
     [% loc('Currently no bodies have been created.') %]
@@ -48,3 +48,4 @@
 [% END %]
 
 [% INCLUDE 'admin/footer.html' %]
+</div>
