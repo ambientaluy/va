@@ -2,7 +2,7 @@ Subject: Reestablecer contraseña de tu cuenta en Vigilancia Ambiental
 
 Para reestablecer la contraseña debés seguir los siguientes pasos:
 
-1. Has click en el siguiente enlace: [% c.uri_for_action( 'auth/token', token ) %]
+1. Has clic en el siguiente enlace: [% c.uri_for_action( 'auth/token', token ) %]
 
 2. Escogé la opción Editar.
 

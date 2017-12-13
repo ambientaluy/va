@@ -1,6 +1,6 @@
 Subject: Tu cuenta en Vigilancia Ambiental
 
-Por favor hacé click en el enlace para confirmar tu dirección de correo.
+Por favor hacé clic en el enlace para confirmar tu dirección de correo.
 Con eso podés ver y gestionar tus reportes más fácilmente.
 
 [% c.uri_for_action( 'auth/token', token ) %]
