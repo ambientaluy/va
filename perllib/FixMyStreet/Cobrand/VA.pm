@@ -159,7 +159,7 @@ sub users_can_hide { 1 }
 
 sub language_override { 'es' }
 
-sub site_title { return 'PorMiBarrio'; }
+sub site_title { return 'VigilanciaAmbiental'; }
 
 sub on_map_default_max_pin_age {
     return '6 month';
