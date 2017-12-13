@@ -39,6 +39,20 @@ $('div.scrolled').slimScroll({
 	opacity: 1,
 });
 
+$('div.scrolled-68').slimScroll({
+	position: 'right',
+	height: '68%',
+	railVisible: true,
+	alwaysVisible: true,
+	railOpacity:1,
+	distance:10,
+	railColor: '',
+	color: '#ACACAC',
+	size:'9px',
+	borderRadius:4,
+	opacity: 1,
+});
+
 $('div.scrolled-88').slimScroll({
 	position: 'right',
 	height: '88%',
@@ -550,7 +564,7 @@ $(window).resize(function() {
 		$('div.como-funciona a').click(function(){
 			$('#faq-list').hide();
 			$('.first-navigation').hide();
-			$('.top-container').hide();
+			//$('.top-container').hide();
 		})
 		$('div.c-respuestas span').click(function(){
 			$('#faq-list').show();
@@ -582,7 +596,7 @@ if ( $(window).width() < 780){
 	$('div.como-funciona a').click(function(){
 		$('#faq-list').hide();
 		$('.first-navigation').hide();
-		$('.top-container').hide();
+		//$('.top-container').hide();
 	})
 	$('div.c-respuestas span').click(function(){
 		$('#faq-list').show();

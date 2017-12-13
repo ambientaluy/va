@@ -1,4 +1,4 @@
-Subject: Nuevos problemas reportados en <?=$values['area_name']?> desde Por Mi Barrio
+Subject: Nuevos problemas reportados en <?=$values['area_name']?> desde Vigilancia Ambiental 
 
 Éstos nuevos problemas fueron reportados a <?=$values['area_name']?>:
 

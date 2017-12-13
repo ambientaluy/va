@@ -1,8 +1,8 @@
-Subject: Confirmá tu reporte en Por Mi Barrio
+Subject: Confirmá tu reporte en Vigilancia Ambiental
 
 Hola [% report.name || report.email %],
 
-Para confirmar el reporte que acabás de subir a Por Mi Barrio
+Para confirmar el reporte que acabás de subir a Vigilancia Ambiental
 mediante [% report.service %], y para revisar o agregar detalles,
 por favor ingresá en:
 

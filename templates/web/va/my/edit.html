@@ -48,7 +48,7 @@ UNLESS not_page %]
 			            [% IF upload_fileid %]
 		   					<img id="user-image" class="img-circle" src="/photo/[% upload_fileid %].temp.jpeg" alt="">
 		   				[% ELSE %]
-		   					<img id="user-image" class="img-circle" alt="" src="/cobrands/pormibarrio/images/no-profile-picture.jpg">
+		   					<img id="user-image" class="img-circle" alt="" src="/cobrands/va/images/no-profile-picture.jpg">
 		   				</div>
 		   				<div class="edit-img">
 			            	<button type="button" class="btn btn-small btn-comentar btn-reemplazar upload-img">Añadir foto</button>
@@ -129,6 +129,7 @@ UNLESS not_page %]
 				        reader.onload = function (e) {
 				            $('#user-image').attr('src', e.target.result);
 				        }
+					
 				        reader.readAsDataURL(this.files[0]);
 				    }
 				});

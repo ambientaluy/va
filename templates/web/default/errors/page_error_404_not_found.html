@@ -1,12 +1,12 @@
 [% INCLUDE 'header.html', title => loc('Page Not Found') %]
 
-<h1>[%loc('Page Not Found') %]</h1>
+<h1 class="error404">[%loc('Page Not Found') %]</h1>
 
 [% IF error_msg %]
     <p class="error">[% error_msg | html %]</p>
 [% END %]
 
-<p>
+<p style="padding-left:30px">
     [%
         tprintf(
             loc("The requested URL '%s' was not found on this server"),

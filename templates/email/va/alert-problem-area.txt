@@ -1,4 +1,4 @@
-Subject: Nuevos reportes en <?=$values['area_name']?> desde Por Mi Barrio
+Subject: Nuevos reportes en <?=$values['area_name']?> desde Vigilancia Ambiental
 
 Los siguientes nuevos reportes se subieron dentro de
 <?=$values['area_name']?>:

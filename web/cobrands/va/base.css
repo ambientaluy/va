@@ -88,6 +88,10 @@ img{height:auto;max-width:100%}
 .ie7 select,.ie7 input,.ie7 textarea{max-width:none}
 select{width:100%}
 a:hover,a:active{text-decoration:underline;color: blue}
+
+li.siguiendo-comentario a:visited{text-decoration:underline;color: #3C8C40}
+li.siguiendo-comentario a:hover,a:active{text-decoration:underline;color: #0E559C}
+
 .small-print{margin-bottom:1.2307em;color:#666666}
 .meta{color:#555555;font-style:italic;margin-bottom:0px}
 .meta-2{font-family:Helmet,Freesans,sans-serif;color:#666666;font-style:italic;font-size:0.75em}

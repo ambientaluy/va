@@ -116,7 +116,7 @@ div#fms_pan_zoom.pan-horizontal div{
 }
 
 .form-page {
-	padding: 30px 40px;
+	padding: 0px 40px;
 }
 
 #form_sign_in input.error, #form_sign_in input.error:focus,
@@ -126,19 +126,23 @@ div#fms_pan_zoom.pan-horizontal div{
     color: #758A9D;
 }
 
-#form_sign_in .form-group {
+/*#form_sign_in .form-group {
 	border-bottom: 1px solid #EBEBEB;
-}
+}*/
 
 
 .privacidad {
 	padding: 10px 100px; 
-	text-align:justify;
 	}
 	
 div.privacidad a {
 	color:#3C8C40;
 	}
+	
+	
+	.sticky-sidebar{
+	;
+		}
 	
 #faq-list {
 	margin-top:25px;
@@ -167,10 +171,15 @@ div.content-padding {
 	padding: 5px 20px;
 	}
 	
-	.menu-principal:active { 
+.menu-principal:active { 
 	color:#000;
 	}
 
+a.menu-principal img{
+		vertical-align:top; 
+		padding-top:2px;
+	}
+		
 /*PAGE INTRO--------------------------------------*/
 
 html {
@@ -357,10 +366,33 @@ div.s-calles .pull-left{
 div#buscador{
 	margin-top: 20px;
 	margin-bottom:25px;
+	color:#fff;
 }
 
+input#ubicacion::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #aaa;
+  font-style:normal;
+}
 
+input#email::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #aaa;
+  font-style:normal;
+}
 
+input[name="identity_document"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #aaa;
+  font-style:normal;
+}
+
+input[name="phone"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #aaa;
+  font-style:normal;
+}
+
+input[name="password"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #aaa;
+  font-style:normal;
+}
 
 div.s-calles .pull-left input{
 	width: 40%;
@@ -369,6 +401,7 @@ div.s-calles .pull-left input{
 	margin-bottom: 0;
 	border-radius: 0;
 	padding-left: 15px;
+	color:#fff;
 }
 
 div.s-calles .pull-left{
@@ -391,7 +424,7 @@ div.s-calles .pull-right{
 
 div.s-calles input:focus{
 	/*background: url(images/icon-search.png) 25px 18px no-repeat;*/
-}
+	}
 
 .btn-search{
 	background-color:rgba(60,140,64,0.30);
@@ -499,7 +532,7 @@ div.usuario{
 div.user-log-on{
 	margin:0 0 0 0;
 	/*background-color:#0E559C;*/
-	padding-left:15px;
+	padding-left:10px;
 	padding-right:15px;
 	position:absolute;
 	left:55px;
@@ -509,14 +542,13 @@ div.user-log-on{
 }
 
 div.list-inline, .dropdown, .user-log-on, .escritorio {
-	top:12px;
+	top:9px;
 	}
 
 div.user-log-on img.img-circle{
 	width:30px;
 	height:auto;
-	margin-right:20px;
-	
+	margin-right:20px;	
 }
 
 a.user-name{
@@ -535,7 +567,7 @@ a.user-name:hover img.img-circle{
 
 .dropdown-menu{
 	box-shadow:none;
-	background-color:rgba(19,30,41,0.96);
+	background-color:rgba(14,85,156,0.96);
 	border:none;
 	right:-20px;
 	top:137%;
@@ -549,7 +581,7 @@ a.user-name:hover img.img-circle{
 
 .dropdown-menu>li>a{
 	text-transform:uppercase;
-	color:#758a9d;
+	color:#ccc;
 	padding:12px 20px 12px 17px;
 	font-weight:600;
 	font-size:0.875em;
@@ -557,7 +589,7 @@ a.user-name:hover img.img-circle{
 }
 
 .dropdown-menu>li>a:hover{
-	background-color:#2a3e51;
+	background-color:#3C8C40;
 	color:#fff;
 	border-left:#495f73 solid 3px;
 }
@@ -1025,7 +1057,7 @@ a.btn-close-report{
 }
 
 a.btn-close-report:hover{
-	background:rgba(0,0,0,0.5);
+	background:rgb(20,63,30);
 	text-decoration:none
 }
 
@@ -1087,7 +1119,7 @@ div.intro-report p{
 }
 
 a.btn-close-report {
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3);
+    background: none repeat scroll 0 0 rgb(14,85,156);
     color: #fff;
     font-size: 0.875em;
     font-weight: 600;
@@ -1277,7 +1309,7 @@ div.user-info form textarea{
 
 div.user-info div.checkbox label,
 div.edit-profile div.checkbox label{
-    color: #7d7d7d;
+    color: #999;
     display: inline;
     font-size: 1em;
 }
@@ -1286,7 +1318,7 @@ div.user-comment .btn-disabled{
 	background-color:#58bef7;
 }
 
-div.user-info textarea::-webkit-input-placeholder { color: #7d7d7d; font-style:italic}
+div.user-info textarea::-webkit-input-placeholder { color: #fff; font-style:italic}
 
 div.user-info h4{
 	font-size:1.375em;
@@ -1588,7 +1620,7 @@ div.c-form-report div.ir{
 	line-height: 1.42857143;
 	margin-bottom:28px;
 	color:#fff;
-	font-size:1em;
+	font-size:1.1em;
 	height:39px;
 	background:rgba(30,46,61,0.2);
 }
@@ -1638,9 +1670,9 @@ div.drag span{
 
 .upload-img {
 	background: url(images/icon-camera.png) no-repeat left 2px;
-	color: #fff;
+	color: #999;
 	font-size: 15px;
-	padding: 0 0 5px 27px;
+	padding: 0 0 25px 35px;
 	border: none;
 }
 
@@ -1660,6 +1692,28 @@ p.error-m {
     font-size: 0.875em;
     margin: -7px 0px 10px 15px;
     color: #FC4349 !important;
+}
+
+h1.error404 {
+padding-left:30px!important;	
+}
+
+
+h1.logout {
+padding-left:30px!important;	
+}
+
+p.logout {
+padding-left:30px!important;	
+}
+
+p.envio_correo{
+padding-left:30px!important;	
+}
+
+
+h1.envio_correo {
+padding-left:30px!important;	
 }
 
 /*BUTTONS----------------------------------------------------------*/
@@ -1853,12 +1907,15 @@ div.checkbox a{
 	background:none;
 	padding:0!important;
 	text-transform:none!important;
-	color:#58bef7!important
+	color:#143F1E!important
 }
 
 div.checkbox a:hover{
-	color:#65bdff!important;
+	color:#0E559C!important;
+	text-decoration:none;
 }
+
+
 
 /*TOOLTIPS y PINS*/
 
@@ -1964,9 +2021,7 @@ span.name{
 
 div.user-profile{
 	z-index:11;
-	margin-top:10px;
-	margin-left:-30px;
-	}
+}
 
 div.profile{
 	padding-top:20px;
@@ -2000,12 +2055,14 @@ div.profile h2{
 	width:100%;
 	}
 
+
 div.img-profile{
 	width:120px;
-	height:120px;
+	height:120px;	
 	clear:both;
 	margin:0 auto;
 }
+
 
 #change-pass-submit{
 	font-size: 0.8em;
@@ -2059,7 +2116,7 @@ buttton#no-account{
 }
 
 .btn-filtro span{
-	color:#7d7d7d;
+	color:#ccc;
 	text-transform:none;
 	font-weight:400;
 }
@@ -2260,7 +2317,7 @@ div.c-respuestas span{
 .content-vertical div.c-respuestas span{
 	cursor: pointer;
 	display: block;
-	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3);
+	background: none repeat scroll 0 0 rgb(14,85,156);
 	color: #fff;
 	font-size: 0.875em;
 	font-weight: 600;
@@ -2269,6 +2326,10 @@ div.c-respuestas span{
 	right: 30px;
 	text-transform: uppercase;
 	top: 20px;
+}
+
+.content-vertical div.c-respuestas span:hover{
+	background: none repeat scroll 0 0 rgb(60,140,64);
 }
 
 div.respuesta{
@@ -2290,6 +2351,14 @@ div.respuesta h2{
 }
 
 div.respuesta p{
+	font-size:1.125em;
+	color:#7d7d7d;
+	line-height:28px;
+	margin-top:30px;
+}
+
+
+ol{
 	font-size:1.125em;
 	color:#7d7d7d;
 	line-height:28px;
@@ -2397,7 +2466,7 @@ a.navbar-brand, li.reportar-small {
 /*MEDIAQUERIES------------------------------------------------------------*/
 
 div.content-vertical{
-	font-size: 12px;
+	font-size: 0.9em;
 }
 
 @media (max-width: 967px) {
@@ -2447,7 +2516,7 @@ div.content-vertical{
 	}
 
 	.btn-search {
-		margin-top: 13px;
+		/*margin-top: 13px;*/
 	}
 
 	ul.l-calles {
@@ -2663,7 +2732,7 @@ div.content-vertical{
 	}
 		
 	.content-vertical{
-		margin-top: 130px;
+		margin-top: 110px;
 	}
 	
 	ul.l-calles{
@@ -2732,6 +2801,7 @@ div.content-vertical{
 	
 	a.menu-principal:hover { 
 		padding: 5px;
+		cursor:pointer;
 	}
 	
 	.escritorio{
@@ -2789,6 +2859,7 @@ div.content-vertical{
 	margin-top:0px;	
 	}
 	
+
 	#chart-options{
 		width:100%!important;
 	}
@@ -2807,18 +2878,66 @@ div.content-vertical{
 		
 	.graph-reports-per-categories{
 		width:100%!important;
+		float:right;
 		}
 		
 	.graph-average-answertime-by-category{
 		width:100%!important;
+		float:right;
 		}
 		
 
 	.ui-datepicker{
-	margin-top:100px;
-	left:10px;
+		margin-top:100px;
+		left:10px;
 	}
 	
+	
+	.privacidad {
+		padding: 10px; 
+	}
+	
+	
+	.sticky-sidebar{
+		padding: 10px; 
+		}
+		
+	div#info-user img.img-circle{
+	width:30px;
+	height:30px;
+	margin-right:10px;
+	margin-top:10px;
+}
+
+
+ul.dropdown-menu {
+	margin-right:5px;
+	margin-top:10px;
+	}
+
+	div.user-log-on {
+	margin:0 0 0 0;
+	top:0px;
+	width:100%;
+	z-index:10;	
+	position:relative;
+	/*left:127px;*/
+	left:0px;
+	padding-right:0px;
+}
+
+	div.img-profile img.img-circle{
+	/*width:120px;
+	height:120px;*/
+	clear:both;
+	margin:0 auto;
+	}
+	
+
+.content-vertical div.respuesta{
+	padding: 60px 20px 0;
+}
+
 
 }
 
@@ -2976,7 +3095,7 @@ i {
 
 #messages{
 	width: 80%;
-	margin: 20px auto;
+	margin: 30px auto;
 	text-align: justify;
 	font-size: 0.95em;
 	color: #143F1E;
@@ -3073,7 +3192,7 @@ input#getcounts{
 	height: 210pt;
 	width: -webkit-calc(100% - 335px);
 	width: calc(100% - 250pt);
-	float: right;
+	float: left;
 	background-color: #FFFFFF;
 	border-radius: 10px 10px 10px 10px;
 	-moz-border-radius: 10px 10px 10px 10px;
@@ -3133,7 +3252,7 @@ input#getcounts{
 	width: -webkit-calc(100% - 335px);
 	width:    -moz-calc(100% - 335px);
 	width:         calc(100% - 335px);
-	float: right;
+	float: left;
 	background-color: #FFFFFF;
 	border-radius: 10px 10px 10px 10px;
 	-moz-border-radius: 10px 10px 10px 10px;
