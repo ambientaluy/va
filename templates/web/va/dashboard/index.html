@@ -48,7 +48,7 @@
 	    [%
 	    rows = {
 	        '0' => [ "total", "Total de reportes recibidos" ]
-	        '1' => [ "fixed - council", "Reportes marcados como 'Arreglado' por la Municipalidad" ]
+	        '1' => [ "fixed - council", "Reportes marcados como 'Arreglado' por el organismo" ]
 	        '2' => [ "fixed_user", "Reportes marcados como 'Arreglado' por los usuarios" ]
 	    };
 	    FOR row IN rows %]
@@ -100,7 +100,7 @@
 	    </tr>
 
 	    <tr id="avg_fixed">
-	        <th scope="row">Promedio de tiempo que tarda la Municipalidad para marcar como "Arreglado" un reporte</th>
+	        <th scope="row">Promedio de tiempo que tarda el organismo para marcar como "Arreglado" un reporte</th>
 	        <td>[% problems.wtd.time_to_fix %]</td>
 	        <td>[% problems.week.time_to_fix %]</td>
 	        <td>[% problems.weeks.time_to_fix %]</td>
@@ -108,7 +108,7 @@
 	    </tr>
 
 	    <tr id="avg_marked">
-	        <th scope="row">Promedio de tiempo que tarda la Municipalidad para marcar el reporte en un Estado de Respuesta (no incluye la opción de "Arreglado")</th>
+	        <th scope="row">Promedio de tiempo que tarda el organismo para marcar el reporte en un Estado de Respuesta (no incluye la opción de "Arreglado")</th>
 	        <td>[% problems.wtd.time_to_mark %]</td>
 	        <td>[% problems.week.time_to_mark %]</td>
 	        <td>[% problems.weeks.time_to_mark %]</td>

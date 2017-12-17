@@ -112,7 +112,7 @@ sub index : Path : Args(0) {
     $c->stash->{category} = $c->req->param('category');
 
     my %where = (
-        bodies_str => $body->id, # XXX Does this break in a two tier council? Restriction needs looking at...
+        #bodies_str => $body->id, # XXX Does this break in a two tier council? Restriction needs looking at... FIXME: comentado porque no funciona para catgorias de multiples organismos
         'problem.state' => [ FixMyStreet::DB::Result::Problem->visible_states() ],
     );
     $where{areas} = { 'like', '%,' . $c->stash->{ward} . ',%' }
