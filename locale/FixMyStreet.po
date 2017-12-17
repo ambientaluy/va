@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: matthew@mysociety.org\n"
-"POT-Creation-Date: 2017-11-12 10:56-0300\n"
+"POT-Creation-Date: 2017-12-14 14:05-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <team@fixmystreet.com>\n"
@@ -25,7 +25,7 @@ msgstr ""
 msgid " and <strong>we will now send it to the council</strong>"
 msgstr ""
 
-#: templates/web/default/report/new/councils_text_all.html:11 templates/web/default/report/new/councils_text_all.html:18 templates/web/default/report/new/councils_text_all.html:4 templates/web/default/report/new/councils_text_none.html:11 templates/web/default/report/new/councils_text_none.html:14 templates/web/default/report/new/councils_text_some.html:20 templates/web/default/report/new/councils_text_some.html:23 templates/web/default/report/new/councils_text_some.html:5 templates/web/emptyhomes/report/new/councils_text_all.html:2
+#: templates/web/default/report/new/councils_text_all.html:20 templates/web/default/report/new/councils_text_all.html:27 templates/web/default/report/new/councils_text_all.html:34 templates/web/default/report/new/councils_text_none.html:11 templates/web/default/report/new/councils_text_none.html:14 templates/web/default/report/new/councils_text_some.html:20 templates/web/default/report/new/councils_text_some.html:23 templates/web/default/report/new/councils_text_some.html:5 templates/web/emptyhomes/report/new/councils_text_all.html:2
 msgid " or "
 msgstr ""
 
@@ -343,15 +343,15 @@ msgstr ""
 msgid "All the information you provide here will be sent to"
 msgstr ""
 
-#: templates/web/default/report/new/councils_text_all.html:11 templates/web/default/report/new/councils_text_all.html:13
+#: templates/web/default/report/new/councils_text_all.html:27 templates/web/default/report/new/councils_text_all.html:29
 msgid "All the information you provide here will be sent to <strong>%s</strong> or <strong>Roads Service</strong>."
 msgstr ""
 
-#: templates/web/default/report/new/councils_text_all.html:4 templates/web/default/report/new/councils_text_all.html:6
+#: templates/web/default/report/new/councils_text_all.html:20 templates/web/default/report/new/councils_text_all.html:22
 msgid "All the information you provide here will be sent to <strong>%s</strong> or a relevant local body such as <strong>TfL</strong>, via the London Report-It system."
 msgstr ""
 
-#: templates/web/bromley/report/new/fill_in_details_form.html:4 templates/web/bromley/report/new/fill_in_details_form.html:6 templates/web/default/report/new/councils_text_all.html:18 templates/web/default/report/new/councils_text_all.html:20 templates/web/default/report/new/fill_in_details_form.html:11 templates/web/default/report/new/fill_in_details_form.html:13 templates/web/emptyhomes/report/new/councils_text_all.html:2 templates/web/emptyhomes/report/new/councils_text_all.html:4 templates/web/emptyhomes/report/new/fill_in_details_form.html:11 templates/web/emptyhomes/report/new/fill_in_details_form.html:13 templates/web/fixmystreet/report/new/fill_in_details_form.html:6 templates/web/fixmystreet/report/new/fill_in_details_form.html:8 templates/web/pormibarrio/report/new/fill_in_details_form.html:16 templates/web/pormibarrio/report/new/fill_in_details_form.html:18 templates/web/pormibarriocr/report/new/fill_in_details_form.html:16 templates/web/pormibarriocr/report/new/fill_in_details_form.html:18 templates/web/va/report/new/fill_in_details_form.html:16 templates/web/va/report/new/fill_in_details_form.html:18
+#: templates/web/bromley/report/new/fill_in_details_form.html:4 templates/web/bromley/report/new/fill_in_details_form.html:6 templates/web/default/report/new/councils_text_all.html:34 templates/web/default/report/new/councils_text_all.html:36 templates/web/default/report/new/fill_in_details_form.html:11 templates/web/default/report/new/fill_in_details_form.html:13 templates/web/emptyhomes/report/new/councils_text_all.html:2 templates/web/emptyhomes/report/new/councils_text_all.html:4 templates/web/emptyhomes/report/new/fill_in_details_form.html:11 templates/web/emptyhomes/report/new/fill_in_details_form.html:13 templates/web/fixmystreet/report/new/fill_in_details_form.html:6 templates/web/fixmystreet/report/new/fill_in_details_form.html:8 templates/web/pormibarrio/report/new/fill_in_details_form.html:16 templates/web/pormibarrio/report/new/fill_in_details_form.html:18 templates/web/pormibarriocr/report/new/fill_in_details_form.html:16 templates/web/pormibarriocr/report/new/fill_in_details_form.html:18 templates/web/va/report/new/fill_in_details_form.html:16 templates/web/va/report/new/fill_in_details_form.html:18
 msgid "All the information you provide here will be sent to <strong>%s</strong>."
 msgstr ""
 
@@ -969,7 +969,7 @@ msgstr ""
 msgid "FixMyStreet"
 msgstr ""
 
-#: templates/web/default/admin/header.html:10
+#: templates/web/default/admin/header.html:9
 msgid "FixMyStreet admin:"
 msgstr ""
 
@@ -1050,7 +1050,7 @@ msgstr ""
 msgid "For council(s):"
 msgstr ""
 
-#: templates/web/pormibarrio/auth/social_signup.html:28 templates/web/va/auth/social_signup.html:28
+#: templates/web/pormibarrio/auth/social_signup.html:28 templates/web/va/auth/social_signup.html:29
 msgid "For example: 1.234.567-8"
 msgstr ""
 
@@ -1874,7 +1874,7 @@ msgstr ""
 msgid "Please choose an incident category"
 msgstr ""
 
-#: templates/web/pormibarrio/auth/social_signup.html:7 templates/web/va/auth/social_signup.html:7
+#: templates/web/pormibarrio/auth/social_signup.html:7 templates/web/va/auth/social_signup.html:8
 msgid "Please confirm your personal information"
 msgstr ""
 
@@ -2534,7 +2534,7 @@ msgstr ""
 msgid "Show pins"
 msgstr ""
 
-#: templates/web/default/auth/general.html:3 templates/web/default/auth/general.html:49 templates/web/fixmybarangay/header.html:70 templates/web/fixmystreet/auth/general.html:3 templates/web/fixmystreet/auth/general.html:42 templates/web/fixmystreet/auth/general.html:62 templates/web/fixmystreet/header.html:64 templates/web/oxfordshire/header.html:115 templates/web/pormibarrio/auth/social_signup.html:43 templates/web/pormibarrio/auth/social_signup.html:6 templates/web/pormibarriocr/auth/social_signup.html:39 templates/web/pormibarriocr/auth/social_signup.html:6 templates/web/seesomething/auth/general.html:3 templates/web/seesomething/auth/general.html:39 templates/web/stevenage/header.html:101 templates/web/va/auth/social_signup.html:43 templates/web/va/auth/social_signup.html:6 templates/web/zurich/auth/general.html:18 templates/web/zurich/auth/general.html:35
+#: templates/web/default/auth/general.html:3 templates/web/default/auth/general.html:49 templates/web/fixmybarangay/header.html:70 templates/web/fixmystreet/auth/general.html:3 templates/web/fixmystreet/auth/general.html:42 templates/web/fixmystreet/auth/general.html:62 templates/web/fixmystreet/header.html:64 templates/web/oxfordshire/header.html:115 templates/web/pormibarrio/auth/social_signup.html:43 templates/web/pormibarrio/auth/social_signup.html:6 templates/web/pormibarriocr/auth/social_signup.html:39 templates/web/pormibarriocr/auth/social_signup.html:6 templates/web/seesomething/auth/general.html:3 templates/web/seesomething/auth/general.html:39 templates/web/stevenage/header.html:101 templates/web/va/auth/social_signup.html:44 templates/web/va/auth/social_signup.html:7 templates/web/zurich/auth/general.html:18 templates/web/zurich/auth/general.html:35
 msgid "Sign in"
 msgstr ""
 
@@ -3458,7 +3458,7 @@ msgstr ""
 msgid "Your email (optional)"
 msgstr ""
 
-#: templates/web/bromley/report/display.html:132 templates/web/fixmystreet/auth/general.html:26 templates/web/fixmystreet/report/update-form.html:80 templates/web/pormibarrio/auth/social_signup.html:24 templates/web/pormibarriocr/auth/social_signup.html:24 templates/web/seesomething/auth/general.html:26 templates/web/va/auth/social_signup.html:24 templates/web/zurich/auth/general.html:30 templates/web/zurich/auth/general.html:58
+#: templates/web/bromley/report/display.html:132 templates/web/fixmystreet/auth/general.html:26 templates/web/fixmystreet/report/update-form.html:80 templates/web/pormibarrio/auth/social_signup.html:24 templates/web/pormibarriocr/auth/social_signup.html:24 templates/web/seesomething/auth/general.html:26 templates/web/va/auth/social_signup.html:25 templates/web/zurich/auth/general.html:30 templates/web/zurich/auth/general.html:58
 msgid "Your email address"
 msgstr ""
 
@@ -3486,7 +3486,7 @@ msgstr ""
 msgid "Your last name"
 msgstr ""
 
-#: templates/web/fixmystreet/auth/general.html:57 templates/web/fixmystreet/contact/index.html:77 templates/web/fixmystreet/report/new/fill_in_details_form.html:124 templates/web/fixmystreet/report/new/fill_in_details_form.html:192 templates/web/fixmystreet/report/update-form.html:140 templates/web/pormibarrio/auth/social_signup.html:20 templates/web/pormibarrio/contact/index.html:77 templates/web/pormibarrio/report/new/fill_in_details_form.html:131 templates/web/pormibarriocr/auth/social_signup.html:20 templates/web/pormibarriocr/contact/index.html:77 templates/web/pormibarriocr/report/new/fill_in_details_form.html:131 templates/web/seesomething/report/new/fill_in_details_form.html:79 templates/web/va/auth/social_signup.html:20 templates/web/va/contact/index.html:77 templates/web/va/report/new/fill_in_details_form.html:131 templates/web/zurich/auth/general.html:61 templates/web/zurich/report/new/fill_in_details_form.html:104
+#: templates/web/fixmystreet/auth/general.html:57 templates/web/fixmystreet/contact/index.html:77 templates/web/fixmystreet/report/new/fill_in_details_form.html:124 templates/web/fixmystreet/report/new/fill_in_details_form.html:192 templates/web/fixmystreet/report/update-form.html:140 templates/web/pormibarrio/auth/social_signup.html:20 templates/web/pormibarrio/contact/index.html:77 templates/web/pormibarrio/report/new/fill_in_details_form.html:131 templates/web/pormibarriocr/auth/social_signup.html:20 templates/web/pormibarriocr/contact/index.html:77 templates/web/pormibarriocr/report/new/fill_in_details_form.html:131 templates/web/seesomething/report/new/fill_in_details_form.html:79 templates/web/va/auth/social_signup.html:21 templates/web/va/contact/index.html:77 templates/web/va/report/new/fill_in_details_form.html:131 templates/web/zurich/auth/general.html:61 templates/web/zurich/report/new/fill_in_details_form.html:104
 msgid "Your name"
 msgstr ""
 
@@ -3494,7 +3494,7 @@ msgstr ""
 msgid "Your name:"
 msgstr ""
 
-#: templates/web/bromley/report/display.html:162 templates/web/bromley/report/new/fill_in_details_form.html:203 templates/web/fixmystreet/auth/general.html:41 templates/web/fixmystreet/report/new/fill_in_details_form.html:166 templates/web/fixmystreet/report/update-form.html:94 templates/web/pormibarrio/auth/social_signup.html:36 templates/web/pormibarriocr/auth/social_signup.html:32 templates/web/seesomething/auth/general.html:30 templates/web/va/auth/social_signup.html:36 templates/web/zurich/auth/general.html:34
+#: templates/web/bromley/report/display.html:162 templates/web/bromley/report/new/fill_in_details_form.html:203 templates/web/fixmystreet/auth/general.html:41 templates/web/fixmystreet/report/new/fill_in_details_form.html:166 templates/web/fixmystreet/report/update-form.html:94 templates/web/pormibarrio/auth/social_signup.html:36 templates/web/pormibarriocr/auth/social_signup.html:32 templates/web/seesomething/auth/general.html:30 templates/web/va/auth/social_signup.html:37 templates/web/zurich/auth/general.html:34
 msgid "Your password"
 msgstr ""
 
@@ -3686,7 +3686,7 @@ msgstr ""
 msgid "partial"
 msgstr ""
 
-#: templates/web/pormibarrio/auth/social_signup.html:32 templates/web/va/auth/social_signup.html:32
+#: templates/web/pormibarrio/auth/social_signup.html:32 templates/web/va/auth/social_signup.html:33
 msgid "phone"
 msgstr ""
 
@@ -3746,52 +3746,10 @@ msgstr ""
 msgid "ward"
 msgstr ""
 
-#: perllib/Utils.pm:280
-#, perl-format
-msgid "%d day"
-msgid_plural "%d days"
-msgstr[0] ""
-msgstr[1] ""
-
-#: perllib/Utils.pm:284
-#, perl-format
-msgid "%d minute"
-msgid_plural "%d minutes"
-msgstr[0] ""
-msgstr[1] ""
-
-#: templates/web/default/front/stats.html:23
-#, perl-format
-msgid "<big>%s</big> fixed in past month"
-msgid_plural "<big>%s</big> fixed in past month"
-msgstr[0] ""
-msgstr[1] ""
-
-#: templates/web/default/front/stats.html:17
-#, perl-format
-msgid "<big>%s</big> report recently"
-msgid_plural "<big>%s</big> reports recently"
-msgstr[0] ""
-msgstr[1] ""
-
 #: templates/web/default/front/stats.html:29
 #, perl-format
 msgid "<big>%s</big> update on reports"
 msgid_plural "<big>%s</big> updates on reports"
-msgstr[0] ""
-msgstr[1] ""
-
-#: perllib/Utils.pm:282
-#, perl-format
-msgid "%d hour"
-msgid_plural "%d hours"
-msgstr[0] ""
-msgstr[1] ""
-
-#: perllib/Utils.pm:278
-#, perl-format
-msgid "%d week"
-msgid_plural "%d weeks"
 msgstr[0] ""
 msgstr[1] ""
 
@@ -3816,9 +3774,51 @@ msgid_plural "<big>%s</big> reports in past week"
 msgstr[0] ""
 msgstr[1] ""
 
+#: perllib/Utils.pm:278
+#, perl-format
+msgid "%d week"
+msgid_plural "%d weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: perllib/Utils.pm:282
+#, perl-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/web/default/front/stats.html:17
+#, perl-format
+msgid "<big>%s</big> report recently"
+msgid_plural "<big>%s</big> reports recently"
+msgstr[0] ""
+msgstr[1] ""
+
 #: templates/web/default/report/new/councils_text_some.html:14
 #, perl-format
 msgid "We do <strong>not</strong> yet have details for the other council that covers this location."
 msgid_plural "We do <strong>not</strong> yet have details for the other councils that cover this location."
+msgstr[0] ""
+msgstr[1] ""
+
+#: perllib/Utils.pm:284
+#, perl-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/web/default/front/stats.html:23
+#, perl-format
+msgid "<big>%s</big> fixed in past month"
+msgid_plural "<big>%s</big> fixed in past month"
+msgstr[0] ""
+msgstr[1] ""
+
+#: perllib/Utils.pm:280
+#, perl-format
+msgid "%d day"
+msgid_plural "%d days"
 msgstr[0] ""
 msgstr[1] ""
