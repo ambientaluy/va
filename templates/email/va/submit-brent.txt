@@ -1,9 +1,9 @@
-Subject: Por Mi Barrio - Nuevo problema reportado: <?=$values['title']?>
+Subject: Vigilancia Ambiental - Nuevo problema reportado: <?=$values['title']?>
 
 Estimado miembro de <?=$values['bodies_name']?>,
 
 <?=$values['missing']?><?=$values['multiple']?>
-Un usuario de Por Mi Barrio ha ingresado un problema que requiere su atención.
+Un usuario de Vigilancia Ambiental ha ingresado un problema que requiere su atención.
 
 <?=$values['fuzzy']?>, o para hacer una actualización del reporte,
 por favor visite el siguiente link:
