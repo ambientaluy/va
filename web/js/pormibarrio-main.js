@@ -158,10 +158,11 @@ $( document ).ready(function() {
 		e.preventDefault();
 		$('#side').hide();
 	});
-	$('.btn-search').click(function(e){
+	/*$('.btn-search').click(function(e){
 		e.preventDefault();
-		streetLocateSubmit('none');
-	});
+		//streetLocateSubmit('none');
+		geocodeAddress();
+	});*/
 	//ACTIVAR SEGUIR REPORTE Y REPORTAR ABUSO
 	$( ".follow-report" ).click(function() {
 	  $( this ).toggleClass( "follow-report-active" );
@@ -629,10 +630,15 @@ function form_category_group_onchange() {
 		$('#form_category').empty();
 
 		var options = '';
-		options += '<option value="">-- Selecciona una categoría --</option>';
+		options += '<option value="">-- Selecciona una subcategoría --</option>';
+		
+		// Eliminar repetidos (cubiertos por mas de un organismo)
+		category_group = category_groups[group_id].filter(function(item, pos) {
+			return category_groups[group_id].indexOf(item) == pos;
+		})
 
-		for (var i = 0; i < category_groups[group_id].length; i++) {
-			options += '<option value="' + category_groups[group_id][i] + '">' + category_groups[group_id][i] + '</option>';
+		for (var i = 0; i < category_group.length; i++) {
+			options += '<option value="' + category_group[i] + '">' + category_group[i] + '</option>';
 		}
 		$("#form_category").html(options);
 
@@ -741,3 +747,56 @@ function toggleCategories(){
 	}
 
 }
+
+function geocodeAddress(dpto) {
+	var address = document.getElementById('ubicacion').value,
+	geocoder = new google.maps.Geocoder();
+	var request = {
+	    address: address,
+	    componentRestrictions: {
+		country: 'UY',
+		administrativeArea: dpto
+	    }
+	}
+	geocoder.geocode(request, function(results, status) {
+	  if (status === 'OK') {
+	    var latitude = results[0].geometry.location.lat();
+            var longitude = results[0].geometry.location.lng();
+	    locateUbication(latitude, longitude);
+	  } else {
+	    alert('No se pudo encontrar la ubicación: ' + status);
+	  }
+	});
+}
+
+function locateUbication(latitude, longitude){
+  if (typeof fixmystreet != "undefined"){
+    var lonlat = new OpenLayers.LonLat(longitude, latitude);
+    lonlat.transform(new OpenLayers.Projection("EPSG:4326"),new OpenLayers.Projection("EPSG:900913"));
+    fixmystreet.map.panTo(lonlat);
+    //fixmystreet_update_pin(lonlat,0); 
+   /* if (fixmystreet.page == 'new') {
+         //Already have a pin 
+        fixmystreet.markers.features[0].move(lonlat);
+    } else {
+        var markers = fms_markers_list( [ [ lonlat.lat, lonlat.lon, 'green' ] ], false );
+        fixmystreet.bbox_strategy.deactivate();
+        fixmystreet.markers.removeAllFeatures();
+        fixmystreet.markers.addFeatures( markers );
+        fixmystreet_activate_drag();
+	fixmystreet.markers.features[0].move(lonlat);
+    }*/
+    setTimeout(function(){
+      fixmystreet.map.zoomTo(12);
+    },500);
+  }else{
+    window.location.href = "/around?latitude="+latitude+";longitude="+longitude+"&zoom=3";
+  }
+}
+
+function initMap(){
+	//alert ("callback");
+	
+}
+
+

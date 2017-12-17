@@ -1,17 +1,24 @@
 <div id="s-calles" class="s-calles">
   [% IF all_areas.keys.first %]
       <div id="buscador" class="form-group pull-left">
-	<form role="form">    
-	<input class="" placeholder="Buscar ubicación" id="ubicacion" style=""/>
-	 
+	<!--<form role="form">  -->  
+	
+	 [% FOREACH x IN all_areas.keys %]
+		[% IF all_areas.${x}.type == 'DEPTO' %]		
+			[% obj = all_areas.${x}.name %]
+		[% END %]
+	[% END %]
+	
+	<input class="" placeholder="Buscar ubicación" id="ubicacion" style="" onKeyDown="if(event.keyCode==13) geocodeAddress('[% obj %]');"/>
 	<!--<input class="" placeholder="Calle" id="calle" onkeyup="searchLocationAjax(event, this)"/>
             <input class="" placeholder="Esquina/numero" id="esquina" onkeyup="searchLocationAjax(event, this)"/>
             <input type="hidden" id="main-street-code" />
             <input type="hidden" id="second-street-code" />-->
-	   <div class="btn btn-search" onclick="streetLocateSubmit()"><img src="/cobrands/va/images/icon-search.png"></div>
+	 <!--  <div class="btn btn-search" onclick="streetLocateSubmit()"><img src="/cobrands/va/images/icon-search.png"></div> -->
+	 <div class="btn btn-search" onclick="geocodeAddress('[% obj %]')"><img src="/cobrands/va/images/icon-search.png"></div>
 	</div>
-    </form>
-    <script type="text/javascript" language="javascript" src="js/postcodes/areas_UY.js"></script>
+    <!--</form>-->
+    <!--<script type="text/javascript" language="javascript" src="js/postcodes/areas_UY.js"></script>-->
     <script>var area=[% all_areas.keys.first %];</script>
   [% ELSE %]
   <div id="s-calles-selects" class="form-group pull-left">
