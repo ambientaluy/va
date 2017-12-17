@@ -179,6 +179,11 @@ a.menu-principal img{
 		vertical-align:top; 
 		padding-top:2px;
 	}
+	
+	
+div.social-control div.checkbox label.inline{
+	color:#ccc!important;
+	}
 		
 /*PAGE INTRO--------------------------------------*/
 
@@ -221,7 +226,7 @@ div.c-intro p{
 }
 
 div.steps{
-	margin-top: 4rem;
+	margin-top: 3.5rem;
 }
 
 div.step{
@@ -547,7 +552,7 @@ div.list-inline, .dropdown, .user-log-on, .escritorio {
 
 div.user-log-on img.img-circle{
 	width:30px;
-	height:auto;
+	height:30px;
 	margin-right:20px;	
 }
 
@@ -954,7 +959,7 @@ div.it-r ul li span{
 div.it-r ul li.icon-solved span{
 	background:url(images/icon-resuelto.png) no-repeat left top;
 	width:20px;
-	height:16px;
+	height:17px;
 	margin-top:2px
 }
 
@@ -967,7 +972,7 @@ div.it-r ul li.icon-camera span{
 
 div.it-r ul li.icon-comments span{
 	background:url(images/icon-comments.png) no-repeat left top;
-	width:18px;
+	width:19px;
 	height:16px;
 	margin-top:2px
 }
@@ -1260,6 +1265,16 @@ div.user-avatar img{
 	height:auto;
 	border-radius:50%;
 }
+
+div.current-user-avatar > img#current_user_avatar.img-circle{
+	height:60px;
+	}
+
+div.user-avatar > img.user_avatar_3{
+	height:60px;
+	}
+
+
 
 div.user-info textarea, div.user-info .form-control {
     background-color: #fafafa;
@@ -2475,7 +2490,7 @@ div.content-vertical{
 	div.c-intro{
 		padding-left:20px;
 		padding-right:20px;
-		padding-top:12rem;
+		/*padding-top:12rem;*/
 	}
 
 	div.c-intro p{
@@ -2727,9 +2742,9 @@ div.content-vertical{
 		width:100%
 	}
 	
-	div.c-intro{
+	/*div.c-intro{
 		padding-top: 0px;
-	}
+	}*/
 		
 	.content-vertical{
 		margin-top: 110px;
@@ -2938,7 +2953,24 @@ ul.dropdown-menu {
 	padding: 60px 20px 0;
 }
 
+div#popup.tool{
+	width:auto!important;
+	height:auto!important;
+	left:0px!important;
+	top:110px!important;
+	}
 
+div#OpenLayers_Map_6_OpenLayers_Container{
+	left:0px!important;
+	}
+	
+div.graph-reports-evolution{
+	height: 440px;
+}
+
+/*svg#OpenLayers_Layer_Vector_63_svgRoot{
+	width:350px;
+	}*/
 }
 
 /*CHARTS*/
