@@ -198,11 +198,17 @@ sub format_problem_for_display : Private {
         $c->stash->{template} = 'report/mobile_display.html';
         return 1;
     }
-    #stash contacts so they can be changed
-    my @contacts = $c->model('DB::Contact')->not_deleted->search( { body_id => [ $problem->bodies_str ] } )->all;
+    my @bodies_list = split(',', $problem->bodies_str); 
+    
+    my @contacts;
+    foreach my $one_body (@bodies_list) {
+        #stash contacts so they can be changed
+        my @body_contacts = $c->model('DB::Contact')->not_deleted->search( { body_id => [ $one_body ] } )->all;
+	push(@contacts, @body_contacts);
+    }
 
     my @categories;
-    foreach my $contact (@contacts) {
+    foreach my $contact (@contacts) {	
         push @categories, $contact->category;
     }
     $c->stash->{categories} = \@categories;
