@@ -280,17 +280,17 @@ $( document ).ready(function() {
 		$('#send-password').slideToggle();
 	});
 	//Disable submits if terms agree
-    if ( $("#terms_agree").length ){
+    if ( $("#terms-agree").length ){
     	//Terms and conditions
 	    $("button").click(function(e) {
-	    	if ( !($("#terms_agree").val() || $("#terms_agree").attr("checked")) ){
+	    	if ( !($("#terms-agree").val() || $("#terms-agree").attr("checked")) ){
 	    		e.preventDefault();
 	    		$('.terms-agree-error').remove();
-                $('.terms_agree').after('<p class="error-m terms-agree-error">Debe aceptar los términos y condiciones</p>');
+                $('.terms-agree').after('<p class="error-m terms-agree-error">Debe aceptar los términos y condiciones</p>');
 	    	}
 		});
 		$('input[type="submit"]').click(function(e) {
-	    	if ( !($("#terms_agree").val() || $("#terms_agree").attr("checked")) ){
+	    	if ( !($("#terms-agree").val() || $("#terms-agree").attr("checked")) ){
 	    		e.preventDefault();
 	    		$('.terms-agree-error').remove();
                 $(this).after('<p class="error-m terms-agree-error">Debe aceptar los términos y condiciones</p>');
@@ -429,6 +429,7 @@ function geolocate(timeout, zoom, is_list ){
 	if (!is_list){
 		list = '&list=0';
 	}
+	if (zoom <= 4) zoom = 12;
 	setTimeout(function(){
 		console.log('TIMEOUT: '+window.location.hostname);
 		if ( window.location.hostname == 'rivera.pormibarrio.uy'){
@@ -473,7 +474,7 @@ function geolocate(timeout, zoom, is_list ){
 	    },
 	    {
 	        enableHighAccuracy: true,
-	        timeout: 4000
+	        timeout: 7000
 	    });
 	}
 }
@@ -555,7 +556,7 @@ $('.responsive').responsiveText();
 
 //REPORTAR EN PANTALLA CHICA
 $(window).resize(function() {
-	if ( $(window).width() < 780){
+	if ( $(window).width() < 861){
 		if ( typeof fixmystreet !== 'undefined' && fixmystreet.page == 'around' && (fixmystreet.zoom == 4 || fixmystreet.zoom == 3)){
 			$('#side').hide();
 		}
@@ -573,7 +574,7 @@ $(window).resize(function() {
 			$('.top-container').show();
 		})
 	}
-	if ( $(window).width() >= 780){
+	if ( $(window).width() >= 861){
 		if ( typeof fixmystreet !== 'undefined' && fixmystreet.page == 'around' && (fixmystreet.zoom == 4 || fixmystreet.zoom == 3)){
 			$('#side').show();
 			$('#fms_pan_zoom').css('top', "1.75em");
@@ -790,7 +791,7 @@ function locateUbication(latitude, longitude){
       fixmystreet.map.zoomTo(12);
     },500);
   }else{
-    window.location.href = "/around?latitude="+latitude+";longitude="+longitude+"&zoom=3";
+    window.location.href = "/around?latitude="+latitude+";longitude="+longitude+"&zoom=12";
   }
 }
 

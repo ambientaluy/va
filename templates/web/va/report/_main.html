@@ -17,7 +17,7 @@
                 <img alt="Resuelto" class="img-resuelto" src='[% mobile ? c.cobrand.base_url : '' %]/cobrands/pormibarrio/images/resuelto.png' />
             [% END %]
         </h3>
-        <address>[% problem.postcode != ''? problem.postcode : loc('No address specified') %]</address>
+        <!--<address>[% problem.postcode != ''? problem.postcode : loc('No address specified') %]</address>-->
         <p>[% add_links( problem.detail ) | html %]</p>
         <div class="sign">
             <div class="picture">
@@ -47,7 +47,7 @@
         [% ELSE %]
           <a target="_blank" href="http://www.montevideo.gub.uy/tramites/aplicacion/consulta-de-reclamos?numReclamo=[% problem.can_display_external_id | html %]" > [% problem.can_display_external_id | html %] </a>
         [% END %]
-      [% ELSIF problem.bodies_str == '1' %]
+      [% ELSIF state_t == 'abierto' %]
           No hemos podido ingresar el reclamo aún
       [% END %]
     </span>

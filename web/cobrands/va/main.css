@@ -1731,6 +1731,7 @@ h1.envio_correo {
 padding-left:30px!important;	
 }
 
+
 /*BUTTONS----------------------------------------------------------*/
 
 .btn-block{
@@ -2484,7 +2485,7 @@ div.content-vertical{
 	font-size: 0.9em;
 }
 
-@media (max-width: 967px) {
+@media (max-width: 967px) and (min-width:481px) {
 
 	/*INTRO*/
 	div.c-intro{
@@ -2504,6 +2505,15 @@ div.content-vertical{
 
 	div.c-buttons-intro{
 		margin-top:3rem;
+	}
+	
+	div#buscador{
+	margin-left:230px;
+	}
+	
+	div#s-calles-selects.form-group.pull-left{
+	margin-left:200px;
+	width:350px;
 	}
 
 }
