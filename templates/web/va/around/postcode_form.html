@@ -25,8 +25,9 @@
     <select id="muniSelect" class="locate">
       <option disabled selected>Eleg&iacute; tu departamento</option>
       <option value="artigas" class="muni">Artigas</option>
-      <option value="canelones" class="muni">Canelones</option>
-     <option value="cerrolargo" class="muni">Cerro Largo</option>
+      <option value="salto" class="muni">Salto</option>
+     
+     <!--<option value="cerrolargo" class="muni">Cerro Largo</option>
      <option value="colonia" class="muni">Colonia</option>
      <option value="durazno" class="muni">Durazno</option>
      <option value="flores" class="muni">Flores</option>
@@ -38,11 +39,11 @@
      <option value="rionegro" class="muni">Río Negro</option>
      <option value="rivera" class="muni">Rivera</option>
      <option value="rocha" class="muni">Rocha</option>
-     <option value="salto" class="muni">Salto</option>
+     <option value="canelones" class="muni">Canelones</option>
      <option value="sanjose" class="muni">San José</option>
      <option value="soriano" class="muni">Soriano</option>
      <option value="tacuarembo" class="muni">Tacuarembó</option>
-     <option value="treintaytres" class="muni">Treinta y Tres</option>
+     <option value="treintaytres" class="muni">Treinta y Tres</option>-->
     </select>
   </div>
   <script>
@@ -93,7 +94,7 @@
             break;
 	case 'rocha':
             location.href = '/around?latitude=-33.9688360883101;longitude=-54.0213867214657&zoom=7&list=1';
-            break;
+            break; 
 	case 'salto':
             location.href = '/around?latitude=-31.3275005296416;longitude=-57.0174973077399&zoom=7&list=1';
             break;
@@ -110,7 +111,7 @@
             location.href = '/around?latitude=-33.068545471729;longitude=-54.285611834231&zoom=7&list=1';
             break;
         default:
-            window.location.href = "https://vigilancia.ambiental.uy";
+            window.location.href = "/";
         }
     });
   </script>
