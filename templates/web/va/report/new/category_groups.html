@@ -3,7 +3,10 @@
 
 <script>
 $("#form_category_groups").change(function(){
-	$("#form_category option[value*='Otra']").insertAfter($("#form_category option:last"));
+	var lastValue = $('#form_category  option:last-child').val();
+	if (lastValue.indexOf('Otra')<0){
+		$("#form_category option[value*='Otra']").insertAfter($("#form_category option:last"));
+	}	
 });
 </script>
 
