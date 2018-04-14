@@ -1,4 +1,12 @@
 [% FILTER collapse %]
+
+
+<script>
+$("#form_category_groups").change(function(){
+	$("#form_category option[value*='Otra']").insertAfter($("#form_category option:last"));
+});
+</script>
+
 <script>
 	[% IF category_groups_json %]
 		var category_groups = [% category_groups_json %];
