@@ -1,6 +1,6 @@
 Subject: Vigilancia Ambiental - Nuevo problema reportado: <?=$values['title']?>
 
-Estimado miembro de <?=$values['bodies_name']?>,
+Estimado integrante de <?=$values['bodies_name']?>,
 
 <?=$values['missing']?><?=$values['multiple']?>
 Un usuario de Vigilancia Ambiental ha ingresado un problema que requiere su atención.
@@ -36,4 +36,4 @@ Muchas gracias,
 
 Equipo de Vigilancia Ambiental
 
-http://vigilancia.ambiental.uy
+https://vigilancia.ambiental.uy

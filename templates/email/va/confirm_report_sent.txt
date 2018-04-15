@@ -4,6 +4,8 @@ Hola,
 
 Tu reporte sobre "<?=$values['title']?>" fue enviado a <?=$values['bodies_name']?>.
 
-Gracias,
+Muchas gracias,
 
-<?=$values['signature']?>
+Equipo de Vigilancia Ambiental
+
+https://vigilancia.ambiental.uy
