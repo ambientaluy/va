@@ -16,7 +16,7 @@ Nombre: <?=$values['name']?>
 
 Email: <?=$values['email']?>
 
-Telfono: <?=$values['phone_line']?>
+Teléfono: <?=$values['phone_line']?>
 
 <?=$values['category_line']?>
 
