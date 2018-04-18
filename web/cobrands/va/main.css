@@ -90,9 +90,6 @@ a.profile-back {
 	display: block;
 }
 
-body.intro .container{
-  background: url(images/bg/bg-intro.jpg) no-repeat scroll center top / cover rgba(0, 0, 0, 0);
- }
 
 .content-horizontal{
 	padding: 155px 0px 20px 0px;
@@ -154,11 +151,11 @@ div.content-padding {
 	
 	.menu-principal {
 	float:right;
-	padding: 5px 20px;
+	padding: 4px 20px 6px;
 	color:#fff;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size:14px;	
-	font-weight: 500;
+	font-weight: 600;
 	outline: none;
 	}
 
@@ -214,7 +211,7 @@ div.c-intro{
 div.c-intro h2{
 	font-weight:300;
 	font-size:3.375em;
-	margin: 4rem 0 0 0;
+	margin: 2rem 0 0 0;
 }
 
 div.c-intro p{
@@ -230,9 +227,16 @@ div.steps{
 }
 
 div.step{
-	width:25%;
+	width:20%;
 	float:left;
-	min-width:235px;
+	min-width:230px;
+	text-align:center
+}
+
+div.step-one{
+	width:5%;
+	float:left;
+	min-width:130px!important;
 	text-align:center
 }
 
@@ -1630,7 +1634,7 @@ div.c-form-report div.ir{
 	width:100%;
 	display:inline-block;
 	background:none;
-	border:#0E559C solid 1px;
+	border:#758a9d solid 1px;
 	padding: 7px 12px;
 	line-height: 1.42857143;
 	margin-bottom:28px;
@@ -2485,7 +2489,7 @@ div.content-vertical{
 	font-size: 0.9em;
 }
 
-@media (max-width: 967px) and (min-width:481px) {
+@media (max-width: 1065px) and (min-width:481px) {
 
 	/*INTRO*/
 	div.c-intro{
@@ -2725,6 +2729,38 @@ div.content-vertical{
 	}
 }
 
+
+@media (max-width: 670px) {
+	.escritorio{
+		display: none;
+	}
+
+	.movil{
+		display: block;
+	}
+	
+	div#info-user img.img-circle{
+	width:30px;
+	height:30px;
+	margin-right:10px;
+	margin-top:10px;
+	}
+
+}
+
+@media (max-width: 620px) {
+
+	a.menu-principal {
+		padding: 5px;
+		font-size:0.9em;
+	}
+	
+	a.menu-principal:hover { 
+		padding: 5px;
+		cursor:pointer;
+	}
+}
+
 @media (max-width: 540px) {
 	/*INTRO*/
 	.btn-intro{
@@ -2748,6 +2784,12 @@ div.content-vertical{
 
 @media (max-width: 480px) {
 	/*INTRO*/
+
+	div.step{
+		float:none;
+		margin:0 auto 4rem;
+	}	
+	
 	.btn-intro{
 		width:100%
 	}
@@ -2829,13 +2871,7 @@ div.content-vertical{
 		cursor:pointer;
 	}
 	
-	.escritorio{
-		display: none;
-	}
 
-	.movil{
-		display: block;
-	}
 	
 	.user-login-movil {
 		margin: 8px;
@@ -2927,12 +2963,7 @@ div.content-vertical{
 		padding: 10px; 
 		}
 		
-	div#info-user img.img-circle{
-	width:30px;
-	height:30px;
-	margin-right:10px;
-	margin-top:10px;
-}
+
 
 
 ul.dropdown-menu {
@@ -2981,6 +3012,13 @@ div.graph-reports-evolution{
 /*svg#OpenLayers_Layer_Vector_63_svgRoot{
 	width:350px;
 	}*/
+}
+
+
+@media (max-width: 360px) {
+.invisible360 {
+	display:none!important;
+	}
 }
 
 /*CHARTS*/
