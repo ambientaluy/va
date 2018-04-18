@@ -155,7 +155,7 @@ sub pin_colour {
 }
 
 # let staff and owners hide reports
-sub users_can_hide { 1 }
+sub users_can_hide { 0 }
 
 sub language_override { 'es' }
 
