@@ -9,9 +9,9 @@
 # PostgreSQL database details for FixMyStreet
 FMS_DB_HOST: 'localhost'
 FMS_DB_PORT: '5432'
-FMS_DB_NAME: 'va'
-FMS_DB_USER: 'va'
-FMS_DB_PASS: 'tero17'
+FMS_DB_NAME: 'db_name'
+FMS_DB_USER: 'db_usernme'
+FMS_DB_PASS: 'db_pass'
 
 # The base URL of the install.
 BASE_URL: 'http://vigilancia.ambiental.uy'
