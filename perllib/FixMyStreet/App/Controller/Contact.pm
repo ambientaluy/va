@@ -55,7 +55,7 @@ Handle abuse form submission from app
 
 =cut
 
-sub submit : Path('submit_ajax') : Args(0) {
+sub submit2 : Path('submit_ajax') : Args(0) {
     my ( $self, $c ) = @_;
 
    return
